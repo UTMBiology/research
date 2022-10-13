@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<!--Coded by Ke Er Zhang-->
+
+<head>
+<meta charset="utf-8">
+<title>UTM Biology Research Clusters</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="/~amyz/visual_scicomm/logos/favicon.png" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <!-- Create a div where faculty data will be placed -->
+  <div id="faculty" class="centered" style="margin-top:30px;"></div>
+</body>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+  * {
+    font-family: Inter, sans-serif;
+    font-weight: normal;
+    color: #002A5C;
+  }
+
+  .column {
+    float: left;
+  }
+
+  .left {
+    /*width: 20%;*/
+    padding: 10px;
+    margin-right: 20px;
+  }
+
+  .right {
+    width: 70%;
+    padding: 10px;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+ 
+  div.centered {
+    position: absolute;
+    width: 90%;
+    /*top: 50%;*/
+    left: 50%;
+    transform: translate(-50%, 0%);
+    overflow-y: auto;
+  }
+
+  img {
+    width:125px;
+  }
+
+  a:link {
+    color: #007FA3;
+  }
+
+  h1 {
+    font-size: 25px;
+    font-weight: bold;
+    display: inline;
+  }
+
+  h2 {
+    font-size: 16px;
+    margin-left: 10px;
+    display: inline;
+  }
+
+  h3 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  hr {
+    border: 0em solid #002A5C;
+    opacity: 0.1;
+    width: 90%;
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #eee;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #ccc;
+  }
+</style>
+
+
+<script>
+  //Fetch faculty data in the spreadsheet and display in HTML
+  $(function() {
+     $.getJSON('./Faculty.json', function(data) {
+         $.each(data.nodes, function(i, f) {
+           if (f.group != "Area") {
+             var htmlContent = '<div class="row">'
+             htmlContent += '<div class="column left">' + "<img src='" + f.img + "' style='border-radius:50%; margin-bottom:-10px;'>" + '</div>'
+             htmlContent += '<div class="column right">' + "<h1>" + f.id + "<\/h1>" + "<h2>" + f.degree + "<\/h2>"
+             htmlContent += '<p style="margin-top:5px;">' + f.position + '</br>' + retrieveText(f.dept) + '</br>' + checkEmpty(f.office) + checkEmpty(f.officephone) + '<a href="mailto:' + f.email + '">' + f.email + '</a>' + '</br>' + '<a href="https://' + f.website + '">' + f.website + '</a>' + "</p>"
+             htmlContent += '<p style="margin-top:-5px;">' + checkTwitter(f.twitter) + checkInstagram(f.instagram) + checkLinkedIn(f.linkedin) + '</p>'
+             htmlContent += '<h3>' + 'Research Interests' + '</h3>'
+             htmlContent += '<p style="margin-top:-10px;">' + f.bio + '</p>'
+             htmlContent += '<p style="margin-top:-5px;">' + retrieveTags(f.dept) + retrieveTags(f.category) + retrieveTags(f.keyword) + '</p>'
+             htmlContent += '<\/div>'
+             htmlContent += '<\/div>'
+             htmlContent += '<hr>'
+             $(htmlContent).appendTo("#faculty");
+          }
+       });
+     });
+  });
+
+  //Check if there is data in the spreadsheet and return it 
+  function checkEmpty(d) {
+    if (!d) {return "";}
+    else {return d + '</br>';}
+  }
+
+  function checkTwitter(d) {
+    if (!d) {return "";}
+    else {return '<a href="https://twitter.com/' + d + '">' + '<img src="https://upload.wikimedia.org/wikipedia/sco/9/9f/Twitter_bird_logo_2012.svg" style="width:auto;height:18px;margin-right:9px;">' + '</a>';}
+  }
+
+  function checkInstagram(d) {
+    if (!d) {return "";}
+    else {return '<a href="https://instagram.com/' + d + '">' + '<img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" style="width:auto;height:20px;margin-right:10px;">' + '</a>';}
+  }
+
+  function checkLinkedIn(d) {
+    if (!d) {return "";}
+    else {return '<a href="' + d + '">' + '<img src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg" style="width:auto;height:20px;margin-right:10px;">' + '</a>';}
+  }
+  
+  //Format and return every item from a list (tag/category/keyword) within a padded rectangle 
+  function retrieveTags(d) {
+    var text = "";
+    for (let i = 0; i < d.length; i++) {
+      text += '<div style="float:left; font: 12px Inter, sans-serif; color:#384876; background-color:#eff4f8; padding:6px; border-radius:5px; margin-right:5px; margin-bottom:5px;">' + d[i] + '</div>';}
+    return text
+  }
+
+  //Format and return every item from a list (text)
+  function retrieveText(d) {
+    var text = "";
+    for (let i = 0; i < d.length; i++) {
+      text += d[i] + ', ';}
+    text = text.slice(0, -2);
+    return text
+  }
+</script>
+</html>

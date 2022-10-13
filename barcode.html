@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+
+<head>
+<meta charset="utf-8">
+<title>UTM Biology Research Clusters</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+
+</head>
+
+<body>
+<!-- Create a div where the graph will take place -->
+  <div id="my_dataviz">
+    <div class="column" id="col1"> 
+    </div>
+    <div class="column" id="col2"> 
+    </div>
+    <div class="column" id="col3"> 
+    </div>
+  </div>
+</body>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+  
+  * {
+    overflow-x:hidden;
+    overflow-y:hidden;
+  }
+  
+  body {
+    overflow-x:hidden;
+    overflow-y:hidden;
+  }
+
+  .column {
+    float: left;
+    width: 33.33%;
+  }
+  
+  /*#my_dataviz {
+    position:absolute;
+    min-width: 1000px;
+  }*/
+
+  .data {
+  /*   fill: grey !important; */
+  }
+
+  /*colour the axis*/
+  .y line, path{
+    stroke: rgba(255, 255, 255, 0);
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #eee;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #ccc;
+  }
+</style>
+
+<script>
+//CODED BY: JF Jerrie Feng - EDITED BY: DN Derek Ng, KZ Ke Er Zhang
+
+//ENTER NUMBER OF CATEGORIES:
+var cat_num = 14;
+
+// set the dimensions and margins of the graph
+var margin = {top: 30, right: 30, bottom: 30, left: 200},
+  width = 380 - margin.left - margin.right,
+  height = 750 - margin.top - margin.bottom;
+
+// append the svg object to the body of the page - Column 1
+var svg = d3.select("#col1")
+.append("svg")
+  .attr("width", width + margin.left + margin.right)
+  .attr("height", height + margin.top + margin.bottom)
+.append("g")
+  .attr("transform",
+        "translate(" + (margin.left-125) + "," + margin.top + ")")
+  .attr("class", "datapoints"); // Added by DN
+
+// append the svg object to the body of the page - Column 2
+var svg2 = d3.select("#col2")
+.append("svg")
+  .attr("width", width + margin.left + margin.right)
+  .attr("height", height + margin.top + margin.bottom)
+.append("g")
+  .attr("transform",
+        "translate(" + (margin.left-125) + "," + margin.top + ")")
+  .attr("class", "datapoints"); // Added by DN
+
+// append the svg object to the body of the page - Column 3
+var svg3 = d3.select("#col3")
+.append("svg")
+  .attr("width", width + margin.left + margin.right)
+  .attr("height", height + margin.top + margin.bottom)
+.append("g")
+  .attr("transform",
+        "translate(" +(margin.left-125) + "," + margin.top + ")")
+  .attr("class", "datapoints"); 
+
+
+//Clip path for making circle img 
+var defsS = svg.append("defs") 
+    .append("clipPath")
+      .attr("id", "clipSmall")
+      .append("circle")
+        .attr("r", 20)
+        .attr('cx',0 - 28)
+        .attr('cy',0 - 10);
+
+
+//Colours for each bar
+var myColor = d3.scaleLinear()
+  .range(["white","#abbcd8", "#7fa7cb", "#508fbc", "#2f75ab", "#265988", "#234e6e", "#143e55", "#246870", "#48958b", "#7fc491", "#b6db96", "#eceeab", "#f5cd92", "#eca565"])
+  .domain([0,1,2,3,4,5,6,7,8,9,10,11,12,13,14])
+
+
+var barImg1 = []; //profile images
+var barImg2 = [];
+var barImg3 = [];
+var myGroup1 = []; //prof names
+var myGroup2 = [];
+var myGroup3 = [];
+
+
+// CREATE COLUMN 1
+d3.json("./Faculty.json", function(data) {
+  //Get specific obj from json file:
+  const barcode = data.bar_col1.map(d => Object.create(d));
+  
+  var myVars = []; //category
+  
+  var repeat_img, repeat_name = "";
+  var temp_cat = 0;
+  
+  for(i in barcode){
+    var temp_img = barcode[i].image;
+    var temp_name = barcode[i].name;
+    
+    if(temp_img != repeat_img){
+      barImg1.push(barcode[i].image);
+      repeat_img = barcode[i].image;
+    }
+    if(temp_name != repeat_name){
+      myGroup1.push(barcode[i].name);
+      repeat_name = barcode[i].name;
+    }
+    if(temp_cat < 14){
+      myVars.push(barcode[temp_cat].category);
+      temp_cat += 1;
+    }
+  } 
+  barImg1 = barImg1.reverse(); //correcting order
+  
+  
+  // BUILD X scales and axis
+  var x = d3.scaleBand()
+    .range([ 0, width ])
+    .domain(myVars)
+    .padding(0.01);
+  svg.append("g")
+    .attr("transform", "translate(0," + height + ")")
+  
+  
+  // BUILD Y scales and axis: column 1
+  var y = d3.scaleBand()
+    .range([ height, 0 ])
+    .domain(myGroup1.reverse()) 
+    .padding(0.45);
+  // svg.append("g")
+  // .call(d3.axisLeft(y))
+  
+   var yAxis = d3.axisLeft() 
+    .scale(y)
+   svg.append("g")
+    .attr("class", "y axis")
+    .call(yAxis)
+    .attr("font-size", "0") //hide yaxis text AZ EDIT
+    .selectAll(".tick").each(function(d,i){        
+        d3.select(this)
+          .append('image')
+          .style("clip-path", "url(#clipSmall)")
+          .attr('xlink:href', barImg1[i]) //add profile img
+          .attr('x',0 - 50)
+          .attr('y',0 - 33)
+          .attr('width', 45)
+          .attr('height', 45);
+        });
+  
+  
+  //Read data for column 1
+  //BACKGROUND COLOUR for each bar
+  svg.selectAll("g.datapoints")
+     .data(barcode, function(d) {return d.name+':'+d.category;})
+      .enter()
+      .append("rect")
+       .filter(function(d, i) {
+         if (i%cat_num === 0) { // number of research categories 
+           return d;
+         }
+       })
+       .attr('y', function(d) {
+         return y(d.name);
+       })
+       .attr('fill', 'rgb(230,230,230)')
+       .attr("opacity", 0.7)
+       .attr('height', function(d) {
+         return y.bandwidth();
+       })
+       .attr('width', 10*(cat_num+1)); // number of categories + 1 -> such that the total width of the background grey fills in the full width of the data visualization
+  
+  
+  //DATA POINTS - each barcode
+  svg.selectAll("g.datapoints")
+      .data(barcode, function(d) {return d.name+':'+d.category;})
+      .enter()
+      .append("rect")
+      .attr("y", function(d) { return y(d.name) })
+      .attr("x", function(d) { return x(d.category) })
+      .attr("width", 10 )
+      .attr("height", y.bandwidth() )
+      .style("fill", function(d) { 
+        console.log(d.value);
+        if (d.value == 0) {
+          return "transparent";
+        } else {
+          return myColor(d.value);
+        }
+        
+      })
+      .on("mouseover", mouseover)
+      .on("mousemove", mousemove1)
+      .on("mouseleave", mouseleave);
+  
+  
+  // PROF NAME
+  svg.selectAll("g.datapoints")
+     .data(barcode, function(d) {return d.name+':'+d.category;}) 
+      .enter()
+    .append("text")
+    .text(function(d) {                 
+      return d.name;
+    })
+    .attr("y", function(d) {
+      return y(d.name) - 4;
+    })
+    .attr("font-family", "Inter, sans-serif")
+    .attr("font-size", "11.5px")
+    .attr("fill", "#002A5C")
+    .attr("opacity", 0.2);
+    
+});
+
+
+
+
+// CREATE COLUMN 2
+d3.json("./Faculty.json", function(data) {
+  //Get specific obj from json file:
+  const barcode = data.bar_col2.map(d => Object.create(d));
+  
+  var myVars = []; //category: reset
+  
+  var repeat_img, repeat_name = "";
+  var temp_cat = 0;
+  
+  for(i in barcode){
+    var temp_img = barcode[i].image;
+    var temp_name = barcode[i].name;
+    
+    if(temp_img != repeat_img){
+      barImg2.push(barcode[i].image);
+      repeat_img = barcode[i].image;
+    }
+    if(temp_name != repeat_name){
+      myGroup2.push(barcode[i].name);
+      repeat_name = barcode[i].name;
+    }
+    if(temp_cat < 14){
+      myVars.push(barcode[temp_cat].category);
+      temp_cat += 1;
+    }
+  } 
+  barImg2 = barImg2.reverse(); //correcting order
+  
+  
+  // BUILD X scales and axis
+  var x = d3.scaleBand()
+    .range([ 0, width ])
+    .domain(myVars)
+    .padding(0.01);
+  svg.append("g")
+    .attr("transform", "translate(0," + height + ")")
+  
+  
+  // BUILD Y scales and axis: column 2
+  var y2 = d3.scaleBand()
+  .range([ height, 0 ])
+  .domain(myGroup2.reverse())
+  .padding(0.45);
+
+  var yAxis2 = d3.axisLeft()
+      .scale(y2)
+  svg2.append("g")
+      .attr("class", "y axis2")
+      .call(yAxis2)
+      .attr("font-size", "0") //hide yaxis text AZ EDIT
+      .selectAll(".tick").each(function(d,i){        
+          d3.select(this)
+            .append('image')
+            .style("clip-path", "url(#clipSmall)")
+            .attr('xlink:href', barImg2[i]) //add profile img
+            .attr('x',0 - 50)
+            .attr('y',0 - 33)
+            .attr('width',45)
+            .attr('height',45);
+      });
+  
+  
+  //Read data for column 2
+  //BACKGROUND COLOUR for each bar
+  svg2.selectAll("g.datapoints")
+     .data(barcode, function(d) {return d.name+':'+d.category;})
+      .enter()
+      .append("rect")
+       .filter(function(d, i) {
+         if (i%cat_num === 0) { // number of research categories 
+           return d;
+         }
+       })
+       .attr('y', function(d) {
+         return y2(d.name);
+       })
+       .attr('fill', 'rgb(230,230,230)')
+       .attr("opacity", 0.7)
+       .attr('height', function(d) {
+         return y2.bandwidth();
+       })
+       .attr('width', 10*(cat_num+1)); // number of categories + 1 -- such that the total width of the background grey fills in the full width of the data visualization
+  
+  
+  //DATA POINTS - each barcode
+  svg2.selectAll("g.datapoints")
+      .data(barcode, function(d) {return d.name+':'+d.category;})
+      .enter()
+      .append("rect")
+      .attr("y", function(d) { return y2(d.name) })
+      .attr("x", function(d) { return x(d.category) })
+      .attr("width", 10 )
+      .attr("height", y2.bandwidth() )
+      .style("fill", function(d) { 
+        if (d.value == 0) {
+          return "transparent";
+        } else {
+          return myColor(d.value);
+        }
+        
+      })
+      .on("mouseover", mouseover)
+      .on("mousemove", mousemove2)
+      .on("mouseleave", mouseleave);
+  
+  
+  // PROF NAME
+  svg2.selectAll("g.datapoints")
+     .data(barcode, function(d) {return d.name+':'+d.category;})
+      .enter()
+    .append("text")
+    .text(function(d) {                 
+      return d.name;
+    })
+    .attr("y", function(d) {
+      return y2(d.name) - 4;
+    })
+    .attr("font-family", "Inter, sans-serif")
+    .attr("font-size", "11.5px")
+    .attr("fill", "#002A5C")
+    .attr("opacity", "0.2");
+  
+  
+});
+
+// CREATE COLUMN 3
+d3.json("./Faculty.json", function(data) {
+  //Get specific obj from json file:
+  const barcode = data.bar_col3.map(d => Object.create(d));
+  
+  var myVars = []; //category: reset
+  
+  var repeat_img, repeat_name = "";
+  var temp_cat = 0;
+  
+  for(i in barcode){
+    var temp_img = barcode[i].image;
+    var temp_name = barcode[i].name;
+    
+    if(temp_img != repeat_img){
+      barImg3.push(barcode[i].image);
+      repeat_img = barcode[i].image;
+    }
+    if(temp_name != repeat_name){
+      myGroup3.push(barcode[i].name);
+      repeat_name = barcode[i].name;
+    }
+    if(temp_cat < 14){
+      myVars.push(barcode[temp_cat].category);
+      temp_cat += 1;
+    }
+  } 
+  barImg3 = barImg3.reverse(); //correcting order
+  
+  
+  // BUILD X scales and axis
+  var x = d3.scaleBand()
+    .range([ 0, width ])
+    .domain(myVars)
+    .padding(0.01);
+  svg.append("g")
+    .attr("transform", "translate(0," + height + ")")
+  
+  
+  // BUILD Y scales and axis: column 3
+  var y3 = d3.scaleBand()
+  .range([ height*0.85, 0 ])
+  .domain(myGroup3.reverse())
+  .padding(0.5);
+
+  var yAxis3 = d3.axisLeft()
+      .scale(y3)
+  svg3.append("g")
+      .attr("class", "y axis3")
+      .call(yAxis3)
+      .attr("font-size", "0") //hide yaxis text AZ EDIT
+      .selectAll(".tick").each(function(d,i){        
+          d3.select(this)
+            .append('image')
+            .style("clip-path", "url(#clipSmall)")
+            .attr('xlink:href', barImg3[i]) //add profile img
+            .attr('x',0 - 50)
+            .attr('y',0 - 33)
+            .attr('width',45)
+            .attr('height',45);
+
+      });
+  
+  
+  //Read data for column 3
+  //BACKGROUND COLOUR for each bar
+  svg3.selectAll("g.datapoints")
+     .data(barcode, function(d) {return d.name+':'+d.category;})
+      .enter()
+      .append("rect")
+       .filter(function(d, i) {
+         if (i%cat_num === 0) { // number of research categories 
+           return d;
+         }
+       })
+       .attr('y', function(d) {
+         return y3(d.name);
+       })
+       .attr('fill', 'rgb(230,230,230)')
+       .attr("opacity", 0.7)
+       .attr('height', function(d) {
+         return y3.bandwidth();
+       })
+       .attr('width', 10*(cat_num+1)); // number of categories + 1 -- such that the total width of the background grey fills in the full width of the data visualization
+  
+  
+  //DATA POINTS - each barcode
+  svg3.selectAll("g.datapoints")
+      .data(barcode, function(d) {return d.name+':'+d.category;})
+      .enter()
+      .append("rect")
+      .attr("y", function(d) { return y3(d.name) })
+      .attr("x", function(d) { return x(d.category) })
+      .attr("width", 10 )
+      .attr("height", y3.bandwidth() )
+      .style("fill", function(d) { 
+        console.log(d.value);
+        if (d.value == 0) {
+          return "transparent";
+        } else {
+          return myColor(d.value);
+        }
+        
+      })
+      .on("mouseover", mouseover)
+      .on("mousemove", mousemove3)
+      .on("mouseleave", mouseleave);
+  
+  
+  //PROF NAME
+  svg3.selectAll("g.datapoints")
+     .data(barcode, function(d) {return d.name+':'+d.category;})
+      .enter()
+    .append("text")
+    .text(function(d) {                 
+      return d.name;
+    })
+    .attr("y", function(d) {
+      return y3(d.name) - 4;
+    })
+    .attr("font-family", "Inter, sans-serif")
+    .attr("font-size", "11.5px")
+    .attr("fill", "#002A5C")
+    .attr("opacity", "0.2");
+  
+  
+});
+
+
+
+
+
+
+
+//FUNCTION: Mouse hover - change colour
+var mouseover = function(d) {
+  var previous = d3.select(this).style("fill") //select rgb colour of current mouse hover
+  var this_x = d3.select(this).attr("x") //selects for the x-axis column: basically all ones of same category
+  
+  if(d3.select(this).style("fill") !== "transparent"){
+    tooltip
+      .style("opacity", 1)
+  }
+  
+  if(previous !== "transparent"){
+    d3.selectAll("rect").each(function() {
+      if (d3.select(this).attr("x") !== this_x && 
+          // d3.select(this).style("fill") !== "rgb(255, 255, 255)") 
+          d3.select(this).style("fill") !== "transparent") {
+        
+        var previous = d3.select(this).style("fill")
+        var rbg_color = d3.rgb(previous)
+        var change = rbg_color
+        change.opacity = 0.5
+        d3.select(this).style(
+          "fill", change
+        )
+      }
+    })
+  }
+  
+  // if (previous !== "rgb(255, 255, 255)") {
+  //   d3.select(this).style("fill", change)
+  // }
+}
+
+//FUNCTION: Mouse not hovering
+var mouseleave = function(d) {
+  var previous = d3.select(this).style("fill")
+  var this_x = d3.select(this).attr("x")
+  
+  tooltip
+      .style("opacity", 0)
+  
+  d3.selectAll("rect").each(function(d) {
+    if (d3.select(this).attr("x") !== this_x && 
+        // d3.select(this).style("fill") !== "rgb(255, 255, 255)") {
+        d3.select(this).style("fill") !== "transparent") {
+      var previous = d3.select(this).style("fill")
+      var rbg_color = d3.rgb(previous)
+      var change = rbg_color
+      change.opacity = 1
+      // if (previous !== "rgb(255, 255, 255)") { 
+      if (previous !== "transparent") {
+        d3.select(this).style("fill", change)
+      }
+    }
+  })
+  
+}
+
+
+// FUNCTION: tooltip
+var tooltip = d3.select("#my_dataviz")
+    .append("div")
+    .style("opacity", 0)
+    .attr("class", "tooltip")
+    .style("position", "absolute")
+    .style("background-color", "black")
+    .style("color", "white")
+    .style("border-width", "2px")
+    .style("padding", "5px")
+    .style("font-family", "Inter, sans-serif")
+    .style("font-size", "11px");
+
+//FUNCTION: tooltip hover over - for each column 
+var mousemove1 = function(d) {
+  tooltip
+    .html(d.category)
+    .style("left", (d3.mouse(this)[0]+ width-100) + "px")
+    .style("top", (d3.mouse(this)[1]) + "px")
+}
+
+var mousemove2 = function(d) {
+  tooltip
+    .html(d.category)
+    .style("left", (d3.mouse(this)[0]+ (width+margin.left+margin.right-75)) + "px")
+    .style("top", (d3.mouse(this)[1]) + "px")
+}
+
+var mousemove3 = function(d) {
+  tooltip
+    .html(d.category)
+    .style("left", (d3.mouse(this)[0]+ (width+margin.left+margin.right-100)*2) + "px")
+    .style("top", (d3.mouse(this)[1]) + "px")
+} 
+
+//CODED BY: JF Jerrie Feng - EDITED BY: DN Derek Ng, KZ Ke Er Zhang
+
+</script>
+</html>

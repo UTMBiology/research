@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<!--Coded by Ke Er Zhang
+Attributions:
+D3 Force-directed Graph from Mike Bostock https://observablehq.com/@d3/force-directed-graph-->
+
+<head>
+<meta charset="utf-8">
+<title>UTM Biology Research Clusters</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="/~amyz/visual_scicomm/logos/favicon.png" />
+<script src="https://d3js.org/d3.v6.js"></script>
+</head>
+
+<body>
+<!-- Create a div where the graph will take place -->
+<div id="my_dataviz" style="overflow:hidden;"></div>
+</body>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+ 
+.column {
+  float: left;
+}
+
+.left {
+  width: 80%;
+}
+
+.right {
+  width: 20%;
+  text-align:right;
+  margin-left: -10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+img {
+  width:160px;
+}
+
+a {
+  color: #007FA3;
+}
+
+h1 {
+  font: 33px Inter, sans-serif;
+  font-weight: bold;
+  color: #002A5C;
+}
+
+h2 {
+  font: 16px Inter, sans-serif;
+  margin-top:-15px;
+  color: #002A5C;
+}
+
+h3 {
+  font: 16px Inter, sans-serif;
+  font-weight: bold;
+  color: #002A5C;
+  margin-top:5px;
+}
+
+p {
+  font: 14px Inter, sans-serif;
+  color: #002A5C;
+}
+
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #eee;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #ccc;
+}
+</style>
+
+
+<script>
+// set the dimensions and margins of the graph
+const margin = {top: 0, right: 0, bottom: 0, left: 0},
+  width = 805,
+  height = 750;
+
+// append the svg object to the body of the page
+const svg = d3.select("#my_dataviz")
+.append("svg")
+  .attr("width", width - margin.left - margin.right)
+  .attr("height", height - margin.top - margin.bottom)
+.append("g")
+  .attr("transform",
+        `translate(${margin.left}, ${margin.top})`);
+
+d3.json("./Faculty.json").then( function(data) {
+  
+  const links = data.links.map(d => Object.create(d));
+  const nodes = data.nodes.map(d => Object.create(d));
+  
+  const minRadius = 18;
+  
+  // keep track of if tooltip is hidden or not
+  var isTooltipHidden = true;
+  
+   const defs = svg.append("defs") //clip path for faculty circle
+    .append("clipPath")
+      .attr("id", "clip")
+      .append("circle")
+        .attr("cx", 0)
+        .attr("cy", 0)
+        .attr("r", minRadius-2.5); 
+
+  // Simulate Forces
+  const simulation = d3.forceSimulation(nodes)
+      .force("link", d3.forceLink(links).id(d => d.id))
+      .force("charge", d3.forceManyBody().strength(-200))
+      .force("center", d3.forceCenter(width / 2, height / 2))
+      .force('collision', d3.forceCollide().radius(minRadius));
+  
+  // Initialize the links
+  const link = svg
+    .append("g")
+    .selectAll("line")
+    .data(links)
+    .join("line")
+    .attr("value", d => d.value)
+    .attr("target", d => d.target.id)
+    .attr("source", d => d.source.id)
+    .attr("stroke", "#002A5C")
+    .attr("stroke-opacity", 0.02)
+    .attr("stroke-width", d => Math.sqrt(d.value))
+    .attr("pointer-events", "none");
+
+  // Initialize the nodes
+   const node = svg
+    .append("g")
+    .selectAll(".node")
+    .data(nodes)
+    .join("g")
+    .attr("class", "node")
+    .attr("id", d => d.id)
+    .call(drag(simulation));
+
+  
+  const nodefaculty = node
+    .filter(d => d.group !== "Area")
+    .append('circle')
+    .attr("r", d => minRadius)
+    .attr("fill", d => d.colour)
+    .attr("fill-opacity", 0.9)
+    .attr("stroke", "#fff")
+    .attr("stroke-width", 1.5);
+  
+  node
+    .filter(d => d.group !== "Area")
+    .append("image")
+    .style("clip-path", "url(#clip)")  
+    .attr("xlink:href", d => d.img)
+    .attr("x", -minRadius)
+    .attr("y", -minRadius)
+    .attr("width", minRadius*2)
+    .attr("height", minRadius*2)
+    .attr("opacity", 1)
+    .on("click", clickNode)
+    .style("cursor", "pointer"); //faculty images//
+  
+  const label_faculty = node
+    .filter(d => d.group !== "Area")
+    .append("text")
+    .attr("text-anchor", "middle")
+    .attr("dy", "2.2em")
+    .attr("id", d => d.id)
+    .text(d => d.id)
+    .attr("fill", "#002A5C")
+    .style("font-size", "12px")
+    .style("font-family", "Inter, sans-serif")
+    .style("text-stroke", "2px #fff")
+    .style("opacity", 0)
+    .style("cursor", "pointer")
+    .style("paint-order", "stroke").style("stroke", "#fff").style("stroke-width", "2px") //text stroke//
+    .attr("pointer-events", "none");
+
+  
+  const nodearea = node
+    .filter(d => d.group === "Area")  
+    .append('circle')
+    .attr("r", d => {      
+      d.weight = link.filter(l => {
+        return l.source.index == d.index || l.target.index == d.index
+      }).size();
+      { return minRadius + (d.weight); }})
+    .attr("fill", d => d.colour)
+    .attr("fill-opacity", 0.6)
+    .attr("stroke", "#fff")
+    .attr("stroke-width", 1.5)
+    .attr("stroke-opacity", 0);
+        
+  const label_area = node
+    .filter(d => d.group === "Area")
+    .append("text")
+    .attr("text-anchor", "middle")
+    .attr("dy", "0.35em")
+    .attr("id", d => d.id)
+    .text(d => d.id)
+    .attr("fill", "#002A5C")
+    .style("font-size", "12px")
+    .style("font-family", "Inter, sans-serif")
+    .style("text-stroke", "2px #fff")
+    .style("cursor", "pointer")
+    .style("paint-order", "stroke").style("stroke", "#fff").style("stroke-width", "2px") //text stroke//
+    .attr("pointer-events", "none");
+  
+  const circlesize = minRadius*4
+  const cardwidth = 400
+  const cardheight = (height/1.35) //- circlesize
+  const cardx = width/2 - cardwidth/2
+  const cardy = height/2 - cardheight/1.9 //+ circlesize/4
+
+  const tooltip = d3
+    .select("body")
+    .append("div")
+    .attr("class", "tooltip")
+    .style("position", "absolute")
+    .style("padding", "20px")
+    .style("z-index", "10")
+    .style("width", cardwidth + "px")
+    .style("height", cardheight + "px")
+    .style("background-color", "#fff")
+    //.style("outline", "1x solid #eee")
+    .style("border-radius", "10px")
+    .style("opacity", 1)
+    .style("visibility", "hidden")
+    .text("");
+
+   const overlay = svg
+    .append('rect')
+    .attr('x', 0)
+    .attr('y', 0)
+    .attr('width', width)
+    .attr('height', height)
+    .attr('fill', '#002A5C')
+    .attr("opacity", 0)
+    .attr("visibility", "hidden")
+    .on("click", clickOut);
+  
+  
+  //INTERACTION//
+  var linkedByIndex = {};
+  links.forEach(function(d) {
+    linkedByIndex[d.source.id + "," + d.target.id] = 1;
+  });
+  function neighboring(a, b) {
+    return linkedByIndex[a.id + "," + b.id] || linkedByIndex[b.id + "," + a.id] || a.id == b.id;
+  }
+
+  var mouseenter = function(event, d) {
+    link 
+      .filter(l => l.source.id === d.id || l.target.id === d.id)
+      .attr("stroke-opacity", 0.5);
+    node
+      .transition().ease(d3.easeLinear).duration(50)
+      .style("opacity", function(o) {
+        return neighboring(d, o) ? 1 : 0.3;
+      });
+    nodearea
+      .style("fill-opacity", 0.95)
+      .attr("stroke-opacity", 1);
+    label_faculty
+      .style("opacity", function(o) {
+        return neighboring(d, o) ? 1 : 0;
+      });
+    label_area
+      .style("font-weight", "bold")
+      .style("opacity", function(o) {
+        return neighboring(d, o) ? 1 : 0;
+      });
+  };
+
+  var mouseleave = function(event) {
+    link 
+      .attr("stroke-opacity", 0.02);
+    node
+      .transition().ease(d3.easeLinear).duration(50)
+      .style("opacity", 1);
+    nodearea
+      .style("fill-opacity", 0.6)
+      .attr("stroke-opacity", 0);
+    label_faculty
+      .style("opacity", 0);
+    label_area
+      .style("opacity", 1)
+      .style("font-weight", "normal");
+  };
+
+  node
+    .on("mouseenter", mouseenter)
+    .on("mouseleave", mouseleave);
+  
+  
+   //TOOLTIP
+  function clickNode(event, d) {
+       // update visibility
+       isTooltipHidden = !isTooltipHidden;
+       var visibility = (isTooltipHidden) ? "hidden" : "visible";
+
+       // load tooltip content (if it changes based on node)
+       loadTooltipContent(d);
+       
+       //if (isTooltipHidden) {
+        //unPinNode(d);
+       //}
+    
+       // place tooltip where cursor was
+      overlay.transition().ease(d3.easeLinear).duration(350).style("visibility", visibility).style("opacity", 0.3); 
+      tooltip.style("top", cardy + "px").style("left", cardx + "px").style("visibility", visibility);
+  }
+  function clickOut(event, d) {
+      isTooltipHidden = !isTooltipHidden;
+      var visibility = (isTooltipHidden) ? "hidden" : "visible";
+      overlay.style("opacity", 0).style("visibility", visibility);
+      tooltip.style("visibility", visibility);
+  }
+  
+  // add html content to tooltip
+  function loadTooltipContent(d) {
+      var htmlContent = "<div style='overflow-y:auto; height:100%;'>"
+      htmlContent += "<div style='text-align:center;'>"
+      htmlContent += "<img src='" + d.img + "' style='border-radius:50%; margin-bottom:-5px;'>"
+      htmlContent += "<h1>" + d.id + "<\/h1>"
+      htmlContent += "<h2>" + d.degree + "<\/h2>"
+      htmlContent += '</div>'
+      htmlContent += '<div class="row">'
+      htmlContent += '<div class="column left">'
+      htmlContent += '<p>' + d.position + '</br>' + retrieveText(d.dept) + '</br>' + checkEmpty(d.office) + checkEmpty(d.officephone) + '<a href="mailto:' + d.email + '">' + d.email + '</a>' + '</br>' + '<a href="https://' + d.website + '">' + d.website + '</a>' + '</div>'
+      htmlContent += '<div class="column right">' + "<p>" + checkTwitter(d.twitter) + checkInstagram(d.instagram) + checkLinkedIn(d.linkedin) + '</div>'
+      htmlContent += '<div style="float:left; width:95%">' + '<h3>' + 'Research Interests' + '</h3>'
+      htmlContent += '<p>' + d.bio + '</p>' + '</div>'
+      htmlContent += '<div style="float:left; margin-top:5px; margin-bottom:10px">' + retrieveTags(d.dept) + retrieveTags(d.category) + retrieveTags(d.keyword) + '</div>'
+      htmlContent += "<\/div>"
+      tooltip.html(htmlContent);
+  }
+
+function checkEmpty(d) {
+  if (!d) {return "";}
+  else {return d + '</br>';}
+}
+  
+function checkTwitter(d) {
+  if (!d) {return "";}
+  else {return '<a href="https://twitter.com/' + d + '">' + '<img src="https://upload.wikimedia.org/wikipedia/sco/9/9f/Twitter_bird_logo_2012.svg" style="width:30px;">' + '</a>' + '</br>';}
+}
+    
+function checkInstagram(d) {
+  if (!d) {return "";}
+  else {return '<a href="https://instagram.com/' + d + '">' + '<img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" style="width:30px;margin-top:5px;">' + '</a>' + '</br>';;}
+}
+
+function checkLinkedIn(d) {
+  if (!d) {return "";}
+  else {return '<a href="' + d + '">' + '<img src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg" style="width:30px; margin-top:5px;">' + '</a>';}
+}
+  
+function retrieveTags(d) {
+  var text = "";
+  for (let i = 0; i < d.length; i++) {
+    text += '<div style="float:left; font: 12px Inter; color:#384876; background-color:#eff4f8; padding:6px; border-radius:5px; margin-right:5px; margin-bottom:5px;">' + d[i] + '</div>';}
+  return text
+ }
+
+function retrieveText(d) {
+  var text = "";
+  for (let i = 0; i < d.length; i++) {
+    text += d[i] + ', ';}
+  text = text.slice(0, -2);
+  return text
+  }
+  
+  
+  //DRAG
+  function drag(simulation) {
+    function dragstarted(event) {
+      if (!event.active) simulation.alphaTarget(0.3).restart();
+      event.subject.fx = event.subject.x;
+      event.subject.fy = event.subject.y;
+      node.on("mouseenter", null).on("mouseleave", null); //deregister mouse event//
+    }
+    function dragged(event) {
+      event.subject.fx = event.x;
+      event.subject.fy = event.y;
+    }
+    function dragended(event) {
+      if (!event.active) simulation.alphaTarget(0);
+      event.subject.fx = null;
+      event.subject.fy = null;
+      node.on("mouseenter", mouseenter).on("mouseleave", mouseleave); //reregister mouse event// 
+    }
+    return d3.drag()
+        .on("start", dragstarted)
+        .on("drag", dragged)
+        .on("end", dragended);
+  }
+  
+  //Simulation reiteration
+  simulation.on("tick", () => {
+      link
+          .attr("x1", d => d.source.x)
+          .attr("y1", d => d.source.y)
+          .attr("x2", d => d.target.x)
+          .attr("y2", d => d.target.y);
+
+      node
+          .attr("cx", d => d.x)
+          .attr("cy", d => d.y)
+          .attr("transform", d => `translate(${d.x}, ${d.y})`);
+    
+    label_faculty
+        .attr("cx", d => d.x)
+        .attr("cy", d => d.y);
+    
+    label_area
+        .attr("cx", d => d.x)
+        .attr("cy", d => d.y);  
+    
+    });
+
+});
+</script>
+
+</html>
