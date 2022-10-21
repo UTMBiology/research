@@ -110,7 +110,7 @@
 <script>
   //Fetch faculty data in the spreadsheet and display in HTML
   $(function() {
-     $.getJSON('./Faculty.json', function(data) {
+     $.getJSON('./faculty.json', function(data) {
          $.each(data.nodes, function(i, f) {
            if (f.group != "Area") {
              var htmlContent = '<div class="row">'
