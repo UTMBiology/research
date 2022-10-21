@@ -21,7 +21,7 @@
         {
             "id": "Hai-Ying (Mary) Cheng",
             "group": "CSB",
-            "img": "https://raw.githubusercontent.com/kzhang98/utmbio/main/Mary_Cheng.jpg",
+            "img": "./media/Mary_Cheng.jpg",
             "colour": "#4ca8bc",
             "degree": "PhD",
             "position": "Professor",
@@ -42,7 +42,7 @@
         {
             "id": "Mark Currie",
             "group": "CSB",
-            "img": "https://raw.githubusercontent.com/kzhang98/utmbio/main/Mark_Currie.jpg",
+            "img": "./media/Mark_Currie.jpg",
             "colour": "#4ca8bc",
             "degree": "BSc, PhD",
             "position": "Assistant Professor",
@@ -58,7 +58,7 @@
         {
             "id": "Cassidy D'Aloia",
             "group": "EEB",
-            "img": "https://raw.githubusercontent.com/kzhang98/utmbio/main/Cassidy_DAloia.jpg",
+            "img": "./media/Cassidy_DAloia.jpg",
             "colour": "#769557",
             "degree": "PhD",
             "position": "Assistant Professor",
@@ -73,7 +73,7 @@
         {
             "id": "Marcus Dillon",
             "group": "EEB",
-            "img": "https://raw.githubusercontent.com/kzhang98/utmbio/main/Marcus_Dillon.jpg",
+            "img": "./media/Marcus_Dillon.jpg",
             "colour": "#769557",
             "degree": "BSc, PhD",
             "position": "Assistant Professor",
@@ -91,7 +91,7 @@
         {
             "id": "Ingo Ensminger",
             "group": "CSB-EEB",
-            "img": "https://raw.githubusercontent.com/kzhang98/utmbio/main/Ingo_Ensminger.jpg",
+            "img": "./media/Ingo_Ensminger.jpg",
             "colour": "#c39ee4",
             "degree": "PhD",
             "position": "Associate Professor",
@@ -110,7 +110,7 @@
         {
             "id": "Ted Erclik",
             "group": "CSB",
-            "img": "https://raw.githubusercontent.com/kzhang98/utmbio/main/Ted_Erclik.jpg",
+            "img": "./media/Ted_Erclik.jpg",
             "colour": "#4ca8bc",
             "degree": "PhD",
             "position": "Assistant Professor",
@@ -128,7 +128,7 @@
         {
             "id": "Jodie Jenkinson",
             "group": "IMS",
-            "img": "https://raw.githubusercontent.com/kzhang98/utmbio/main/Jodie_Jenkinson.jpg",
+            "img": "./media/Jodie_Jenkinson.jpg",
             "colour": "#fbc060",
             "degree": "BA, MScBMC, PhD, FAMI",
             "position": "Professor, Director of the MSc in Biomedical Communications",
@@ -149,7 +149,7 @@
         {
             "id": "Marc Johnson",
             "group": "EEB",
-            "img": "https://raw.githubusercontent.com/kzhang98/utmbio/main/Marc_Johnson.jpg",
+            "img": "./media/Marc_Johnson.jpg",
             "colour": "#769557",
             "degree": "PhD",
             "position": "Professor",
@@ -167,7 +167,7 @@
         {
             "id": "Peter M. Kotanen",
             "group": "EEB",
-            "img": "https://raw.githubusercontent.com/kzhang98/utmbio/main/Peter_Kotanen.jpg",
+            "img": "./media/Peter_Kotanen.jpg",
             "colour": "#769557",
             "degree": "BSc, MSc, PhD",
             "position": "Professor",
@@ -185,7 +185,7 @@
         {
             "id": "Joel D. Levine",
             "group": "CSB-EEB",
-            "img": "https://raw.githubusercontent.com/kzhang98/utmbio/main/Joel_Levine.jpg",
+            "img": "./media/Joel_Levine.jpg",
             "colour": "#c39ee4",
             "degree": "PhD",
             "position": "Professor",
@@ -206,7 +206,7 @@
         {
             "id": "Baohua Liu",
             "group": "CSB",
-            "img": "https://raw.githubusercontent.com/kzhang98/utmbio/main/Baohua_Liu.jpg",
+            "img": "./media/Baohua_Liu.jpg",
             "colour": "#4ca8bc",
             "degree": "BSc, MSc, PhD",
             "position": "Assistant Professor",
@@ -224,7 +224,7 @@
         {
             "id": "Shannon McCauley",
             "group": "EEB",
-            "img": "https://raw.githubusercontent.com/kzhang98/utmbio/main/Shannon_McCauley.jpg",
+            "img": "./media/Shannon_McCauley.jpg",
             "colour": "#769557",
             "degree": "BA, MSc, PhD",
             "position": "Associate Professor",
@@ -241,7 +241,7 @@
         {
             "id": "Rosalind Murray",
             "group": "EEB",
-            "img": "https://raw.githubusercontent.com/kzhang98/utmbio/main/Rosalind_Murray.jpg",
+            "img": "./media/Rosalind_Murray.jpg",
             "colour": "#769557",
             "degree": "PhD",
             "position": "Assistant Professor",
@@ -258,7 +258,7 @@
         {
             "id": "Bailey McMeans",
             "group": "EEB",
-            "img": "https://raw.githubusercontent.com/kzhang98/utmbio/main/Bailey_McMeans.jpeg",
+            "img": "./media/Bailey_McMeans.jpeg",
             "colour": "#769557",
             "degree": "MSc, PhD",
             "position": "Assistant Professor",
@@ -276,7 +276,7 @@
         {
             "id": "Rob Ness",
             "group": "CSB-EEB",
-            "img": "https://raw.githubusercontent.com/kzhang98/utmbio/main/Rob_Ness.jpg",
+            "img": "./media/Rob_Ness.jpg",
             "colour": "#c39ee4",
             "degree": "BSc, PhD",
             "position": "Assistant Professor",
@@ -294,7 +294,7 @@
         {
             "id": "Derek Ng",
             "group": "IMS",
-            "img": "https://raw.githubusercontent.com/kzhang98/utmbio/main/Derek_Ng.jpg",
+            "img": "./media/Derek_Ng.jpg",
             "colour": "#fbc060",
             "degree": "BSc, MScBMC, PhD",
             "position": "Associate Professor",
@@ -313,7 +313,7 @@
         {
             "id": "Alex N. Nguyen Ba",
             "group": "CSB",
-            "img": "https://raw.githubusercontent.com/kzhang98/utmbio/main/Alex_Nguyen_Ba.jpg",
+            "img": "./media/Alex_Nguyen_Ba.jpg",
             "colour": "#4ca8bc",
             "degree": "BSc, PhD",
             "position": "Assistant Professor",
@@ -331,7 +331,7 @@
         {
             "id": "Michael Phillips",
             "group": "CSB",
-            "img": "https://raw.githubusercontent.com/kzhang98/utmbio/main/Michael_Phillips.jpg",
+            "img": "./media/Michael_Phillips.jpg",
             "colour": "#4ca8bc",
             "degree": "BSc, PhD",
             "position": "Associate Professor",
@@ -347,7 +347,7 @@
         {
             "id": "John Ratcliffe",
             "group": "EEB",
-            "img": "https://raw.githubusercontent.com/kzhang98/utmbio/main/John_Ratcliffe.jpg",
+            "img": "./media/John_Ratcliffe.jpg",
             "colour": "#769557",
             "degree": "PhD",
             "position": "Professor",
@@ -364,7 +364,7 @@
         {
             "id": "Robert R. Reisz",
             "group": "EEB",
-            "img": "https://raw.githubusercontent.com/kzhang98/utmbio/main/Robert_Reisz.jpg",
+            "img": "./media/Robert_Reisz.jpg",
             "colour": "#769557",
             "degree": "PhD",
             "position": "Professor",
@@ -385,7 +385,7 @@
         {
             "id": "Arbora Resulaj",
             "group": "CSB",
-            "img": "https://raw.githubusercontent.com/kzhang98/utmbio/main/Arbora_Resulaj.jpg",
+            "img": "./media/Arbora_Resulaj.jpg",
             "colour": "#4ca8bc",
             "degree": "BASc, PhD",
             "position": "Assistant Professor",
@@ -400,7 +400,7 @@
         {
             "id": "Ho Sung Rhee",
             "group": "CSB",
-            "img": "https://raw.githubusercontent.com/kzhang98/utmbio/main/Ho_Sung_Rhee.jpg",
+            "img": "./media/Ho_Sung_Rhee.jpg",
             "colour": "#4ca8bc",
             "degree": "BSc, MSc, PhD",
             "position": "Assistant Professor",
@@ -417,7 +417,7 @@
         {
             "id": "Adriano Senatore",
             "group": "CSB",
-            "img": "https://raw.githubusercontent.com/kzhang98/utmbio/main/Adriano_Senatore.jpg",
+            "img": "./media/Adriano_Senatore.jpg",
             "colour": "#4ca8bc",
             "degree": "MSc, PhD",
             "position": "Associate Professor",
@@ -435,7 +435,7 @@
         {
             "id": "Steven M. Short",
             "group": "EEB",
-            "img": "https://raw.githubusercontent.com/kzhang98/utmbio/main/Steven_Short.jpg",
+            "img": "./media/Steven_Short.jpg",
             "colour": "#769557",
             "degree": "BSc, PhD",
             "position": "Associate Professor, Chair of Biology",
@@ -454,7 +454,7 @@
         {
             "id": "Sasa Stefanovic",
             "group": "EEB",
-            "img": "https://raw.githubusercontent.com/kzhang98/utmbio/main/Sasa_Stefanovic.jpg",
+            "img": "./media/Sasa_Stefanovic.jpg",
             "colour": "#769557",
             "degree": "MSc, PhD",
             "position": "Professor",
@@ -471,7 +471,7 @@
         {
             "id": "Bryan Stewart",
             "group": "CSB",
-            "img": "https://raw.githubusercontent.com/kzhang98/utmbio/main/Bryan_Stewart.jpg",
+            "img": "./media/Bryan_Stewart.jpg",
             "colour": "#4ca8bc",
             "degree": "PhD",
             "position": "Professor",
@@ -492,7 +492,7 @@
         {
             "id": "Helene Wagner",
             "group": "EEB",
-            "img": "https://raw.githubusercontent.com/kzhang98/utmbio/main/Helene_Wagner.jpg",
+            "img": "./media/Helene_Wagner.jpg",
             "colour": "#769557",
             "degree": "PhD",
             "position": "Professor",
@@ -511,7 +511,7 @@
         {
             "id": "Shelley Wall",
             "group": "IMS",
-            "img": "https://raw.githubusercontent.com/kzhang98/utmbio/main/Shelley_Wall.jpg",
+            "img": "./media/Shelley_Wall.jpg",
             "colour": "#fbc060",
             "degree": "AOCAD, MScBMC, PhD, CMI, FAMI",
             "position": "Associate Professor",
@@ -530,7 +530,7 @@
         {
             "id": "Brandon Walters",
             "group": "CSB",
-            "img": "https://raw.githubusercontent.com/kzhang98/utmbio/main/Brandon_Walters.jpg",
+            "img": "./media/Brandon_Walters.jpg",
             "colour": "#4ca8bc",
             "degree": "BSc, MSc, PhD",
             "position": "Assistant Professor",
@@ -548,7 +548,7 @@
         {
             "id": "Nicholas Woolridge",
             "group": "IMS",
-            "img": "https://raw.githubusercontent.com/kzhang98/utmbio/main/Nicholas_Woolridge.jpg",
+            "img": "./media/Nicholas_Woolridge.jpg",
             "colour": "#fbc060",
             "degree": "BFA, BScBMC, MSc, CMI, FAMI",
             "position": "Associate Professor",
@@ -1187,25 +1187,25 @@
           "name": "Katharina Braeutigam",
           "category": "Neurobiology",
           "value": 0,
-          "image": "https://raw.githubusercontent.com/kzhang98/utmbio/main/Katharina_Braeutigam.png"
+          "image": "./media/Katharina_Braeutigam.png"
         },
         {
           "name": "Katharina Braeutigam",
           "category": "Integrative Physiology",
           "value": 2,
-          "image": "https://raw.githubusercontent.com/kzhang98/utmbio/main/Katharina_Braeutigam.png"
+          "image": "./media/Katharina_Braeutigam.png"
         },
         {
           "name": "Katharina Braeutigam",
           "category": "Cell Biology",
           "value": 3,
-          "image": "https://raw.githubusercontent.com/kzhang98/utmbio/main/Katharina_Braeutigam.png"
+          "image": "./media/Katharina_Braeutigam.png"
         },
         {
           "name": "Katharina Braeutigam",
           "category": "Molecular Biology",
           "value": 4,
-          "image": "https://raw.githubusercontent.com/kzhang98/utmbio/main/Katharina_Braeutigam.png"
+          "image": "./media/Katharina_Braeutigam.png"
         },
         {
           "name": "Katharina Braeutigam",
