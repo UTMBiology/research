@@ -3,7 +3,7 @@
         {
             "id": "Katharina Braeutigam",
             "group": "CSB",
-            "img": "https://raw.githubusercontent.com/kzhang98/utmbio/main/Katharina_Braeutigam.png",
+            "img": "./media/Katharina_Braeutigam.png",
             "colour": "#4ca8bc",
             "degree": "PhD",
             "position": "Assistant Professor",
