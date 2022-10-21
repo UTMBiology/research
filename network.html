@@ -104,7 +104,7 @@ const svg = d3.select("#my_dataviz")
   .attr("transform",
         `translate(${margin.left}, ${margin.top})`);
 
-d3.json("./Faculty.json").then( function(data) {
+d3.json("./faculty.json").then( function(data) {
   
   const links = data.links.map(d => Object.create(d));
   const nodes = data.nodes.map(d => Object.create(d));
