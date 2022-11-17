@@ -116,7 +116,7 @@
              var htmlContent = '<div class="row">'
              htmlContent += '<div class="column left">' + "<img src='" + f.img + "' style='border-radius:50%; margin-bottom:-10px;'>" + '</div>'
              htmlContent += '<div class="column right">' + "<h1>" + f.id + "<\/h1>" + "<h2>" + f.degree + "<\/h2>"
-             htmlContent += '<p style="margin-top:5px;">' + f.position + '</br>' + retrieveText(f.dept) + '</br>' + checkEmpty(f.office) + checkEmpty(f.officephone) + '<a href="mailto:' + f.email + '">' + f.email + '</a>' + '</br>' + '<a href="https://' + f.website + '">' + f.website + '</a>' + "</p>"
+             htmlContent += '<p style="margin-top:5px;">' + f.position + '</br>' + retrieveText(f.dept) + '</br>' + checkEmpty(f.office) + checkEmpty(f.officephone) + '<a href="mailto:' + f.email + '" target="_blank">' + f.email + '</a>' + '</br>' + '<a href="https://' + f.website + '" target="_blank">' + f.website + '</a>' + "</p>"
              htmlContent += '<p style="margin-top:-5px;">' + checkTwitter(f.twitter) + checkInstagram(f.instagram) + checkLinkedIn(f.linkedin) + '</p>'
              htmlContent += '<h3>' + 'Research Interests' + '</h3>'
              htmlContent += '<p style="margin-top:-10px;">' + f.bio + '</p>'
@@ -138,17 +138,17 @@
 
   function checkTwitter(d) {
     if (!d) {return "";}
-    else {return '<a href="https://twitter.com/' + d + '">' + '<img src="https://upload.wikimedia.org/wikipedia/sco/9/9f/Twitter_bird_logo_2012.svg" style="width:auto;height:18px;margin-right:9px;">' + '</a>';}
+    else {return '<a href="https://twitter.com/' + d + '" target="_blank">' + '<img src="https://upload.wikimedia.org/wikipedia/sco/9/9f/Twitter_bird_logo_2012.svg" style="width:auto;height:18px;margin-right:9px;">' + '</a>';}
   }
 
   function checkInstagram(d) {
     if (!d) {return "";}
-    else {return '<a href="https://instagram.com/' + d + '">' + '<img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" style="width:auto;height:20px;margin-right:10px;">' + '</a>';}
+    else {return '<a href="https://instagram.com/' + d + '" target="_blank">' + '<img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" style="width:auto;height:20px;margin-right:10px;">' + '</a>';}
   }
 
   function checkLinkedIn(d) {
     if (!d) {return "";}
-    else {return '<a href="' + d + '">' + '<img src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg" style="width:auto;height:20px;margin-right:10px;">' + '</a>';}
+    else {return '<a href="' + d + '" target="_blank">' + '<img src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg" style="width:auto;height:20px;margin-right:10px;">' + '</a>';}
   }
   
   //Format and return every item from a list (tag/category/keyword) within a padded rectangle 
