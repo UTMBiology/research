@@ -339,7 +339,7 @@
             "office": "DV4003",
             "officephone": "(905) 569-4848",
             "email": "michaelandrew.phillips@utoronto.ca",
-            "website": "plantmetabolism.blogspot.com",
+            "website": "terpenemetabolism.com",
             "bio": "My research focuses on the regulation and control of plant terpenoid biosynthesis. We use mass spectrometry to study central terpenoid metabolism in Arabidopsis and specialized metabolism in glandular trichomes of medically important plant species.",
             "category": ["Integrative Physiology", "Molecular Biology", "Cell Biology"],
             "keyword": ["Plant Metabolism", "Terpenoids"]
@@ -3716,80 +3716,67 @@
         {
           "name": "Nicholas Woolridge",
           "category": "Integrative Physiology",
-          "value": 0,
-          "image": "./media/Nicholas_Woolridge.jpg"
+          "value": 0
         },
         {
           "name": "Nicholas Woolridge",
           "category": "Cell Biology",
-          "value": 0,
-          "image": "./media/Nicholas_Woolridge.jpg"
+          "value": 0
         },
         {
           "name": "Nicholas Woolridge",
           "category": "Molecular Biology",
-          "value": 0,
-          "image": "./media/Nicholas_Woolridge.jpg"
+          "value": 0
         },
         {
           "name": "Nicholas Woolridge",
           "category": "Epigenetics",
-          "value": 0,
-          "image": "./media/Nicholas_Woolridge.jpg"
+          "value": 0
         },
         {
           "name": "Nicholas Woolridge",
           "category": "Animal Behaviour",
-          "value": 0,
-          "image": "./media/Nicholas_Woolridge.jpg"
+          "value": 0
         },
         {
           "name": "Nicholas Woolridge",
           "category": "Stress and Disease Biology",
-          "value": 0,
-          "image": "./media/Nicholas_Woolridge.jpg"
+          "value": 0
         },
         {
           "name": "Nicholas Woolridge",
           "category": "Evolutionary Biology",
-          "value": 0,
-          "image": "./media/Nicholas_Woolridge.jpg"
+          "value": 0
         },
         {
           "name": "Nicholas Woolridge",
           "category": "Ecology",
-          "value": 0,
-          "image": "./media/Nicholas_Woolridge.jpg"
+          "value": 0
         },
         {
           "name": "Nicholas Woolridge",
           "category": "Plant Biology",
-          "value": 0,
-          "image": "./media/Nicholas_Woolridge.jpg"
+          "value": 0
         },
         {
           "name": "Nicholas Woolridge",
           "category": "Biological Responses to Climate Change",
-          "value": 0,
-          "image": "./media/Nicholas_Woolridge.jpg"
+          "value": 0
         },
         {
           "name": "Nicholas Woolridge",
           "category": "Paleontology",
-          "value": 0,
-          "image": "./media/Nicholas_Woolridge.jpg"
+          "value": 0
         },
         {
           "name": "Nicholas Woolridge",
           "category": "Visual Representation of Science",
-          "value": 13,
-          "image": "./media/Nicholas_Woolridge.jpg"
+          "value": 13
         },
         {
           "name": "Nicholas Woolridge",
           "category": "Molecular Visualization",
-          "value": 14,
-          "image": "./media/Nicholas_Woolridge.jpg"
+          "value": 14
         }
   ]
 }
