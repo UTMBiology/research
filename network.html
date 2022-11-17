@@ -343,7 +343,7 @@ d3.json("./faculty.json").then( function(data) {
       htmlContent += '</div>'
       htmlContent += '<div class="row">'
       htmlContent += '<div class="column left">'
-      htmlContent += '<p>' + d.position + '</br>' + retrieveText(d.dept) + '</br>' + checkEmpty(d.office) + checkEmpty(d.officephone) + '<a href="mailto:' + d.email + '">' + d.email + '</a>' + '</br>' + '<a href="https://' + d.website + '">' + d.website + '</a>' + '</div>'
+      htmlContent += '<p>' + d.position + '</br>' + retrieveText(d.dept) + '</br>' + checkEmpty(d.office) + checkEmpty(d.officephone) + '<a href="mailto:' + d.email + '" target="_blank">' + d.email + '</a>' + '</br>' + '<a href="https://' + d.website + '" target="_blank">' + d.website + '</a>' + '</div>'
       htmlContent += '<div class="column right">' + "<p>" + checkTwitter(d.twitter) + checkInstagram(d.instagram) + checkLinkedIn(d.linkedin) + '</div>'
       htmlContent += '<div style="float:left; width:95%">' + '<h3>' + 'Research Interests' + '</h3>'
       htmlContent += '<p>' + d.bio + '</p>' + '</div>'
@@ -359,17 +359,17 @@ function checkEmpty(d) {
   
 function checkTwitter(d) {
   if (!d) {return "";}
-  else {return '<a href="https://twitter.com/' + d + '">' + '<img src="https://upload.wikimedia.org/wikipedia/sco/9/9f/Twitter_bird_logo_2012.svg" style="width:30px;">' + '</a>' + '</br>';}
+  else {return '<a href="https://twitter.com/' + d + '" target="_blank">' + '<img src="https://upload.wikimedia.org/wikipedia/sco/9/9f/Twitter_bird_logo_2012.svg" style="width:30px;">' + '</a>' + '</br>';}
 }
     
 function checkInstagram(d) {
   if (!d) {return "";}
-  else {return '<a href="https://instagram.com/' + d + '">' + '<img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" style="width:30px;margin-top:5px;">' + '</a>' + '</br>';;}
+  else {return '<a href="https://instagram.com/' + d + '" target="_blank">' + '<img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" style="width:30px;margin-top:5px;">' + '</a>' + '</br>';;}
 }
 
 function checkLinkedIn(d) {
   if (!d) {return "";}
-  else {return '<a href="' + d + '">' + '<img src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg" style="width:30px; margin-top:5px;">' + '</a>';}
+  else {return '<a href="' + d + '" target="_blank">' + '<img src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg" style="width:30px; margin-top:5px;">' + '</a>';}
 }
   
 function retrieveTags(d) {
