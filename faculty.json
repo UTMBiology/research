@@ -183,6 +183,23 @@
             "keyword": ["Biological Invasions", "Ecology of Plant Populations and Communities", "Grazing by Geese", "Herbivory", "Invasive Plants", "Natural History", "Northern Ecosystems"]
         },
         {
+            "id": "Angela B. Lange",
+            "group": "CSB",
+            "img": "./media/Angela_Lange.jpg",
+            "colour": "#769557",
+            "degree": "PhD",
+            "position": "Professor",
+            "dept": ["Cell and Systems Biology"],
+            "officephone": "(905) 828-39872",
+            "lab": "DV3017A",
+            "labphone": "(905) 569-4752",
+            "email": "angela.lange@utoronto.ca",
+            "website": "http://www.utm.utoronto.ca/lange-lab/",
+            "bio": "The goals of my research program are to study how cells, tissues and organ systems are regulated and integrated by neurons and neuroendocrine pathways that utilize a variety of neuroactive chemicals, receptors and second messengers. We determine how these systems participate in successful behaviours, using a variety of insect models. Our current research objectives involve discovery in the medically-important disease vector, <i>Rhodnius prolixus</i>, where we examine the integrative control of blood-gorging, homeostasis, reproduction, and the identification and molecular characterization of signaling pathways. Our scientific approach is holistic and incorporates multi-facetted aspects from gene to behaviour. ",
+            "category": ["Neurobiology", "Integrative Physiology", "Molecular Biology", "Cell Biology"],
+            "keyword": ["insect", "neuropeptide", "neurohormone", "amines", "receptor", "reproduction", "feeding", "diuresis"]
+        },
+        {
             "id": "Joel D. Levine",
             "group": "CSB-EEB",
             "img": "./media/Joel_Levine.jpg",
@@ -832,8 +849,23 @@
             "value": "1"
         },
         {
-            "source": "Peter M. Kotanen",
-            "target": "Biological Responses to Climate Change",
+            "source": "Angela B. Lange",
+            "target": "Neurobiology",
+            "value": "1"
+        },
+        {
+            "source": "Angela B. Lange",
+            "target": "Integrative Physiology",
+            "value": "1"
+        },
+        {
+            "source": "Angela B. Lange",
+            "target": "Molecular Biology",
+            "value": "1"
+        },
+        {
+            "source": "Angela B. Lange",
+            "target": "Cell Biology",
             "value": "1"
         },
         {
@@ -2025,6 +2057,90 @@
         }
   ],
   "bar_col2": [
+       {
+          "name": "Angela B. Lange",
+          "category": "Neurobiology",
+          "value": 1,
+          "image": "./media/Peter_Kotanen.jpg"
+        },
+        {
+          "name": "Angela B. Lange",
+          "category": "Integrative Physiology",
+          "value": 2,
+          "image": "./media/Peter_Kotanen.jpg"
+        },
+        {
+          "name": "Angela B. Lange",
+          "category": "Cell Biology",
+          "value": 3,
+          "image": "./media/Peter_Kotanen.jpg"
+        },
+        {
+          "name": "Angela B. Lange",
+          "category": "Molecular Biology",
+          "value": 4,
+          "image": "./media/Peter_Kotanen.jpg"
+        },
+        {
+          "name": "Angela B. Lange",
+          "category": "Epigenetics",
+          "value": 0,
+          "image": "./media/Peter_Kotanen.jpg"
+        },
+        {
+          "name": "Angela B. Lange",
+          "category": "Animal Behaviour",
+          "value": 0,
+          "image": "./media/Peter_Kotanen.jpg"
+        },
+        {
+          "name": "Angela B. Lange",
+          "category": "Stress and Disease Biology",
+          "value": 0,
+          "image": "./media/Peter_Kotanen.jpg"
+        },
+        {
+          "name": "Angela B. Lange",
+          "category": "Evolutionary Biology",
+          "value": 0,
+          "image": "./media/Peter_Kotanen.jpg"
+        },
+        {
+          "name": "Angela B. Lange",
+          "category": "Ecology",
+          "value": 0,
+          "image": "./media/Peter_Kotanen.jpg"
+        },
+        {
+          "name": "Angela B. Lange",
+          "category": "Plant Biology",
+          "value": 0,
+          "image": "./media/Peter_Kotanen.jpg"
+        },
+        {
+          "name": "Angela B. Lange",
+          "category": "Biological Responses to Climate Change",
+          "value": 0,
+          "image": "./media/Peter_Kotanen.jpg"
+        },
+        {
+          "name": "Angela B. Lange",
+          "category": "Paleontology",
+          "value": 0,
+          "image": "./media/Peter_Kotanen.jpg"
+        },
+        {
+          "name": "Angela B. Lange",
+          "category": "Visual Representation of Science",
+          "value": 0,
+          "image": "./media/Peter_Kotanen.jpg"
+        },
+        {
+          "name": "Angela B. Lange",
+          "category": "Molecular Visualization",
+          "value": 0,
+          "image": "./media/Peter_Kotanen.jpg"
+        }
         {
           "name": "Joel D. Levine",
           "category": "Neurobiology",
@@ -2948,7 +3064,9 @@
           "category": "Molecular Visualization",
           "value": 0,
           "image": "./media/Robert_Reisz.jpg"
-        },
+        }
+  ], 
+  "bar_col3": [
         {
           "name": "Arbora Resulaj",
           "category": "Neurobiology",
@@ -3032,9 +3150,7 @@
           "category": "Molecular Visualization",
           "value": 0,
           "image": "./media/Arbora_Resulaj.jpg"
-        }
-  ], 
-  "bar_col3": [
+        },
         {
           "name": "Ho Sung Rhee",
           "category": "Neurobiology",
