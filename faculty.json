@@ -3064,7 +3064,9 @@
           "category": "Molecular Visualization",
           "value": 0,
           "image": "./media/Robert_Reisz.jpg"
-        },
+        }
+  ], 
+  "bar_col3": [
         {
           "name": "Arbora Resulaj",
           "category": "Neurobiology",
@@ -3148,9 +3150,7 @@
           "category": "Molecular Visualization",
           "value": 0,
           "image": "./media/Arbora_Resulaj.jpg"
-        }
-  ], 
-  "bar_col3": [
+        },
         {
           "name": "Ho Sung Rhee",
           "category": "Neurobiology",
