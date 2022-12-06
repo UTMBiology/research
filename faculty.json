@@ -196,8 +196,8 @@
             "email": "angela.lange@utoronto.ca",
             "website": "http://www.utm.utoronto.ca/lange-lab/",
             "bio": "The goals of my research program are to study how cells, tissues and organ systems are regulated and integrated by neurons and neuroendocrine pathways that utilize a variety of neuroactive chemicals, receptors and second messengers. We determine how these systems participate in successful behaviours, using a variety of insect models. Our current research objectives involve discovery in the medically-important disease vector, <i>Rhodnius prolixus</i>, where we examine the integrative control of blood-gorging, homeostasis, reproduction, and the identification and molecular characterization of signaling pathways. Our scientific approach is holistic and incorporates multi-facetted aspects from gene to behaviour. ",
-            "category": ["Neurobiology";"Integrative Physiology";"Molecular Biology";"Cell Biology"],
-            "keyword": ["insect";"neuropeptide";"neurohormone";"amines";"receptor";"reproduction";"feeding";"diuresis"]
+            "category": ["Neurobiology", "Integrative Physiology", "Molecular Biology", "Cell Biology"],
+            "keyword": ["insect", "neuropeptide", "neurohormone", "amines", "receptor", "reproduction", "feeding", "diuresis"]
         },
         {
             "id": "Joel D. Levine",
