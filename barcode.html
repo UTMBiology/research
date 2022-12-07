@@ -434,7 +434,7 @@ d3.json("./faculty.json", function(data) {
   
   // BUILD Y scales and axis: column 3
   var y3 = d3.scaleBand()
-  .range([ height, 0 ])
+  .range([ height*0.9, 0 ])
   .domain(myGroup3.reverse())
   .padding(0.45);
 
