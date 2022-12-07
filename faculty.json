@@ -2054,93 +2054,93 @@
           "category": "Molecular Visualization",
           "value": 0,
           "image": "./media/Peter_Kotanen.jpg"
-        }
-  ],
-  "bar_col2": [
-       {
+        },
+        {
           "name": "Angela B. Lange",
           "category": "Neurobiology",
           "value": 1,
-          "image": "./media/Peter_Kotanen.jpg"
+          "image": "./media/Angela_Lange.jpg"
         },
         {
           "name": "Angela B. Lange",
           "category": "Integrative Physiology",
           "value": 2,
-          "image": "./media/Peter_Kotanen.jpg"
+          "image": "./media/Angela_Lange.jpg"
         },
         {
           "name": "Angela B. Lange",
           "category": "Cell Biology",
           "value": 3,
-          "image": "./media/Peter_Kotanen.jpg"
+          "image": "./media/Angela_Lange.jpg"
         },
         {
           "name": "Angela B. Lange",
           "category": "Molecular Biology",
           "value": 4,
-          "image": "./media/Peter_Kotanen.jpg"
+          "image": "./media/Angela_Lange.jpg"
         },
         {
           "name": "Angela B. Lange",
           "category": "Epigenetics",
           "value": 0,
-          "image": "./media/Peter_Kotanen.jpg"
+          "image": "./media/Angela_Lange.jpg"
         },
         {
           "name": "Angela B. Lange",
           "category": "Animal Behaviour",
           "value": 0,
-          "image": "./media/Peter_Kotanen.jpg"
+          "image": "./media/Angela_Lange.jpg"
         },
         {
           "name": "Angela B. Lange",
           "category": "Stress and Disease Biology",
           "value": 0,
-          "image": "./media/Peter_Kotanen.jpg"
+          "image": "./media/Angela_Lange.jpg"
         },
         {
           "name": "Angela B. Lange",
           "category": "Evolutionary Biology",
           "value": 0,
-          "image": "./media/Peter_Kotanen.jpg"
+          "image": "./media/Angela_Lange.jpg"
         },
         {
           "name": "Angela B. Lange",
           "category": "Ecology",
           "value": 0,
-          "image": "./media/Peter_Kotanen.jpg"
+          "image": "./media/Angela_Lange.jpg"
         },
         {
           "name": "Angela B. Lange",
           "category": "Plant Biology",
           "value": 0,
-          "image": "./media/Peter_Kotanen.jpg"
+          "image": "./media/Angela_Lange.jpg"
         },
         {
           "name": "Angela B. Lange",
           "category": "Biological Responses to Climate Change",
           "value": 0,
-          "image": "./media/Peter_Kotanen.jpg"
+          "image": "./media/Angela_Lange.jpg"
         },
         {
           "name": "Angela B. Lange",
           "category": "Paleontology",
           "value": 0,
-          "image": "./media/Peter_Kotanen.jpg"
+          "image": "./media/Angela_Lange.jpg"
         },
         {
           "name": "Angela B. Lange",
           "category": "Visual Representation of Science",
           "value": 0,
-          "image": "./media/Peter_Kotanen.jpg"
+          "image": "./media/Angela_Lange.jpg"
         },
         {
           "name": "Angela B. Lange",
           "category": "Molecular Visualization",
           "value": 0,
-          "image": "./media/Peter_Kotanen.jpg"
-        },
+          "image": "./media/Angela_Lange.jpg"
+        }
+  ],
+  "bar_col2": [
         {
           "name": "Joel D. Levine",
           "category": "Neurobiology",
@@ -3043,7 +3043,7 @@
         },
         {
           "name": "Robert R. Reisz",
-          "category": "Biological Responses to Climate ChaDerek Nge",
+          "category": "Biological Responses to Climate Change",
           "value": 11,
           "image": "./media/Robert_Reisz.jpg"
         },
