@@ -3068,6 +3068,96 @@
   ], 
   "bar_col3": [
         {
+          "name": "Arbora Resulaj",
+          "category": "Neurobiology",
+          "value": 1,
+          "image": "./media/Robert_Reisz.jpg"
+        },
+        {
+          "name": "Arbora Resulaj",
+          "category": "Integrative Physiology",
+          "value": 2,
+          "image": "./media/Arbora_Resulaj.jpg"
+        },
+        {
+          "name": "Arbora Resulaj",
+          "category": "Cell Biology",
+          "value": 0,
+          "image": "./media/Arbora_Resulaj.jpg"
+        },
+        {
+          "name": "Arbora Resulaj",
+          "category": "Molecular Biology",
+          "value": 0,
+          "image": "./media/Arbora_Resulaj.jpg"
+        },
+        {
+          "name": "Arbora Resulaj",
+          "category": "Epigenetics",
+          "value": 0,
+          "image": "./media/Arbora_Resulaj.jpg"
+        },
+        {
+          "name": "Arbora Resulaj",
+          "category": "Animal Behaviour",
+          "value": 6,
+          "image": "./media/Arbora_Resulaj.jpg"
+        },
+        {
+          "name": "Arbora Resulaj",
+          "category": "Stress and Disease Biology",
+          "value": 0,
+          "image": "./media/Arbora_Resulaj.jpg"
+        },
+        {
+          "name": "Arbora Resulaj",
+          "category": "Evolutionary Biology",
+          "value": 0,
+          "image": "./media/Arbora_Resulaj.jpg"
+        },
+        {
+          "name": "Arbora Resulaj",
+          "category": "Ecology",
+          "value": 0,
+          "image": "./media/Arbora_Resulaj.jpg"
+        },
+        {
+          "name": "Arbora Resulaj",
+          "category": "Plant Biology",
+          "value": 0,
+          "image": "./media/Arbora_Resulaj.jpg"
+        },
+        {
+          "name": "Arbora Resulaj",
+          "category": "Biological Responses to Climate Change",
+          "value": 0,
+          "image": "./media/Arbora_Resulaj.jpg"
+        },
+        {
+          "name": "Arbora Resulaj",
+          "category": "Paleontology",
+          "value": 0,
+          "image": "./media/Arbora_Resulaj.jpg"
+        },
+        {
+          "name": "Arbora Resulaj",
+          "category": "Visual Representation of Science",
+          "value": 13,
+          "image": "./media/Arbora_Resulaj.jpg"
+        },
+        {
+          "name": "Arbora Resulaj",
+          "category": "Molecular Visualization",
+          "value": 0,
+          "image": "./media/Arbora_Resulaj.jpg"
+        },
+        {
+          "name": "Ho Sung Rhee",
+          "category": "Neurobiology",
+          "value": 1,
+          "image": "./media/Ho_Sung_Rhee.jpg"
+        },
+        {
           "name": "Ho Sung Rhee",
           "category": "Integrative Physiology",
           "value": 0,
