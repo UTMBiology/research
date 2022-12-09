@@ -137,7 +137,7 @@ var myGroup3 = [];
 
 
 // CREATE COLUMN 1
-d3.json("./faculty.json", function(data) {
+d3.json("./Faculty.json", function(data) {
   //Get specific obj from json file:
   const barcode = data.bar_col1.map(d => Object.create(d));
   
@@ -268,7 +268,7 @@ d3.json("./faculty.json", function(data) {
 
 
 // CREATE COLUMN 2
-d3.json("./faculty.json", function(data) {
+d3.json("./Faculty.json", function(data) {
   //Get specific obj from json file:
   const barcode = data.bar_col2.map(d => Object.create(d));
   
@@ -394,7 +394,7 @@ d3.json("./faculty.json", function(data) {
 });
 
 // CREATE COLUMN 3
-d3.json("./faculty.json", function(data) {
+d3.json("./Faculty.json", function(data) {
   //Get specific obj from json file:
   const barcode = data.bar_col3.map(d => Object.create(d));
   
@@ -434,9 +434,9 @@ d3.json("./faculty.json", function(data) {
   
   // BUILD Y scales and axis: column 3
   var y3 = d3.scaleBand()
-  .range([ height*0.9, 0 ])
+  .range([ height*0.85, 0 ])
   .domain(myGroup3.reverse())
-  .padding(0.45);
+  .padding(0.5);
 
   var yAxis3 = d3.axisLeft()
       .scale(y3)
