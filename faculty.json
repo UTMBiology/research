@@ -348,7 +348,7 @@
         {
             "id": "Ian Orchard",
             "group": "CSB",
-            "img": "./media/Joel_Levine.jpg",
+            "img": "./media/Ian_Orchard.jpg",
             "colour": "#4ca8bc",
             "degree": "BSc, PhD, DSc",
             "position": "Professor Emeritus",
@@ -2852,6 +2852,90 @@
           "value": 0,
           "image": "./media/Alex_Nguyen_Ba.jpg"
         },
+              {
+          "name": "Ian Orchard",
+          "category": "Neurobiology",
+          "value": 1,
+          "image": "./media/Ian_Orchard.jpg"
+        },
+        {
+          "name": "Ian Orchard",
+          "category": "Integrative Physiology",
+          "value": 2,
+          "image": "./media/Ian_Orchard.jpg"
+        },
+        {
+          "name": "Ian Orchard",
+          "category": "Cell Biology",
+          "value": 3,
+          "image": "./media/Ian_Orchard.jpg"
+        },
+        {
+          "name": "Ian Orchard",
+          "category": "Molecular Biology",
+          "value": 4,
+          "image": "./media/Ian_Orchard.jpg"
+        },
+        {
+          "name": "Ian Orchard",
+          "category": "Epigenetics",
+          "value": 0,
+          "image": "./media/Ian_Orchard.jpg"
+        },
+        {
+          "name": "Ian Orchard",
+          "category": "Animal Behaviour",
+          "value": 0,
+          "image": "./media/Ian_Orchard.jpg"
+        },
+        {
+          "name": "Ian Orchard",
+          "category": "Stress and Disease Biology",
+          "value": 0,
+          "image": "./media/Ian_Orchard.jpg"
+        },
+        {
+          "name": "Ian Orchard",
+          "category": "Evolutionary Biology",
+          "value": 0,
+          "image": "./media/Ian_Orchard.jpg"
+        },
+        {
+          "name": "Ian Orchard",
+          "category": "Ecology",
+          "value": 0,
+          "image": "./media/Ian_Orchard.jpg"
+        },
+        {
+          "name": "Ian Orchard",
+          "category": "Plant Biology",
+          "value": 0,
+          "image": "./media/Ian_Orchard.jpg"
+        },
+        {
+          "name": "Ian Orchard",
+          "category": "Biological Responses to Climate Change",
+          "value": 0,
+          "image": "./media/Ian_Orchard.jpg"
+        },
+        {
+          "name": "Ian Orchard",
+          "category": "Paleontology",
+          "value": 0,
+          "image": "./media/Ian_Orchard.jpg"
+        },
+        {
+          "name": "Ian Orchard",
+          "category": "Visual Representation of Biology/Science",
+          "value": 0,
+          "image": "./media/Ian_Orchard.jpg"
+        },
+        {
+          "name": "Ian Orchard",
+          "category": "Molecular Visualization",
+          "value": 0,
+          "image": "./media/Ian_Orchard.jpg"
+        },
         {
           "name": "Michael Phillips",
           "category": "Neurobiology",
@@ -3019,7 +3103,9 @@
           "category": "Molecular Visualization",
           "value": 0,
           "image": "./media/John_Ratcliffe.jpg"
-        },
+        }
+  ], 
+  "bar_col3": [
         {
           "name": "Robert R. Reisz",
           "category": "Neurobiology",
@@ -3103,9 +3189,7 @@
           "category": "Molecular Visualization",
           "value": 0,
           "image": "./media/Robert_Reisz.jpg"
-        }
-  ], 
-  "bar_col3": [
+        },
         {
           "name": "Arbora Resulaj",
           "category": "Neurobiology",
