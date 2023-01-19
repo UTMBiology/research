@@ -186,7 +186,7 @@
             "id": "Angela B. Lange",
             "group": "CSB",
             "img": "./media/Angela_Lange.jpg",
-            "colour": "#769557",
+            "colour": "#4ca8bc",
             "degree": "PhD",
             "position": "Professor",
             "dept": ["Cell and Systems Biology"],
@@ -344,6 +344,20 @@
             "bio": "Our lab studies quantitative genetics in precision medicine and evolution. We use high-throughput automation and high-resolution approaches to tackle the big questions in these fields by building on the latest advances in synthetic biology and computer science.",
             "category": ["Evolutionary Biology", "Molecular Biology"],
             "keyword": ["Precision Medicine"]
+        },
+        {
+            "id": "Ian Orchard",
+            "group": "CSB",
+            "img": "./media/Joel_Levine.jpg",
+            "colour": "#4ca8bc",
+            "degree": "BSc, PhD, DSc",
+            "position": "Professor Emeritus",
+            "dept": ["Cell and Systems Biology"],
+            "office": "DV4002",
+            "email": "ian.orchard@utoronto.ca",
+            "bio": "The central theme of my research program is the functioning of the nervous system, using insects as experimental models.  We are establishing the mechanisms by which the nervous system communicates information; examining hormonal, synaptic, and modulatory mechanisms, using neurophysiological, neurochemical, endocrinological, and molecular biological techniques. In particular, we are interested in the role of peptides and amines as neurohormones, released into the blood to co-ordinate activities of diverse groups of tissues, and as neuromodulators, modulating the ongoing activities of distinct pathways.",
+            "category": ["Cell Biology", "Neurobiology", "Neuroscience & Physiology", "Physiology", "Molecular Biology"],
+            "keyword": ["Invertebrate", "Insect", "Neuroendocrinology", "Neurohormones", "GPCRs", "Diuresis", "Reproduction", "Chagas disease"]
         },
         {
             "id": "Michael Phillips",
@@ -996,6 +1010,26 @@
         {
             "source": "Alex N. Nguyen Ba",
             "target": "Molecular Biology",
+            "value": "1"
+        },
+        {
+            "source": "Ian Orchard",
+            "target": "Molecular Biology",
+            "value": "1"
+        },
+        {
+            "source": "Ian Orchard",
+            "target": "Cell Biology",
+            "value": "1"
+        },
+        {
+            "source": "Ian Orchard",
+            "target": "Integrative Physiology",
+            "value": "1"
+        },
+        {
+            "source": "Ian Orchard",
+            "target": "Neurobiology",
             "value": "1"
         },
         {
