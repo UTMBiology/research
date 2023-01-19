@@ -355,6 +355,7 @@
             "dept": ["Cell and Systems Biology"],
             "office": "DV4002",
             "email": "ian.orchard@utoronto.ca",
+            "website": "https://www.utm.utoronto.ca/orchard-lab/",
             "bio": "The central theme of my research program is the functioning of the nervous system, using insects as experimental models.  We are establishing the mechanisms by which the nervous system communicates information; examining hormonal, synaptic, and modulatory mechanisms, using neurophysiological, neurochemical, endocrinological, and molecular biological techniques. In particular, we are interested in the role of peptides and amines as neurohormones, released into the blood to co-ordinate activities of diverse groups of tissues, and as neuromodulators, modulating the ongoing activities of distinct pathways.",
             "category": ["Cell Biology", "Neurobiology", "Neuroscience & Physiology", "Physiology", "Molecular Biology"],
             "keyword": ["Invertebrate", "Insect", "Neuroendocrinology", "Neurohormones", "GPCRs", "Diuresis", "Reproduction", "Chagas disease"]
