@@ -16,7 +16,8 @@
             "website": "plant-epigenetics.com",
             "bio": "Complex organisms such as plants are masters of dynamic genome regulation. In addition to mastering developmental differentiation, they also retain flexibly to respond to environmental challenges. Underpinning mechanisms include fascinating metastable epigenetic phenomena – a focus of our lab. We investigate developmental transitions as well as molecular epigenetic memory systems, e.g. of past stresses. For this, our work integrates next and third generation sequencing, modern data analyses techniques (bioinformatics), epigenomics, molecular biology and classical physiology.",
             "category": ["Integrative Physiology", "Cell Biology", "Molecular Biology", "Biological Responses to Climate Change", "Stress and Disease Biology", "Plant Biology", "Epigenetics"],
-            "keyword": ["Genome Biology", "Bioinformatics"]
+            "keyword": ["Genome Biology", "Bioinformatics"],
+            "courses": "BIO347 Epigenetics, BIO417 Molecular and Structural Genomics"
         },
         {
             "id": "Hai-Ying (Mary) Cheng",
@@ -53,7 +54,8 @@
             "website": "www.utm.utoronto.ca/biology/people/mark-currie",
             "bio": "We seek to understand the mechanisms that govern genome organization, epigenetic gene regulation, and genome stability in health and disease. We combine structural biology, biochemistry, and cellular model systems.",
             "category": ["Molecular Biology", "Cell Biology", "Stress and Disease Biology", "Molecular Visualization", "Epigenetics"],
-            "keyword": ["Epigenetic Gene Regulation", "Chromatin Biology", "Genome Stability", "Structural Biology", "Biochemistry"]
+            "keyword": ["Epigenetic Gene Regulation", "Chromatin Biology", "Genome Stability", "Structural Biology", "Biochemistry"],
+            "courses": "BTC2110H Topics in Biotechnology: Structural Biology in Drug Development & Biotechnology, CSB1021H/S Structural Biology in Drug Development & Biotechnology, JBC472H5Y Seminars in Biotechnology, BIO481Y5 Y Biology Research Course, BIO399Y5S Research Opportunity Program, BIO299Y5S Research Opportunity Program"
         },
         {
             "id": "Cassidy D'Aloia",
@@ -63,12 +65,16 @@
             "degree": "PhD",
             "position": "Assistant Professor",
             "dept": ["Ecology and Evolutionary Biology"],
-            "email": "cdaloia@unb.ca ",
+            "office": "DV3042",
+            "officephone": "(905) 828-5360",
+            "lab": "DV4028",
+            "email": "cassidy.daloia@utoronto.ca",
             "twitter": "C_daloia",
             "website": "www.cassidydaloia.com",
             "bio": "I am broadly interested in the molecular ecology of coastal fishes and invertebrates. The central theme of my research program is understanding the patterns, causes, and consequences of dispersal and gene flow in the ocean. Current research topics in my lab include: (1) disentangling historical and contemporary factors that shape the distribution of genetic variation in natural populations; (2) understanding how (and when) kin structure emerges in marine populations; and (3) exploring the usefulness of genomic data to support sustainable fisheries and marine conservation efforts. ",
             "category": ["Evolutionary Biology", "Ecology", "Biological Responses to Climate Change"],
-            "keyword": ["Molecular Ecology", "Conservation", "Marine Science", "Coral Reefs"]
+            "keyword": ["Molecular Ecology", "Conservation", "Marine Science", "Coral Reefs"],
+            "courses": "BIO329 Conservation Biology"
         },
         {
             "id": "Marcus Dillon",
@@ -86,7 +92,8 @@
             "website": "sites.utm.utoronto.ca/dillonlab",
             "bio": "Research in the Dillon Lab focusses on tracking how novel infectious diseases emerge, identifying genetic loci that direct disease emergence, and characterizing the evolutionary pathways that enable opportunistic pathogens to infect new hosts. They address these problems using a variety of techniques in the fields of evolutionary genetics and microbiology, including comparative genomics, bioinformatics, and experimental evolution. </br> (Opportunities: The Dillon Lab is a growing research group with multiple fully funded MSc and PhD positions. Undergraduate positions are also available through the Research Opportunity Program (ROP) and Biology Research Course (BIO481). You can find more information about current opportunities on my lab website.)",
             "category": ["Evolutionary Biology", "Molecular Biology", "Stress and Disease Biology", "Plant Biology"],
-            "keyword": ["Microbiology", "Plant Pathology", "Host-Microbe Interactions", "Comparative Genomics", "Bioinformatics"]
+            "keyword": ["Microbiology", "Plant Pathology", "Host-Microbe Interactions", "Comparative Genomics", "Bioinformatics"],
+            "courses": "BIO370Y5Y Microbiology"
         },
         {
             "id": "Ingo Ensminger",
@@ -120,10 +127,11 @@
             "lab": "DV2026",
             "email": "ted.erclik@utoronto.ca",
             "twitter": "ercliklab",
-            "website": "www.ercliklab.com",
+            "website": "https://www.ercliklab.ca",
             "bio": "Our lab's goal is to understand how complex neural circuits develop from an initial population of stem cells. As a model system, we use the Drosophila optic lobe, which is the visual processing center of the fruit fly brain.",
             "category": ["Neurobiology", "Molecular Biology", "Cell Biology"],
-            "keyword": ["Developmental Biology", "<i>Drosophila</i>", "Stem Cells", "Neurogenesis"]
+            "keyword": ["Developmental Biology", "<i>Drosophila</i>", "Stem Cells", "Neurogenesis"],
+            "courses": "BIO380 Human Development, BIO403 Developmental Neurobiology"
         },
         {
             "id": "Jodie Jenkinson",
@@ -144,7 +152,8 @@
             "website": "www.sciencevis.ca",
             "bio": "My research focuses on the role that visual representations play in learning. This includes investigation along various lines of inquiry including the efficacy of visual media within different learning contexts, the design of visual representations for optimal impact, and the development of standards of visual communication in the scientific visualization community. In the Biomedical Communications graduate program, I teach Research Methods for Visual Communication and Information Design and Data Visualization.",
             "category": ["Visual Representation", "Molecular Visualization"],
-            "keyword": ["Molecular Visualization", "Visual Complexity", "Dynamic Representation"]
+            "keyword": ["Molecular Visualization", "Visual Complexity", "Dynamic Representation"],
+            "courses": "MSC2004H Research Methods, MSC2023H Information Visualization"
         },
         {
             "id": "Marc Johnson",
@@ -160,9 +169,10 @@
             "email": "marc.johnson@utoronto.ca",
             "twitter": "evoecolab",
             "website": "www.evoeco.org",
-            "bio": "My lab's research bridges the diverse questions and techniques from community ecology, genetics and evolution. Our interests are broad, but all aspects of research in the lab seek to understand the dynamic interplay between the ecology and evolution of species interactions, particularly as it relates to plant-animal interactions. </br> Research Questions: </br>\r\nHow do populations adapt to climate change and other forms of anthropogenic change like urbanization? What are the evolutionary consequences of sex? How do plants defend themselves against herbivores? How do species interactions influence the coevolution and eco-evolutionary dynamics within communities?",
+            "bio": "My lab's research bridges the diverse questions and techniques from community ecology, genetics and evolution. Our interests are broad, but all aspects of research in the lab seek to understand the dynamic interplay between the ecology and evolution of species interactions, particularly as it relates to plant-animal interactions. Much of our current research focuses how humans are altering the ecology and evolution of life through climate change, urbanization and other anthropogenic disturbances.",
             "category": ["Evolutionary Biology", "Ecology", "Stress and Disease Biology", "Biological Responses to Climate Change", "Plant Biology"],
-            "keyword": ["Coevolution", "Asexual Reproduction", "Species Interactions", "Urban Evolution", "Climate Change"]
+            "keyword": ["Coevolution", "Asexual Reproduction", "Species Interactions", "Urban Evolution", "Climate Change"],
+            "courses": "BIO342 Evolutionary Biology, BIO444, BIO445 Evolutionary Ecology, BIO299/399 Research Opportunity Program, BIO481 Biology Research Project"
         },
         {
             "id": "Peter M. Kotanen",
@@ -174,13 +184,14 @@
             "dept": ["Ecology and Evolutionary Biology"],
             "office": "DV3041",
             "officephone": "(905) 828-5365",
-            "lab": "DV2021",
-            "labphone": "(905) 828-3988",
+            "lab": "DV2012",
+            "labphone": "(905) 828-5304",
             "email": "peter.kotanen@utoronto.ca",
             "website": "www.erin.utoronto.ca/~w3pkota",
             "bio": "I study the ecology of biological invasions. My current research focusses on factors limiting invasions by non-native plants at high latitudes. Other recent research has centred on the question of whether escape from natural enemies (herbivores and pathogens) promotes the survival and spread of exotic plants, and whether escape from these enemies is more likely in marginal populations. I also have a longstanding interest in the effects of grazing by northern populations of geese.",
             "category": ["Ecology", "Biological Responses to Climate Change", "Plant Biology"],
-            "keyword": ["Biological Invasions", "Ecology of Plant Populations and Communities", "Grazing by Geese", "Herbivory", "Invasive Plants", "Natural History", "Northern Ecosystems"]
+            "keyword": ["Biological Invasions", "Ecology of Plant Populations and Communities", "Grazing by Geese", "Herbivory", "Invasive Plants", "Natural History", "Northern Ecosystems"],
+            "courses": "BIO 330  Plant Ecology, BIO 332 Biology Field Research (Arctic Field Ecology) "
         },
         {
             "id": "Angela B. Lange",
@@ -236,7 +247,8 @@
             "website": "liulab.ca",
             "bio": "We are interested in the circuit mechanisms underlying the orchestration of the ocular motor behavior and visual information processing, which is essential for proper vision.",
             "category": ["Neurobiology", "Integrative Physiology", "Animal Behaviour"],
-            "keyword": ["Visual System", "Plasticity", "Cortex", "Brainstem"]
+            "keyword": ["Visual System", "Plasticity", "Cortex", "Brainstem"],
+            "courses": "BIO361 Biometrics II, BIO408 Neural Circuit Structure and Function"
         },
         {
             "id": "Shannon McCauley",
@@ -253,7 +265,8 @@
             "website": "www.shannonjmccauley.com",
             "bio": "I am a freshwater ecologist with research interests in how processes act across spatial scales to affect community structure and species distributions. At the local scale I am particularly interested in how predator-prey interactions affect community structure, while at the regional scale I have investigated the role of dispersal in shaping communities and species distributions.",
             "category": ["Ecology", "Animal Behaviour", "Biological Responses to Climate Change"],
-            "keyword": ["Freshwater Ecology", "Community Ecology", "Predator-prey Interactions", "Dispersal "]
+            "keyword": ["Freshwater Ecology", "Community Ecology", "Predator-prey Interactions", "Dispersal"],
+            "courses": "BIO333 Freshwater Ecology, BIO331 The Ecology of Communities"
         },
         {
             "id": "Rosalind Murray",
@@ -265,12 +278,14 @@
             "dept": ["Ecology and Evolutionary Biology"],
             "office": "DV3051",
             "officephone": "(905) 828-3892",
+            "lab": "DV2028",
             "email": "rosalind.murray@utoronto.ca ",
             "twitter": "rosalindmurray",
             "website": "www.rosalindlmurray.com",
             "bio": "We use a combination of field and lab-based experiments to study how environmental conditions affect insect evolutionary ecology.  Current and ongoing research in the lab includes (1) Ecological constraints on sexual selection; (2) Life history evolution in response to environmental change; (3) The effect of salinity pollution on freshwater populations and communities.",
             "category": ["Animal Behaviour", "Evolutionary Biology", "Ecology", "Biological Responses to Climate Change", "Stress and Disease Biology"],
-            "keyword": ["Entomology", "Sexual Dimorphism", "Evolutionary Ecology"]
+            "keyword": ["Entomology", "Sexual Dimorphism", "Evolutionary Ecology"],
+            "courses": "BIO318 Animal Behaviour, BIO328 Lectures in Animal Behaviour"
         },
         {
             "id": "Bailey McMeans",
@@ -282,13 +297,15 @@
             "dept": ["Ecology and Evolutionary Biology"],
             "office": "DV4005",
             "officephone": "(905) 569-4959",
+            "lab": "DV4026C",
             "email": "bailey.mcmeans@utoronto.ca",
             "twitter": "bailey_mcmeans",
             "linkedin": "https://www.linkedin.com/in/bailey-mcmeans-b6b4004a/",
             "website": "www.baileymcmeans.com",
             "bio": "Our research explores how aquatic animals respond to changes in the environment (e.g. temperature) via changes in their physiology (e.g. lipid profiles) and ecology (e.g. feeding behavior). We are also interested in the ramifications of these organism-level responses for the structure and stability of food webs. We combine theory with field-based methods in Arctic seas, temperate lakes and tropical floodplains. These study systems all share drastic seasonal fluctuations in environmental characteristics.",
             "category": ["Animal Behaviour", "Ecology", "Biological Responses to Climate Change"],
-            "keyword": ["Aquatic Ecosystems", "Food Webs", "Fish", "Winter"]
+            "keyword": ["Aquatic Ecosystems", "Food Webs", "Fish", "Winter"],
+            "courses": "BIO313 Methods and Experimental Design in Ecology, BIO376 Marine Ecology"
         },
         {
             "id": "Rob Ness",
@@ -306,7 +323,8 @@
             "website": "ness.bio",
             "bio": "The genetic variation required for evolution by natural selection is generated by mutation, which creates new variants, and recombination, which shuffles those variants into new combinations. In my lab we combine experimental evolution, computational biology, population genetics and genomics to uncover how the generation of variation at the molecular level interacts with genetic drift and natural selection to drive patterns of biological diversity.",
             "category": ["Molecular Biology", "Evolutionary Biology", "Stress and Disease Biology"],
-            "keyword": ["Genomics", "Bioinformatics"]
+            "keyword": ["Genomics", "Bioinformatics"],
+            "courses": "BIO362H5 Bioinformatics, BIO458H5 Genomics"
         },
         {
             "id": "Derek Ng",
@@ -325,7 +343,8 @@
             "website": "ocw.utoronto.ca/media-ug-life-science",
             "bio": "My research focuses on developing and evaluating novel data visualization and interaction methods and tools for knowledge discovery, interpretation, and communication in molecular biology. I teach courses on web-based health and science communication, interactive media design and development, and biomolecular visualization.",
             "category": ["Molecular Visualization", "Visual Representation", "Molecular Biology"],
-            "keyword": ["Biochemistry", "Data Visualization", "Interactive Media", "Education", "Science Communication"]
+            "keyword": ["Biochemistry", "Data Visualization", "Interactive Media", "Education", "Science Communication"],
+            "courses": "HSC401H Web-based Health & Science Communication, MSC2008H Community-Centered Design Research, MSC2020H Visual Representation of Biomolecular Structure & Function"
         },
         {
             "id": "Alex N. Nguyen Ba",
@@ -341,9 +360,10 @@
             "twitter": "alex_nguyen_ba",
             "linkedin": "https://ca.linkedin.com/in/alex-n-nguyen-ba-7bb76b6b/",
             "website": "annb-lab.github.io",
-            "bio": "Our lab studies quantitative genetics in precision medicine and evolution. We use high-throughput automation and high-resolution approaches to tackle the big questions in these fields by building on the latest advances in synthetic biology and computer science.",
+            "bio": "Our lab is working to understand how genetic changes lead to differences in traits and how this impacts evolution. This is important as a quarter of individuals are carriers of a gene variant that can cause disease. Despite genetic screening efforts, it is still not possible for scientists to identify which variants are pathogenic and which are benign. Our lab uses synthetic biology, robotics, and high-throughput technologies to pave the way for an atlas of disease causing mutations. We also frame these findings in an evolutionary synthesis to guide us towards acquiring an understanding of our evolutionary history.",
             "category": ["Evolutionary Biology", "Molecular Biology"],
-            "keyword": ["Precision Medicine"]
+            "keyword": ["Precision Medicine"],
+            "courses": "BIO259H Introduction to Biological Data, BIO427H Data Science in Biology"
         },
         {
             "id": "Ian Orchard",
@@ -371,10 +391,11 @@
             "office": "DV4003",
             "officephone": "(905) 569-4848",
             "email": "michaelandrew.phillips@utoronto.ca",
-            "website": "terpenemetabolism.com",
+            "website": "https://terpenemetabolism.com/",
             "bio": "My research focuses on the regulation and control of plant terpenoid biosynthesis. We use mass spectrometry to study central terpenoid metabolism in Arabidopsis and specialized metabolism in glandular trichomes of medically important plant species.",
             "category": ["Integrative Physiology", "Molecular Biology", "Cell Biology"],
-            "keyword": ["Plant Metabolism", "Terpenoids"]
+            "keyword": ["Plant Metabolism", "Terpenoids"],
+            "courses": "BIO324H5 Plant Biochemistry, BIO368H5 Medicinal Plants and Human Health, CSB1021LEC137 Mass Spectrometry for Biological Systems, BIO299/399 Research Opportunity Program, BIO481 Biology Research Course"
         },
         {
             "id": "John Ratcliffe",
@@ -391,7 +412,8 @@
             "website": "www.batsandmoths.com",
             "bio": "My students and I study the auditory neuroethology and cognitive ecology of echolocating bats, focusing on acoustic signal production and reception for the purposes of locating prey and discriminating good food from bad. We also study the design and evolution of hearing and defensive signals in moths and other insects with bat-detecting ears.",
             "category": ["Neurobiology", "Integrative Physiology", "Animal Behaviour", "Evolutionary Biology", "Ecology"],
-            "keyword": ["Neuroethology"]
+            "keyword": ["Neuroethology"],
+            "courses": "BIO320 Sensory and Cognitive Ecology, BIO405 Evolutionary Perspectives on Cognition and Behaviour"
         }, 
         {
             "id": "Robert R. Reisz",
@@ -406,13 +428,11 @@
             "officephone": "(905) 828-3982",
             "lab": "DV3016",
             "email": "robert.reisz@utoronto.ca",
-            "twitter": "reiszrobert",
-            "facebook": "rreisz1",
-            "linkedin": "https://ca.linkedin.com/in/robert-reisz-29b83032/",
             "website": "reiszlab.weebly.com/",
             "bio": "Vertebrate Paleontology. During much of my career I have studied the evolution of terrestrial vertebrates with a focus on the origin of amniotes, their anatomy, phylogeny and ecology. Paleozoic amniotes not only record the first successful adaptation of vertebrates to a fully terrestrial mode of life, but are also at the base of subsequent adaptive radiations that eventually gave rise to modern reptiles, birds and mammals. These fossils therefore provide a unique opportunity for studies of the origin and evolutionary radiation of all amniotes. I have also studied the anatomy, embryology and growth, and evolutionary relationships of a variety of other vertebrates, including lungfish, dissorophoid amphibians, diadectomorph tetrapods, and basal dinosaurs.",
             "category": ["Evolutionary Biology", "Biological Responses to Climate Change", "Visual Representation", "Paleontology"],
-            "keyword": ["Evolution of Vertebrates"]
+            "keyword": ["Evolution of Vertebrates"],
+            "courses": "BIO 354H5 S Vertebrate Form and Function, BIO 356G5 S Major features of Vertebrate Evolution"
         },
         {
             "id": "Arbora Resulaj",
@@ -426,8 +446,7 @@
             "email": "arbora.resulaj@utoronto.ca ",
             "website": "www.resulajlab.com",
             "bio": "The lab’s research is focused on understanding how neural circuits enable perception, memory, and decision-making. Using mice as a model system, Dr. Resulaj’s lab currently uses techniques and approaches such as electrophysiology, behaviour, and optogenetics to study short term memory, and its role in visual cognition.",
-            "category": ["Neurobiology", "Integrative Physiology", "Animal Behaviour", "Visual Representation"],
-            "keyword": [""]
+            "category": ["Neurobiology", "Integrative Physiology", "Animal Behaviour", "Visual Representation"]
         },
         {
             "id": "Ho Sung Rhee",
@@ -444,7 +463,8 @@
             "website": "sites.utm.utoronto.ca/rhee",
             "bio": "Our research focuses on understanding the functions of regulatory elements in gene expression associated with human development and disease. We study how a unique cell type is specified and maintained by regulatory elements in the central nervous system during mammalian development. To understand these processes, we use cutting-edge molecular, cellular, and computational approaches. They include embryonic stem cell differentiation, transgenic mouse models, genomic mapping, and CRISPR-based genome editing techniques.",
             "category": ["Molecular Biology", "Neurobiology", "Cell Biology", "Stress and Disease Biology", "Animal Behaviour", "Epigenetics"],
-            "keyword": ["Gene Regulation", "Neurodevelopment", "Genomics"]
+            "keyword": ["Gene Regulation", "Neurodevelopment", "Genomics"],
+            "courses": "BIO372 Molecular Biology, BIO419 Molecular Aspects of Gene Regulation"
         },
         {
             "id": "Adriano Senatore",
@@ -481,7 +501,8 @@
             "website": "www.aquaticvirology.com",
             "bio": "My research focuses on the molecular ecology of aquatic microorganisms. As the major primary producers in freshwater and marine ecosystems, phytoplankton are key components of aquatic food webs and biogeochemical cycles. Moreover, the discovery of abundant viruses in all aquatic environments suggest that they are important agents of phytoplankton mortality. Thus, my research focuses on the role of viruses in phytoplankton population and community ecology. To better understand the complex interactions of phytoplankton and their viruses, I use quantitative molecular techniques to examine their community composition and dynamics in natural environments and laboratory cultures.",
             "category": ["Molecular Biology", "Ecology"],
-            "keyword": ["Microbiology", "Virology", "Aquatic Ecosystems"]
+            "keyword": ["Microbiology", "Virology", "Aquatic Ecosystems"],
+            "courses": "BIO373H5 Environmental Microbiology, BIO475H5 Virology"
         },
         {
             "id": "Sasa Stefanovic",
@@ -498,7 +519,8 @@
             "website": "www.utm.utoronto.ca/biology/people/sasa-stefanovic",
             "bio": "My research employs molecular and traditional tools addressing plant systematics questions at both higher and lower taxonomic level as well as molecular mechanisms underlying organellar genome evolution in plants.",
             "category": ["Evolutionary Biology", "Plant Biology"],
-            "keyword": ["Plant Systematics", "Heterotrophic Plants", "Parasitic Plants", "Organellar Genome Evolution"]
+            "keyword": ["Plant Systematics", "Heterotrophic Plants", "Parasitic Plants", "Organellar Genome Evolution"],
+            "courses": "BIO339 Plant Identification and Systematics, BIO443 Phylogenetic Principles"
         },
         {
             "id": "Bryan Stewart",
@@ -507,7 +529,6 @@
             "colour": "#4ca8bc",
             "degree": "PhD",
             "position": "Professor",
-            "affliation": ["Acting Vice-Dean Graduate"],
             "dept": ["Cell and Systems Biology"],
             "office": "DV3266",
             "officephone": "",
@@ -518,8 +539,9 @@
             "linkedin": "https://ca.linkedin.com/in/bryan-stewart-37111495/",
             "website": "www.bryanstewart.ca",
             "bio": "Our research studies development and physiology of nerve and muscle. We use a variety of genetic, molecular, biochemical, imaging and electrophysiological techniques to describe and understand the cellular and molecular mechanisms that contribute to the proper growth and function of these tissues, in health and disease.",
-            "category": ["Neurobiology", "Integrative Physiology", "Cell Biology", "Molecular Biology"],
-            "keyword": ["<i>Drosophila</i>", "Synapse", "Muscle", "Development", "Electrophysiology", "Microscopy"]
+            "category": ["Neurobiology", "Integrative Physiology", "Cell Biology", "Molecular Biology", "Disease Biology"],
+            "keyword": ["<i>Drosophila</i>", "Synapse", "Muscle", "Development", "Electrophysiology", "Microscopy"],
+            "courses": "BIO403 Developmental Neurobiology, BIO414 Advanced Integrative Physiology"
         },
         {
             "id": "Helene Wagner",
@@ -557,7 +579,8 @@
             "website": "www.shelleywall.layfigures.com",
             "bio": "My research interests include graphic medicine, patient education, the visual construction of gender in medical discourse, the history of medical and bioscientific illustration, and the socio-cultural dimensions of medical visualization. I teach courses in bioscientific, pathological, and neuroanatomical illustration, and in graphic medicine. As Illustrator-in-Residence in the Temerty Faculty of Medicine, I conduct elective workshops in the visual medical humanities and the use of comics to build empathy and reflective capacity in the training of healthcare professionals.",
             "category": ["Visual Representation"],
-            "keyword": ["Graphic Medicine", "Histories of Visual Representation", "Communication", "Patient Education", "Visual Representations of Sex and Gender"]
+            "keyword": ["Graphic Medicine", "Histories of Visual Representation", "Communication", "Patient Education", "Visual Representations of Sex and Gender"],
+            "courses": "HSC302H Biocommunication Visualization, MSC2012H Neuroanatomy for Visual Communication, MSC2022H Graphic Medicine Seminar"
         },
         {
             "id": "Brandon Walters",
@@ -569,13 +592,15 @@
             "dept": ["Cell and Systems Biology"],
             "office": "CC4061",
             "officephone": "(905) 828-3925",
+            "lab": "DV1015",
             "email": "brandonj.walters@utoronto.ca",
             "twitter": "MagosBiologis",
             "linkedin": "https://ca.linkedin.com/in/brandon-walters-b86933/",
             "website": "www.utm.utoronto.ca/biology/people/brandon-walters",
-            "bio": "My research focuses on how memory is encoded in rodents at the molecular level, and how these molecular changes support the establishment and persistence of a memory. Even though we have known of the molecular basis of memory for over a decade, how the molecular events sum together to give rise to memory is still not understood. Currently I am focused on “transient” players in memory formation, focusing on mRNA itself. This view was spurred by the observation that the synapse is capable of local translation (IE within the synapse)  of mRNA into proteins, giving synapses a vital role in local regulation of translation and thus how synapses respond to experience.",
+            "bio": "My research focuses on how memory is encoded in rodents at the molecular level, and how these molecular changes support the establishment and persistence of a memory. Even though we have known of the molecular basis of memory for over a decade, how the molecular events sum together to give rise to memory is still not understood. Currently I am focused on “transient” players in memory formation, focusing on mRNA modifications, specifically methylation and how RNA methylation is used during memory formation.",
             "category": ["Neurobiology", "Molecular Biology", "Animal Behaviour", "Cell Biology", "Epigenetics"],
-            "keyword": ["Molecular Mechanisms of Memory", "mRNA Methylation", "Epitranscriptomics"]
+            "keyword": ["Molecular Mechanisms of Memory", "mRNA Methylation", "Epitranscriptomics"],
+            "courses": "BIO 483 Molecular Mechanisms of Memory Formation, BIO 471 Mechanisms of Disease"
         },
         {
             "id": "Nicholas Woolridge",
@@ -3650,7 +3675,7 @@
         {
           "name": "Bryan Stewart",
           "category": "Stress and Disease Biology",
-          "value": 0,
+          "value": 7,
           "image": "./media/Bryan_Stewart.jpg"
         },
         {
