@@ -1,7 +1,7 @@
 {
     "nodes": [
         {
-            "id": "Katharina Braeutigam",
+            "id": "Katharina Braeutigamm",
             "group": "CSB",
             "img": "./media/Katharina_Braeutigam.png",
             "colour": "#4ca8bc",
@@ -375,7 +375,7 @@
             "dept": ["Cell and Systems Biology"],
             "office": "DV4002",
             "email": "ian.orchard@utoronto.ca",
-            "website": "https://www.utm.utoronto.ca/orchard-lab/",
+            "website": "http://www.utm.utoronto.ca/orchard-lab/",
             "bio": "The central theme of my research program is the functioning of the nervous system, using insects as experimental models.  We are establishing the mechanisms by which the nervous system communicates information; examining hormonal, synaptic, and modulatory mechanisms, using neurophysiological, neurochemical, endocrinological, and molecular biological techniques. In particular, we are interested in the role of peptides and amines as neurohormones, released into the blood to co-ordinate activities of diverse groups of tissues, and as neuromodulators, modulating the ongoing activities of distinct pathways.",
             "category": ["Cell Biology", "Neurobiology", "Neuroscience & Physiology", "Physiology", "Molecular Biology"],
             "keyword": ["Invertebrate", "Insect", "Neuroendocrinology", "Neurohormones", "GPCRs", "Diuresis", "Reproduction", "Chagas disease"]
@@ -688,7 +688,7 @@
             "officephone": "(905) 569-5745",
             "email": "sanja.hinic.frlog@utoronto.ca",
             "bio": "I am a science educator and a palaeontologist. My teaching approaches are designed to motivate learning and support personal and collaborative growth while helping students build observational, critical thinking, and inquiry skills in biology. I complement my teaching with pedagogical research on the role and impact of student motivation in undergraduate courses and approaches in field-based teaching and learning. I am also interested in functional morphology and locomotion in birds. Specifically, I study the evolution of skeletal features indicative of aquatic locomotion in birds.",
-            "category": ["Paleontology", "Evolutionary Biology", "Science Education"],
+            "category": ["Paleontology", "Evolutionary Biology", "Science Education", "Integrative Physiology"],
             "keyword": ["Evolution", "Vertebrate Evolution", "Physiology", "Pedagogy", "Ornithology"],
             "courses": ["BIO202 Introductory Animal Physiology", "BIO208 Foundations of Human Anatomy and Physiology I", "BIO209 Foundations of Human Anatomy and Physiology II", "BIO326 Ornithology"],
         },
@@ -1433,7 +1433,112 @@
             "source": "Nicholas Woolridge",
             "target": "Molecular Visualization",
             "value": "1"
-        }
+        },
+        {
+          "source": "Steven Chatfield",
+          "target": "Cell Biology",
+          "value": "1"
+        },
+        {
+          "source": "Steven Chatfield",
+          "target": "Molecular Biology",
+          "value": "1"
+        },
+        {
+          "source": "Steven Chatfield",
+          "target": "Plant Biology",
+          "value": "1"
+        },
+        {
+          "source": "Michael Corrin",
+          "target": "Visual Representation of Science",
+          "value": "1"
+        },
+        {
+          "source": "Marc Dryer",
+          "target": "Visual Representation of Science",
+          "value": "1"
+        },
+        {
+          "source": "Sanja Hinic-Frlog",
+          "target": "Evolutionary Biology",
+          "value": "1"
+        },
+        {
+          "source": "Sanja Hinic-Frlog",
+          "target": "Science Education",
+          "value": "1"
+        },
+        {
+          "source": "Sanja Hinic-Frlog",
+          "target": "Paleontology",
+          "value": "1"
+        },
+        {
+          "source": "Sanja Hinic-Frlog",
+          "target": "Integrative Physiology",
+          "value": "1"
+        },
+        {
+          "source": "Dave Mazierski",
+          "target": "Visual Representation of Science",
+          "value": "1"
+        },
+        {
+          "source": "Dave Mazierski",
+          "target": "Paleontology",
+          "value": "1"
+        },
+        {
+          "source": "Dave Mazierski",
+          "target": "Evolutionary Biology",
+          "value": "1"
+        },
+        {
+          "source": "Dave Mazierski",
+          "target": "Cell Biology",
+          "value": "1"
+        },
+        {
+          "source": "Jayson Parker",
+          "target": "Neurobiology",
+          "value": "1"
+        },
+        {
+          "source": "Jayson Parker",
+          "target": "Integrative Physiology",
+          "value": "1"
+        },
+        {
+          "source": "Fiona Rawle",
+          "target": "Evolutionary Biology",
+          "value": "1"
+        },
+        {
+          "source": "Fiona Rawle",
+          "target": "Visual Representation of Science",
+          "value": "1"
+        },
+        {
+          "source": "Fiona Rawle",
+          "target": "Science Education",
+          "value": "1"
+        },
+        {
+          "source": "Christoph Richter",
+          "target": "Animal Behaviour",
+          "value": "1"
+        },
+        {
+          "source": "Christoph Richter",
+          "target": "Ecology",
+          "value": "1"
+        },
+        {
+          "source": "Christoph Richter",
+          "target": "Evolutionary Biology",
+          "value": "1"
+        },
     ],
     "bar_col1": [
         {
