@@ -116,11 +116,13 @@
              var htmlContent = '<div class="row">'
              htmlContent += '<div class="column left">' + "<img src='" + f.img + "' style='border-radius:50%; margin-bottom:-10px;'>" + '</div>'
              htmlContent += '<div class="column right">' + "<h1>" + f.id + "<\/h1>" + "<h2>" + f.degree + "<\/h2>"
-             htmlContent += '<p style="margin-top:5px;">' + f.position + '</br>' + retrieveText(f.dept) + '</br>' + checkEmpty(f.office) + checkEmpty(f.officephone) + '<a href="mailto:' + f.email + '" target="_blank">' + f.email + '</a>' + '</br>' + '<a href="https://' + f.website + '" target="_blank">' + f.website + '</a>' + "</p>"
+             htmlContent += '<p style="margin-top:5px;">' + f.position + '</br>' + retrieveText(f.affiliation) + retrieveText(f.dept) + '</br>' + checkEmpty(f.office) + checkEmpty(f.officephone) + '<a href="mailto:' + f.email + '" target="_blank">' + f.email + '</a>' + '</br>' + checkEmpty('<a href="http://' + f.website + '" target="_blank">' + f.website + '</a>') + "</p>"
              htmlContent += '<p style="margin-top:-5px;">' + checkTwitter(f.twitter) + checkInstagram(f.instagram) + checkLinkedIn(f.linkedin) + '</p>'
              htmlContent += '<h3>' + 'Research Interests' + '</h3>'
              htmlContent += '<p style="margin-top:-10px;">' + f.bio + '</p>'
-             htmlContent += '<p style="margin-top:-5px;">' + retrieveTags(f.dept) + retrieveTags(f.category) + retrieveTags(f.keyword) + retrieveTags(f.courses) + '</p>'
+             htmlContent += '<p style="margin-top:-5px;">' + retrieveTags(f.dept) + retrieveTags(f.category) + retrieveTags(f.keyword) + '</p>'
+             htmlContent += '<h3>' + 'Courses' + '</h3>'
+             htmlContent += '<p style="margin-top:-5px;">' + retrieveTags(f.courses) + '</p>'
              htmlContent += '<\/div>'
              htmlContent += '<\/div>'
              htmlContent += '<hr>'
