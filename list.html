@@ -44,7 +44,6 @@
     display: table;
     clear: both;
     overflow-y: auto; 
-    height: 100%;
   }
  
   div.centered {
@@ -115,7 +114,7 @@
      $.getJSON('./faculty.json', function(data) {
          $.each(data.nodes, function(i, f) {
            if (f.group != "Area") {
-             var htmlContent = '<div class="row">'
+             var htmlContent = "<div style='overflow-y:auto; height:100%;'>"
              htmlContent += '<div class="column left">' + "<img src='" + f.img + "' style='border-radius:50%; margin-bottom:-10px;'>" + '</div>'
              htmlContent += '<div class="column right">' + "<h1>" + f.id + "<\/h1>" + "<h2>" + f.degree + "<\/h2>"
              htmlContent += '<p style="margin-top:5px;">' + f.position + '</br>' + retrieveText(f.affiliation) + retrieveText(f.dept) + '</br>' + checkEmpty(f.office) + checkEmpty(f.officephone) + '<a href="mailto:' + f.email + '" target="_blank">' + f.email + '</a>' + '</br>' + checkWebsite(f.website) + "</p>"
