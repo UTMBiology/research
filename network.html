@@ -343,11 +343,12 @@ d3.json("./faculty.json").then( function(data) {
       htmlContent += '</div>'
       htmlContent += '<div class="row">'
       htmlContent += '<div class="column left">'
-      htmlContent += '<p>' + d.position + '</br>' + retrieveText(d.dept) + '</br>' + checkEmpty(d.office) + checkEmpty(d.officephone) + '<a href="mailto:' + d.email + '" target="_blank">' + d.email + '</a>' + '</br>' + '<a href="https://' + d.website + '" target="_blank">' + d.website + '</a>' + '</div>'
+      htmlContent += '<p>' + d.position + '</br>' + retrieveText(d.dept) + '</br>' + checkEmpty(d.office) + checkEmpty(d.officephone) + '<a href="mailto:' + d.email + '" target="_blank">' + d.email + '</a>' + '</br>' + checkWebsite(d.website) + '</div>'
       htmlContent += '<div class="column right">' + "<p>" + checkTwitter(d.twitter) + checkInstagram(d.instagram) + checkLinkedIn(d.linkedin) + '</div>'
       htmlContent += '<div style="float:left; width:95%">' + '<h3>' + 'Research Interests' + '</h3>'
       htmlContent += '<p>' + d.bio + '</p>' + '</div>'
-      htmlContent += '<div style="float:left; margin-top:5px; margin-bottom:10px">' + retrieveTags(d.dept) + retrieveTags(d.category) + retrieveTags(d.keyword) + retrieveTags(d.courses) + '</div>'
+      htmlContent += '<div style="float:left; margin-top:5px; margin-bottom:10px">' + retrieveTags(d.dept) + retrieveTags(d.category) + retrieveTags(d.keyword) + '</div>'
+      htmlContent += '<div style="float:left; width:95%">' + '<p>' + '<b>' + 'Visit the List View for undergraduate courses instructed' + '</b>' + '</p>'
       htmlContent += "<\/div>"
       tooltip.html(htmlContent);
   }
@@ -355,6 +356,11 @@ d3.json("./faculty.json").then( function(data) {
 function checkEmpty(d) {
   if (!d) {return "";}
   else {return d + '</br>';}
+}
+
+function checkWebsite(d) {
+  if (!d) {return "";}
+  else {return '<a href="http://' + d + '" target="_blank">' + d + '</a>';}
 }
   
 function checkTwitter(d) {
