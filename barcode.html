@@ -74,7 +74,7 @@
 //CODED BY: JF Jerrie Feng - EDITED BY: DN Derek Ng, KZ Ke Er Zhang
 
 //ENTER NUMBER OF CATEGORIES:
-var cat_num = 14;
+var cat_num = 15;
 
 // set the dimensions and margins of the graph
 var margin = {top: 30, right: 30, bottom: 30, left: 200},
@@ -124,8 +124,8 @@ var defsS = svg.append("defs")
 
 //Colours for each bar
 var myColor = d3.scaleLinear()
-  .range(["white","#abbcd8", "#7fa7cb", "#508fbc", "#2f75ab", "#265988", "#234e6e", "#143e55", "#246870", "#48958b", "#7fc491", "#b6db96", "#eceeab", "#f5cd92", "#eca565"])
-  .domain([0,1,2,3,4,5,6,7,8,9,10,11,12,13,14])
+  .range(["white","#abbcd8", "#7fa7cb", "#508fbc", "#2f75ab", "#265988", "#234e6e", "#143e55", "#246870", "#48958b", "#7fc491", "#b6db96", "#eceeab", "#f5cd92", "#eca565","#907958"])
+  .domain([0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15])
 
 
 var barImg1 = []; //profile images
@@ -158,7 +158,7 @@ d3.json("./faculty.json", function(data) {
       myGroup1.push(barcode[i].name);
       repeat_name = barcode[i].name;
     }
-    if(temp_cat < 14){
+    if(temp_cat < 15){
       myVars.push(barcode[temp_cat].category);
       temp_cat += 1;
     }
@@ -289,7 +289,7 @@ d3.json("./faculty.json", function(data) {
       myGroup2.push(barcode[i].name);
       repeat_name = barcode[i].name;
     }
-    if(temp_cat < 14){
+    if(temp_cat < 15){
       myVars.push(barcode[temp_cat].category);
       temp_cat += 1;
     }
@@ -415,7 +415,7 @@ d3.json("./faculty.json", function(data) {
       myGroup3.push(barcode[i].name);
       repeat_name = barcode[i].name;
     }
-    if(temp_cat < 14){
+    if(temp_cat < 15){
       myVars.push(barcode[temp_cat].category);
       temp_cat += 1;
     }

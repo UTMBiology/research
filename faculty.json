@@ -726,7 +726,7 @@
             "linkedin": "https://www.linkedin.com/in/jayson-parker-63b7776/",
             "bio": "Neuroscientist and former biotechnology analyst in investment banking.  My focus is on the the Digital Health Technology stream in the MBiotech program.  Teaching areas are medical device regulation, clinical trial design, drug development and critical thinking in data analysis.  3D printing is part of all my courses.  My research areas:  digital biomarkers, wearable technology, clinical trial failure rates and medical device regulation. Geek side: Dungeons & Dragons, World of Warcraft, 40k.",
             "category": ["Neurobiology", "Integrative Physiology"],
-            "keyword": ["Digital Health", "Clinical Trial", "Biomarkers", "Oncology", "Medical Devices", "Drug Regulation, Drug Development"],
+            "keyword": ["Digital Health", "Clinical Trial", "Biomarkers", "Oncology", "Medical Devices", "Drug Regulation", "Drug Development"],
             "courses": ["BIO375H Introductory Medical Biotechnology"]
         },        
         {
@@ -1622,6 +1622,102 @@
           "image": "./media/Katharina_Braeutigam.png"
         },
         {
+          "name": "Katharina Braeutigam",
+          "category": "Science Education",
+          "value": 0,
+          "image": "./media/Katharina_Braeutigam.png"
+        },
+        {
+          "name": "Steven Chatfield",
+          "category": "Neurobiology",
+          "value": 0,
+          "image": "./media/Steven_Chatfield.jpg"
+        },
+        {
+          "name": "Steven Chatfield",
+          "category": "Integrative Physiology",
+          "value": 0,
+          "image": "./media/Steven_Chatfield.jpg"
+        },
+        {
+          "name": "Steven Chatfield",
+          "category": "Cell Biology",
+          "value": 3,
+          "image": "./media/Steven_Chatfield.jpg"
+        },
+        {
+          "name": "Steven Chatfield",
+          "category": "Molecular Biology",
+          "value": 4,
+          "image": "./media/Steven_Chatfield.jpg"
+        },
+        {
+          "name": "Steven Chatfield",
+          "category": "Epigenetics",
+          "value": 0,
+          "image": "./media/Steven_Chatfield.jpg"
+        },
+        {
+          "name": "Steven Chatfield",
+          "category": "Animal Behaviour",
+          "value": 0,
+          "image": "./media/Steven_Chatfield.jpg"
+        },
+        {
+          "name": "Steven Chatfield",
+          "category": "Stress and Disease Biology",
+          "value": 0,
+          "image": "./media/Steven_Chatfield.jpg"
+        },
+        {
+          "name": "Steven Chatfield",
+          "category": "Evolutionary Biology",
+          "value": 0,
+          "image": "./media/Steven_Chatfield.jpg"
+        },
+        {
+          "name": "Steven Chatfield",
+          "category": "Ecology",
+          "value": 0,
+          "image": "./media/Steven_Chatfield.jpg"
+        },
+        {
+          "name": "Steven Chatfield",
+          "category": "Plant Biology",
+          "value": 10,
+          "image": "./media/Steven_Chatfield.jpg"
+        },
+        {
+          "name": "Steven Chatfield",
+          "category": "Biological Responses to Climate Change",
+          "value": 0,
+          "image": "./media/Steven_Chatfield.jpg"
+        },
+        {
+          "name": "Steven Chatfield",
+          "category": "Paleontology",
+          "value": 0,
+          "image": "./media/Steven_Chatfield.jpg"
+        },
+        {
+          "name": "Steven Chatfield",
+          "category": "Visual Representation of Biology/Science",
+          "value": 0,
+          "image": "./media/Steven_Chatfield.jpg"
+        },
+        {
+          "name": "Steven Chatfield",
+          "category": "Molecular Visualization",
+          "value": 0,
+          "image": "./media/Steven_Chatfield.jpg"
+        },
+        {
+          "name": "Steven Chatfield",
+          "category": "Science Education",
+          "value": 0,
+          "image": "./media/Steven_Chatfield.jpg"
+        },
+        {
           "name": "Hai-Ying (Mary) Cheng",
           "category": "Neurobiology",
           "value": 1,
@@ -1704,6 +1800,192 @@
           "category": "Molecular Visualization",
           "value": 0,
           "image": "./media/Mary_Cheng.jpg"
+        },
+        {
+          "name": "Hai-Ying (Mary) Cheng",
+          "category": "Science Education",
+          "value": 0,
+          "image": "./media/Mary_Cheng.jpg"
+        },
+        {
+          "name": "Michael Corrin",
+          "category": "Neurobiology",
+          "value": 0,
+          "image": "./media/Michael_Corrin.jpg"
+        },
+        {
+          "name": "Michael Corrin",
+          "category": "Integrative Physiology",
+          "value": 0,
+          "image": "./media/Michael_Corrin.jpg"
+        },
+        {
+          "name": "Michael Corrin",
+          "category": "Cell Biology",
+          "value": 0,
+          "image": "./media/Michael_Corrin.jpg"
+        },
+        {
+          "name": "Michael Corrin",
+          "category": "Molecular Biology",
+          "value": 0,
+          "image": "./media/Michael_Corrin.jpg"
+        },
+        {
+          "name": "Michael Corrin",
+          "category": "Epigenetics",
+          "value": 0,
+          "image": "./media/Michael_Corrin.jpg"
+        },
+        {
+          "name": "Michael Corrin",
+          "category": "Animal Behaviour",
+          "value": 0,
+          "image": "./media/Michael_Corrin.jpg"
+        },
+        {
+          "name": "Michael Corrin",
+          "category": "Stress and Disease Biology",
+          "value": 0,
+          "image": "./media/Michael_Corrin.jpg"
+        },
+        {
+          "name": "Michael Corrin",
+          "category": "Evolutionary Biology",
+          "value": 0,
+          "image": "./media/Michael_Corrin.jpg"
+        },
+        {
+          "name": "Michael Corrin",
+          "category": "Ecology",
+          "value": 0,
+          "image": "./media/Michael_Corrin.jpg"
+        },
+        {
+          "name": "Michael Corrin",
+          "category": "Plant Biology",
+          "value": 0,
+          "image": "./media/Michael_Corrin.jpg"
+        },
+        {
+          "name": "Michael Corrin",
+          "category": "Biological Responses to Climate Change",
+          "value": 0,
+          "image": "./media/Michael_Corrin.jpg"
+        },
+        {
+          "name": "Michael Corrin",
+          "category": "Paleontology",
+          "value": 0,
+          "image": "./media/Michael_Corrin.jpg"
+        },
+        {
+          "name": "Michael Corrin",
+          "category": "Visual Representation of Biology/Science",
+          "value": 13,
+          "image": "./media/Michael_Corrin.jpg"
+        },
+        {
+          "name": "Michael Corrin",
+          "category": "Molecular Visualization",
+          "value": 0,
+          "image": "./media/Michael_Corrin.jpg"
+        },
+        {
+          "name": "Michael Corrin",
+          "category": "Science Education",
+          "value": 0,
+          "image": "./media/Michael_Corrin.jpg"
+        },
+        {
+          "name": "Marc Dryer",
+          "category": "Neurobiology",
+          "value": 0,
+          "image": "./media/Marc_Dryer.jpg"
+        },
+        {
+          "name": "Marc Dryer",
+          "category": "Integrative Physiology",
+          "value": 0,
+          "image": "./media/Marc_Dryer.jpg"
+        },
+        {
+          "name": "Marc Dryer",
+          "category": "Cell Biology",
+          "value": 0,
+          "image": "./media/Marc_Dryer.jpg"
+        },
+        {
+          "name": "Marc Dryer",
+          "category": "Molecular Biology",
+          "value": 0,
+          "image": "./media/Marc_Dryer.jpg"
+        },
+        {
+          "name": "Marc Dryer",
+          "category": "Epigenetics",
+          "value": 0,
+          "image": "./media/Marc_Dryer.jpg"
+        },
+        {
+          "name": "Marc Dryer",
+          "category": "Animal Behaviour",
+          "value": 0,
+          "image": "./media/Marc_Dryer.jpg"
+        },
+        {
+          "name": "Marc Dryer",
+          "category": "Stress and Disease Biology",
+          "value": 0,
+          "image": "./media/Marc_Dryer.jpg"
+        },
+        {
+          "name": "Marc Dryer",
+          "category": "Evolutionary Biology",
+          "value": 0,
+          "image": "./media/Marc_Dryer.jpg"
+        },
+        {
+          "name": "Marc Dryer",
+          "category": "Ecology",
+          "value": 0,
+          "image": "./media/Marc_Dryer.jpg"
+        },
+        {
+          "name": "Marc Dryer",
+          "category": "Plant Biology",
+          "value": 0,
+          "image": "./media/Marc_Dryer.jpg"
+        },
+        {
+          "name": "Marc Dryer",
+          "category": "Biological Responses to Climate Change",
+          "value": 0,
+          "image": "./media/Marc_Dryer.jpg"
+        },
+        {
+          "name": "Marc Dryer",
+          "category": "Paleontology",
+          "value": 0,
+          "image": "./media/Marc_Dryer.jpg"
+        },
+        {
+          "name": "Marc Dryer",
+          "category": "Visual Representation of Biology/Science",
+          "value": 13,
+          "image": "./media/Marc_Dryer.jpg"
+        },
+        {
+          "name": "Marc Dryer",
+          "category": "Molecular Visualization",
+          "value": 0,
+          "image": "./media/Marc_Dryer.jpg"
+        },
+        {
+          "name": "Marc Dryer",
+          "category": "Science Education",
+          "value": 0,
+          "image": "./media/Marc_Dryer.jpg"
         },
         {
           "name": "Mark Currie",
@@ -1790,6 +2072,12 @@
           "image": "./media/Mark_Currie.jpg"
         },
         {
+          "name": "Mark Currie",
+          "category": "Science Education",
+          "value": 0,
+          "image": "./media/Mark_Currie.jpg"
+        },
+        {
           "name": "Cassidy D'Aloia",
           "category": "Neurobiology",
           "value": 0,
@@ -1870,6 +2158,12 @@
         {
           "name": "Cassidy D'Aloia",
           "category": "Molecular Visualization",
+          "value": 0,
+          "image": "./media/Cassidy_DAloia.jpg"
+        },
+        {
+          "name": "Cassidy D'Aloia",
+          "category": "Science Education",
           "value": 0,
           "image": "./media/Cassidy_DAloia.jpg"
         },
@@ -1958,6 +2252,12 @@
           "image": "./media/Marcus_Dillon.jpg"
         },
         {
+          "name": "Marcus Dillon",
+          "category": "Science Education",
+          "value": 0,
+          "image": "./media/Marcus_Dillon.jpg"
+        },
+        {
           "name": "Ingo Ensminger",
           "category": "Neurobiology",
           "value": 0,
@@ -2038,6 +2338,12 @@
         {
           "name": "Ingo Ensminger",
           "category": "Molecular Visualization",
+          "value": 0,
+          "image": "./media/Ingo_Ensminger.jpg"
+        },
+        {
+          "name": "Ingo Ensminger",
+          "category": "Science Education",
           "value": 0,
           "image": "./media/Ingo_Ensminger.jpg"
         },
@@ -2124,6 +2430,102 @@
           "category": "Molecular Visualization",
           "value": 0,
           "image": "./media/Ted_Erclik.jpg"
+        },
+        {
+          "name": "Ted Erclik",
+          "category": "Science Education",
+          "value": 0,
+          "image": "./media/Ted_Erclik.jpg"
+        },
+        {
+          "name": "Sanja Hinic-Frlog",
+          "category": "Neurobiology",
+          "value": 0,
+          "image": "./media/Sanja_Hinic-Frlog.jpg"
+        },
+        {
+          "name": "Sanja Hinic-Frlog",
+          "category": "Integrative Physiology",
+          "value": 2,
+          "image": "./media/Sanja_Hinic-Frlog.jpg"
+        },
+        {
+          "name": "Sanja Hinic-Frlog",
+          "category": "Cell Biology",
+          "value": 0,
+          "image": "./media/Sanja_Hinic-Frlog.jpg"
+        },
+        {
+          "name": "Sanja Hinic-Frlog",
+          "category": "Molecular Biology",
+          "value": 0,
+          "image": "./media/Sanja_Hinic-Frlog.jpg"
+        },
+        {
+          "name": "Sanja Hinic-Frlog",
+          "category": "Epigenetics",
+          "value": 0,
+          "image": "./media/Sanja_Hinic-Frlog.jpg"
+        },
+        {
+          "name": "Sanja Hinic-Frlog",
+          "category": "Animal Behaviour",
+          "value": 0,
+          "image": "./media/Sanja_Hinic-Frlog.jpg"
+        },
+        {
+          "name": "Sanja Hinic-Frlog",
+          "category": "Stress and Disease Biology",
+          "value": 0,
+          "image": "./media/Sanja_Hinic-Frlog.jpg"
+        },
+        {
+          "name": "Sanja Hinic-Frlog",
+          "category": "Evolutionary Biology",
+          "value": 8,
+          "image": "./media/Sanja_Hinic-Frlog.jpg"
+        },
+        {
+          "name": "Sanja Hinic-Frlog",
+          "category": "Ecology",
+          "value": 0,
+          "image": "./media/Sanja_Hinic-Frlog.jpg"
+        },
+        {
+          "name": "Sanja Hinic-Frlog",
+          "category": "Plant Biology",
+          "value": 0,
+          "image": "./media/Sanja_Hinic-Frlog.jpg"
+        },
+        {
+          "name": "Sanja Hinic-Frlog",
+          "category": "Biological Responses to Climate Change",
+          "value": 0,
+          "image": "./media/Sanja_Hinic-Frlog.jpg"
+        },
+        {
+          "name": "Sanja Hinic-Frlog",
+          "category": "Paleontology",
+          "value": 12,
+          "image": "./media/Sanja_Hinic-Frlog.jpg"
+        },
+        {
+          "name": "Sanja Hinic-Frlog",
+          "category": "Visual Representation of Biology/Science",
+          "value": 0,
+          "image": "./media/Sanja_Hinic-Frlog.jpg"
+        },
+        {
+          "name": "Sanja Hinic-Frlog",
+          "category": "Molecular Visualization",
+          "value": 0,
+          "image": "./media/Sanja_Hinic-Frlog.jpg"
+        },
+        {
+          "name": "Sanja Hinic-Frlog",
+          "category": "Science Education",
+          "value": 15,
+          "image": "./media/Sanja_Hinic-Frlog.jpg"
         },
         {
           "name": "Jodie Jenkinson",
@@ -2210,6 +2612,12 @@
           "image": "./media/Jodie_Jenkinson.jpg"
         },
         {
+          "name": "Jodie Jenkinson",
+          "category": "Science Education",
+          "value": 0,
+          "image": "./media/Jodie_Jenkinson.jpg"
+        },
+        {
           "name": "Marc Johnson",
           "category": "Neurobiology",
           "value": 0,
@@ -2294,6 +2702,12 @@
           "image": "./media/Marc_Johnson.jpg"
         },
         {
+          "name": "Marc Johnson",
+          "category": "Science Education",
+          "value": 0,
+          "image": "./media/Marc_Johnson.jpg"
+        },
+        {
           "name": "Peter M. Kotanen",
           "category": "Neurobiology",
           "value": 0,
@@ -2377,6 +2791,14 @@
           "value": 0,
           "image": "./media/Peter_Kotanen.jpg"
         },
+        {
+          "name": "Peter M. Kotanen",
+          "category": "Science Education",
+          "value": 0,
+          "image": "./media/Peter_Kotanen.jpg"
+        }
+    ],
+    "bar_col2": [
         {
           "name": "Angela B. Lange",
           "category": "Neurobiology",
@@ -2460,9 +2882,13 @@
           "category": "Molecular Visualization",
           "value": 0,
           "image": "./media/Angela_Lange.jpg"
-        }
-  ],
-  "bar_col2": [
+        },
+        {
+          "name": "Angela B. Lange",
+          "category": "Science Education",
+          "value": 0,
+          "image": "./media/Angela_Lange.jpg"
+        },
         {
           "name": "Joel D. Levine",
           "category": "Neurobiology",
@@ -2548,6 +2974,12 @@
           "image": "./media/Joel_Levine.jpg"
         },
         {
+          "name": "Joel D. Levine",
+          "category": "Science Education",
+          "value": 0,
+          "image": "./media/Joel_Levine.jpg"
+        },
+        {
           "name": "Baohua Liu",
           "category": "Neurobiology",
           "value": 1,
@@ -2632,6 +3064,102 @@
           "image": "./media/Baohua_Liu.jpg"
         },
         {
+          "name": "Baohua Liu",
+          "category": "Science Education",
+          "value": 0,
+          "image": "./media/Baohua_Liu.jpg"
+        },
+        {
+          "name": "Dave Mazierski",
+          "category": "Neurobiology",
+          "value": 0,
+          "image": "./media/David_Mazierski.jpg"
+        },
+        {
+          "name": "Dave Mazierski",
+          "category": "Integrative Physiology",
+          "value": 0,
+          "image": "./media/David_Mazierski.jpg"
+        },
+        {
+          "name": "Dave Mazierski",
+          "category": "Cell Biology",
+          "value": 3,
+          "image": "./media/David_Mazierski.jpg"
+        },
+        {
+          "name": "Dave Mazierski",
+          "category": "Molecular Biology",
+          "value": 0,
+          "image": "./media/David_Mazierski.jpg"
+        },
+        {
+          "name": "Dave Mazierski",
+          "category": "Epigenetics",
+          "value": 0,
+          "image": "./media/David_Mazierski.jpg"
+        },
+        {
+          "name": "Dave Mazierski",
+          "category": "Animal Behaviour",
+          "value": 0,
+          "image": "./media/David_Mazierski.jpg"
+        },
+        {
+          "name": "Dave Mazierski",
+          "category": "Stress and Disease Biology",
+          "value": 0,
+          "image": "./media/David_Mazierski.jpg"
+        },
+        {
+          "name": "Dave Mazierski",
+          "category": "Evolutionary Biology",
+          "value": 8,
+          "image": "./media/David_Mazierski.jpg"
+        },
+        {
+          "name": "Dave Mazierski",
+          "category": "Ecology",
+          "value": 0,
+          "image": "./media/David_Mazierski.jpg"
+        },
+        {
+          "name": "Dave Mazierski",
+          "category": "Plant Biology",
+          "value": 0,
+          "image": "./media/David_Mazierski.jpg"
+        },
+        {
+          "name": "Dave Mazierski",
+          "category": "Biological Responses to Climate Change",
+          "value": 0,
+          "image": "./media/David_Mazierski.jpg"
+        },
+        {
+          "name": "Dave Mazierski",
+          "category": "Paleontology",
+          "value": 12,
+          "image": "./media/David_Mazierski.jpg"
+        },
+        {
+          "name": "Dave Mazierski",
+          "category": "Visual Representation of Biology/Science",
+          "value": 13,
+          "image": "./media/David_Mazierski.jpg"
+        },
+        {
+          "name": "Dave Mazierski",
+          "category": "Molecular Visualization",
+          "value": 0,
+          "image": "./media/David_Mazierski.jpg"
+        },
+        {
+          "name": "Dave Mazierski",
+          "category": "Science Education",
+          "value": 0,
+          "image": "./media/David_Mazierski.jpg"
+        },
+        {
           "name": "Shannon McCauley",
           "category": "Neurobiology",
           "value": 0,
@@ -2716,6 +3244,12 @@
           "image": "./media/Shannon_McCauley.jpg"
         },
         {
+          "name": "Shannon McCauley",
+          "category": "Science Education",
+          "value": 0,
+          "image": "./media/Shannon_McCauley.jpg"
+        },
+        {
           "name": "Bailey McMeans",
           "category": "Neurobiology",
           "value": 0,
@@ -2796,6 +3330,12 @@
         {
           "name": "Bailey McMeans",
           "category": "Molecular Visualization",
+          "value": 0,
+          "image": "./media/Bailey_McMeans.jpeg"
+        },
+        {
+          "name": "Bailey McMeans",
+          "category": "Science Education",
           "value": 0,
           "image": "./media/Bailey_McMeans.jpeg"
         },
@@ -2884,6 +3424,12 @@
           "image": "./media/Rosalind_Murray.jpg"
         },
         {
+          "name": "Rosalind Murray",
+          "category": "Science Education",
+          "value": 0,
+          "image": "./media/Rosalind_Murray.jpg"
+        },
+        {
           "name": "Rob Ness",
           "category": "Neurobiology",
           "value": 0,
@@ -2964,6 +3510,12 @@
         {
           "name": "Rob Ness",
           "category": "Molecular Visualization",
+          "value": 0,
+          "image": "./media/Rob_Ness.jpg"
+        },
+        {
+          "name": "Rob Ness",
+          "category": "Science Education",
           "value": 0,
           "image": "./media/Rob_Ness.jpg"
         },
@@ -3048,6 +3600,12 @@
         {
           "name": "Derek Ng",
           "category": "Molecular Visualization",
+          "value": 14,
+          "image": "./media/Derek_Ng.jpg"
+        },
+        {
+          "name": "Derek Ng",
+          "category": "Science Education",
           "value": 14,
           "image": "./media/Derek_Ng.jpg"
         },
@@ -3135,7 +3693,103 @@
           "value": 0,
           "image": "./media/Alex_Nguyen_Ba.jpg"
         },
-              {
+        {
+          "name": "Alex N. Nguyen Ba",
+          "category": "Science Education",
+          "value": 0,
+          "image": "./media/Alex_Nguyen_Ba.jpg"
+        },
+        {
+          "name": "Jayson Parker",
+          "category": "Neurobiology",
+          "value": 1,
+          "image": "./media/Jayson_Parker.jpg"
+        },
+        {
+          "name": "Jayson Parker",
+          "category": "Integrative Physiology",
+          "value": 2,
+          "image": "./media/Jayson_Parker.jpg"
+        },
+        {
+          "name": "Jayson Parker",
+          "category": "Cell Biology",
+          "value": 0,
+          "image": "./media/Jayson_Parker.jpg"
+        },
+        {
+          "name": "Jayson Parker",
+          "category": "Molecular Biology",
+          "value": 0,
+          "image": "./media/Jayson_Parker.jpg"
+        },
+        {
+          "name": "Jayson Parker",
+          "category": "Epigenetics",
+          "value": 0,
+          "image": "./media/Jayson_Parker.jpg"
+        },
+        {
+          "name": "Jayson Parker",
+          "category": "Animal Behaviour",
+          "value": 0,
+          "image": "./media/Jayson_Parker.jpg"
+        },
+        {
+          "name": "Jayson Parker",
+          "category": "Stress and Disease Biology",
+          "value": 0,
+          "image": "./media/Jayson_Parker.jpg"
+        },
+        {
+          "name": "Jayson Parker",
+          "category": "Evolutionary Biology",
+          "value": 0,
+          "image": "./media/Jayson_Parker.jpg"
+        },
+        {
+          "name": "Jayson Parker",
+          "category": "Ecology",
+          "value": 0,
+          "image": "./media/Jayson_Parker.jpg"
+        },
+        {
+          "name": "Jayson Parker",
+          "category": "Plant Biology",
+          "value": 0,
+          "image": "./media/Jayson_Parker.jpg"
+        },
+        {
+          "name": "Jayson Parker",
+          "category": "Biological Responses to Climate Change",
+          "value": 0,
+          "image": "./media/Jayson_Parker.jpg"
+        },
+        {
+          "name": "Jayson Parker",
+          "category": "Paleontology",
+          "value": 0,
+          "image": "./media/Jayson_Parker.jpg"
+        },
+        {
+          "name": "Jayson Parker",
+          "category": "Visual Representation of Biology/Science",
+          "value": 0,
+          "image": "./media/Jayson_Parker.jpg"
+        },
+        {
+          "name": "Jayson Parker",
+          "category": "Molecular Visualization",
+          "value": 0,
+          "image": "./media/Jayson_Parker.jpg"
+        },
+        {
+          "name": "Jayson Parker",
+          "category": "Science Education",
+          "value": 0,
+          "image": "./media/Jayson_Parker.jpg"
+        },
+        {
           "name": "Ian Orchard",
           "category": "Neurobiology",
           "value": 1,
@@ -3216,6 +3870,12 @@
         {
           "name": "Ian Orchard",
           "category": "Molecular Visualization",
+          "value": 0,
+          "image": "./media/Ian_Orchard.jpg"
+        },
+        {
+          "name": "Ian Orchard",
+          "category": "Science Education",
           "value": 0,
           "image": "./media/Ian_Orchard.jpg"
         },
@@ -3304,6 +3964,12 @@
           "image": "./media/Michael_Phillips.jpg"
         },
         {
+          "name": "Michael Phillips",
+          "category": "Science Education",
+          "value": 0,
+          "image": "./media/Michael_Phillips.jpg"
+        },
+        {
           "name": "John Ratcliffe",
           "category": "Neurobiology",
           "value": 1,
@@ -3386,9 +4052,105 @@
           "category": "Molecular Visualization",
           "value": 0,
           "image": "./media/John_Ratcliffe.jpg"
+        },
+        {
+          "name": "John Ratcliffe",
+          "category": "Science Education",
+          "value": 0,
+          "image": "./media/John_Ratcliffe.jpg"
+        },
+        {
+          "name": "Fiona Rawle",
+          "category": "Neurobiology",
+          "value": 0,
+          "image": "./media/Fiona_Rawle.jpg"
+        },
+        {
+          "name": "Fiona Rawle",
+          "category": "Integrative Physiology",
+          "value": 0,
+          "image": "./media/Fiona_Rawle.jpg"
+        },
+        {
+          "name": "Fiona Rawle",
+          "category": "Cell Biology",
+          "value": 0,
+          "image": "./media/Fiona_Rawle.jpg"
+        },
+        {
+          "name": "Fiona Rawle",
+          "category": "Molecular Biology",
+          "value": 0,
+          "image": "./media/Fiona_Rawle.jpg"
+        },
+        {
+          "name": "Fiona Rawle",
+          "category": "Epigenetics",
+          "value": 0,
+          "image": "./media/Fiona_Rawle.jpg"
+        },
+        {
+          "name": "Fiona Rawle",
+          "category": "Animal Behaviour",
+          "value": 0,
+          "image": "./media/Fiona_Rawle.jpg"
+        },
+        {
+          "name": "Fiona Rawle",
+          "category": "Stress and Disease Biology",
+          "value": 0,
+          "image": "./media/Fiona_Rawle.jpg"
+        },
+        {
+          "name": "Fiona Rawle",
+          "category": "Evolutionary Biology",
+          "value": 8,
+          "image": "./media/Fiona_Rawle.jpg"
+        },
+        {
+          "name": "Fiona Rawle",
+          "category": "Ecology",
+          "value": 0,
+          "image": "./media/Fiona_Rawle.jpg"
+        },
+        {
+          "name": "Fiona Rawle",
+          "category": "Plant Biology",
+          "value": 0,
+          "image": "./media/Fiona_Rawle.jpg"
+        },
+        {
+          "name": "Fiona Rawle",
+          "category": "Biological Responses to Climate Change",
+          "value": 0,
+          "image": "./media/Fiona_Rawle.jpg"
+        },
+        {
+          "name": "Fiona Rawle",
+          "category": "Paleontology",
+          "value": 0,
+          "image": "./media/Fiona_Rawle.jpg"
+        },
+        {
+          "name": "Fiona Rawle",
+          "category": "Visual Representation of Biology/Science",
+          "value": 13,
+          "image": "./media/Fiona_Rawle.jpg"
+        },
+        {
+          "name": "Fiona Rawle",
+          "category": "Molecular Visualization",
+          "value": 0,
+          "image": "./media/Fiona_Rawle.jpg"
+        },
+        {
+          "name": "Fiona Rawle",
+          "category": "Science Education",
+          "value": 15,
+          "image": "./media/Fiona_Rawle.jpg"
         }
-  ], 
-  "bar_col3": [
+    ], 
+    "bar_col3": [
         {
           "name": "Robert R. Reisz",
           "category": "Neurobiology",
@@ -3474,6 +4236,12 @@
           "image": "./media/Robert_Reisz.jpg"
         },
         {
+          "name": "Robert R. Reisz",
+          "category": "Science Education",
+          "value": 0,
+          "image": "./media/Robert_Reisz.jpg"
+        },
+        {
           "name": "Arbora Resulaj",
           "category": "Neurobiology",
           "value": 1,
@@ -3554,6 +4322,12 @@
         {
           "name": "Arbora Resulaj",
           "category": "Molecular Visualization",
+          "value": 0,
+          "image": "./media/Arbora_Resulaj.jpg"
+        },
+        {
+          "name": "Arbora Resulaj",
+          "category": "Science Education",
           "value": 0,
           "image": "./media/Arbora_Resulaj.jpg"
         },
@@ -3642,6 +4416,102 @@
           "image": "./media/Ho_Sung_Rhee.jpg"
         },
         {
+          "name": "Ho Sung Rhee",
+          "category": "Science Education",
+          "value": 0,
+          "image": "./media/Ho_Sung_Rhee.jpg"
+        },
+        {
+          "name": "Christoph Richter",
+          "category": "Neurobiology",
+          "value": 0,
+          "image": "./media/Christoph_Richter.jpg"
+        },
+        {
+          "name": "Christoph Richter",
+          "category": "Integrative Physiology",
+          "value": 0,
+          "image": "./media/Christoph_Richter.jpg"
+        },
+        {
+          "name": "Christoph Richter",
+          "category": "Cell Biology",
+          "value": 0,
+          "image": "./media/Christoph_Richter.jpg"
+        },
+        {
+          "name": "Christoph Richter",
+          "category": "Molecular Biology",
+          "value": 0,
+          "image": "./media/Christoph_Richter.jpg"
+        },
+        {
+          "name": "Christoph Richter",
+          "category": "Epigenetics",
+          "value": 0,
+          "image": "./media/Christoph_Richter.jpg"
+        },
+        {
+          "name": "Christoph Richter",
+          "category": "Animal Behaviour",
+          "value": 6,
+          "image": "./media/Christoph_Richter.jpg"
+        },
+        {
+          "name": "Christoph Richter",
+          "category": "Stress and Disease Biology",
+          "value": 0,
+          "image": "./media/Christoph_Richter.jpg"
+        },
+        {
+          "name": "Christoph Richter",
+          "category": "Evolutionary Biology",
+          "value": 8,
+          "image": "./media/Christoph_Richter.jpg"
+        },
+        {
+          "name": "Christoph Richter",
+          "category": "Ecology",
+          "value": 9,
+          "image": "./media/Christoph_Richter.jpg"
+        },
+        {
+          "name": "Christoph Richter",
+          "category": "Plant Biology",
+          "value": 0,
+          "image": "./media/Christoph_Richter.jpg"
+        },
+        {
+          "name": "Christoph Richter",
+          "category": "Biological Responses to Climate Change",
+          "value": 0,
+          "image": "./media/Christoph_Richter.jpg"
+        },
+        {
+          "name": "Christoph Richter",
+          "category": "Paleontology",
+          "value": 0,
+          "image": "./media/Christoph_Richter.jpg"
+        },
+        {
+          "name": "Christoph Richter",
+          "category": "Visual Representation of Biology/Science",
+          "value": 0,
+          "image": "./media/Christoph_Richter.jpg"
+        },
+        {
+          "name": "Christoph Richter",
+          "category": "Molecular Visualization",
+          "value": 0,
+          "image": "./media/Christoph_Richter.jpg"
+        },
+        {
+          "name": "Christoph Richter",
+          "category": "Science Education",
+          "value": 0,
+          "image": "./media/Christoph_Richter.jpg"
+        },
+        {
           "name": "Adriano Senatore",
           "category": "Neurobiology",
           "value": 1,
@@ -3726,6 +4596,12 @@
           "image": "./media/Adriano_Senatore.jpg"
         },
         {
+          "name": "Adriano Senatore",
+          "category": "Science Education",
+          "value": 0,
+          "image": "./media/Adriano_Senatore.jpg"
+        },
+        {
           "name": "Steven M. Short",
           "category": "Neurobiology",
           "value": 0,
@@ -3806,6 +4682,12 @@
         {
           "name": "Steven M. Short",
           "category": "Molecular Visualization",
+          "value": 0,
+          "image": "./media/Steven_Short.jpg"
+        },
+        {
+          "name": "Steven M. Short",
+          "category": "Science Education",
           "value": 0,
           "image": "./media/Steven_Short.jpg"
         },
@@ -3894,6 +4776,12 @@
           "image": "./media/Sasa_Stefanovic.jpg"
         },
         {
+          "name": "Sasa Stefanovic",
+          "category": "Science Education",
+          "value": 0,
+          "image": "./media/Sasa_Stefanovic.jpg"
+        },
+        {
           "name": "Bryan Stewart",
           "category": "Neurobiology",
           "value": 1,
@@ -3974,6 +4862,12 @@
         {
           "name": "Bryan Stewart",
           "category": "Molecular Visualization",
+          "value": 0,
+          "image": "./media/Bryan_Stewart.jpg"
+        },
+        {
+          "name": "Bryan Stewart",
+          "category": "Science Education",
           "value": 0,
           "image": "./media/Bryan_Stewart.jpg"
         },
@@ -4062,6 +4956,12 @@
           "image": "./media/Helene_Wagner.jpg"
         },
         {
+          "name": "Helene Wagner",
+          "category": "Science Education",
+          "value": 0,
+          "image": "./media/Helene_Wagner.jpg"
+        },
+        {
           "name": "Shelley Wall",
           "category": "Neurobiology",
           "value": 0,
@@ -4142,6 +5042,12 @@
         {
           "name": "Shelley Wall",
           "category": "Molecular Visualization",
+          "value": 0,
+          "image": "./media/Shelley_Wall.jpg"
+        },
+        {
+          "name": "Shelley Wall",
+          "category": "Science Education",
           "value": 0,
           "image": "./media/Shelley_Wall.jpg"
         },
@@ -4230,6 +5136,12 @@
           "image": "./media/Brandon_Walters.jpg"
         },
         {
+          "name": "Brandon Walters",
+          "category": "Science Education",
+          "value": 0,
+          "image": "./media/Brandon_Walters.jpg"
+        },
+        {
           "name": "Nicholas Woolridge",
           "category": "Neurobiology",
           "value": 0,
@@ -4311,6 +5223,12 @@
           "name": "Nicholas Woolridge",
           "category": "Molecular Visualization",
           "value": 14,
+          "image": "./media/Nicholas_Woolridge.jpg"
+        },
+        {
+          "name": "Nicholas Woolridge",
+          "category": "Science Education",
+          "value": 0,
           "image": "./media/Nicholas_Woolridge.jpg"
         }
   ]
