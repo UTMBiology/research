@@ -4058,7 +4058,9 @@
           "category": "Science Education",
           "value": 0,
           "image": "./media/John_Ratcliffe.jpg"
-        },
+        }
+    ], 
+    "bar_col3": [
         {
           "name": "Fiona Rawle",
           "category": "Neurobiology",
@@ -4148,9 +4150,7 @@
           "category": "Science Education",
           "value": 15,
           "image": "./media/Fiona_Rawle.jpg"
-        }
-    ], 
-    "bar_col3": [
+        },
         {
           "name": "Robert R. Reisz",
           "category": "Neurobiology",

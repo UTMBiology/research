@@ -77,9 +77,9 @@
 var cat_num = 15;
 
 // set the dimensions and margins of the graph
-var margin = {top: 30, right: 30, bottom: 30, left: 200},
+var margin = {top: 30, right: 30, bottom: 30, left: 30},
   width = 380 - margin.left - margin.right,
-  height = 750 - margin.top - margin.bottom;
+  height = 800 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page - Column 1
 var svg = d3.select("#col1")
@@ -170,7 +170,7 @@ d3.json("./faculty.json", function(data) {
   var x = d3.scaleBand()
     .range([ 0, width ])
     .domain(myVars)
-    .padding(0.01);
+    .padding(0.2); // 0.01
   svg.append("g")
     .attr("transform", "translate(0," + height + ")")
   
@@ -362,6 +362,7 @@ d3.json("./faculty.json", function(data) {
       .attr("width", 10 )
       .attr("height", y2.bandwidth() )
       .style("fill", function(d) { 
+        console.log(d.value);
         if (d.value == 0) {
           return "transparent";
         } else {
@@ -434,7 +435,8 @@ d3.json("./faculty.json", function(data) {
   
   // BUILD Y scales and axis: column 3
   var y3 = d3.scaleBand()
-  .range([ height*0.87, 0 ])
+  .range([ height, 0 ])
+  //   .range([ height*0.87, 0 ]) << changed by AJ
   .domain(myGroup3.reverse())
   .padding(0.45);
 
