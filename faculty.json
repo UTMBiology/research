@@ -151,7 +151,7 @@
             "linkedin": "https://www.linkedin.com/in/jodiejenkinson/",
             "website": "www.sciencevis.ca",
             "bio": "My research focuses on the role that visual representations play in learning. This includes investigation along various lines of inquiry including the efficacy of visual media within different learning contexts, the design of visual representations for optimal impact, and the development of standards of visual communication in the scientific visualization community. In the Biomedical Communications graduate program, I teach Research Methods for Visual Communication and Information Design and Data Visualization.",
-            "category": ["Visual Representation", "Molecular Visualization"],
+            "category": ["Visual Representation of Science", "Molecular Visualization"],
             "keyword": ["Molecular Visualization", "Visual Complexity", "Dynamic Representation"]
         },
         {
@@ -341,7 +341,7 @@
             "linkedin": "https://www.linkedin.com/in/derekpng/",
             "website": "www.ocw.utoronto.ca/media-ug-life-science",
             "bio": "My research focuses on developing and evaluating novel data visualization and interaction methods and tools for knowledge discovery, interpretation, and communication in molecular biology. I teach courses on web-based health and science communication, interactive media design and development, and biomolecular visualization.",
-            "category": ["Molecular Visualization", "Visual Representation", "Molecular Biology"],
+            "category": ["Molecular Visualization", "Visual Representation of Science", "Molecular Biology"],
             "keyword": ["Biochemistry", "Data Visualization", "Interactive Media", "Education", "Science Communication"],
             "courses": ["HSC401H Web-based Health & Science Communication"]
         },
@@ -429,7 +429,7 @@
             "email": "robert.reisz@utoronto.ca",
             "website": "www.reiszlab.weebly.com/",
             "bio": "Vertebrate Paleontology. During much of my career I have studied the evolution of terrestrial vertebrates with a focus on the origin of amniotes, their anatomy, phylogeny and ecology. Paleozoic amniotes not only record the first successful adaptation of vertebrates to a fully terrestrial mode of life, but are also at the base of subsequent adaptive radiations that eventually gave rise to modern reptiles, birds and mammals. These fossils therefore provide a unique opportunity for studies of the origin and evolutionary radiation of all amniotes. I have also studied the anatomy, embryology and growth, and evolutionary relationships of a variety of other vertebrates, including lungfish, dissorophoid amphibians, diadectomorph tetrapods, and basal dinosaurs.",
-            "category": ["Evolutionary Biology", "Biological Responses to Climate Change", "Visual Representation", "Paleontology"],
+            "category": ["Evolutionary Biology", "Biological Responses to Climate Change", "Visual Representation of Science", "Paleontology"],
             "keyword": ["Evolution of Vertebrates"],
             "courses": ["BIO 354H5 S Vertebrate Form and Function", "BIO356G5 S Major features of Vertebrate Evolution"]
         },
@@ -445,7 +445,7 @@
             "email": "arbora.resulaj@utoronto.ca ",
             "website": "www.resulajlab.com",
             "bio": "The lab’s research is focused on understanding how neural circuits enable perception, memory, and decision-making. Using mice as a model system, Dr. Resulaj’s lab currently uses techniques and approaches such as electrophysiology, behaviour, and optogenetics to study short term memory, and its role in visual cognition.",
-            "category": ["Neurobiology", "Integrative Physiology", "Animal Behaviour", "Visual Representation"]
+            "category": ["Neurobiology", "Integrative Physiology", "Animal Behaviour", "Visual Representation of Science"]
         },
         {
             "id": "Ho Sung Rhee",
@@ -577,7 +577,7 @@
             "linkedin": "https://www.linkedin.com/in/shelley-wall-3708b6a/",
             "website": "www.shelleywall.layfigures.com",
             "bio": "My research interests include graphic medicine, patient education, the visual construction of gender in medical discourse, the history of medical and bioscientific illustration, and the socio-cultural dimensions of medical visualization. I teach courses in bioscientific, pathological, and neuroanatomical illustration, and in graphic medicine. As Illustrator-in-Residence in the Temerty Faculty of Medicine, I conduct elective workshops in the visual medical humanities and the use of comics to build empathy and reflective capacity in the training of healthcare professionals.",
-            "category": ["Visual Representation"],
+            "category": ["Visual Representation of Science"],
             "keyword": ["Graphic Medicine", "Histories of Visual Representation", "Communication", "Patient Education", "Visual Representations of Sex and Gender"],
             "courses": ["HSC302H Biocommunication Visualization"]
         },
@@ -617,7 +617,7 @@
             "website": "www.nickwoolridge.xyz",
             "linkedin": "https://www.linkedin.com/in/nick-woolridge-1a23b326/",
             "bio": "I conduct research in risk visualization, cell and molecular modelling, and mobile applications in health. I co-authored with Michael J. Wiley Anatomy 300/303 Interactive Lab Companion, and co-authored with Jason Sharpe and Charles Lumsden In Silico: 3D Animation and Simulation of Cell Biology with Maya and MEL, a book on 3D graphics programming in biological visualization. From 2008-2019 I was the Director of the Master of Science in Biomedical Communications program. In the Masters program, I teach the first half of MSC2003Y (Biomedical Communications technology), which focuses on introductory organic modelling, and MSC2015H (Interpretive Visualization: Cinematic Design and Preproduction), in which students develop scripts storyboards and animatics, in order to design cinematic stories.",
-            "category": ["Visual Representation", "Molecular Visualization"],
+            "category": ["Visual Representation of Science", "Molecular Visualization"],
             "keyword": ["Medical Illustration", "Science Communication"]
         },
         {
@@ -1701,7 +1701,7 @@
         },
         {
           "name": "Steven Chatfield",
-          "category": "Visual Representation of Biology/Science",
+          "category": "Visual Representation of Science",
           "value": 0,
           "image": "./media/Steven_Chatfield.jpg"
         },
@@ -1881,7 +1881,7 @@
         },
         {
           "name": "Michael Corrin",
-          "category": "Visual Representation of Biology/Science",
+          "category": "Visual Representation of Science",
           "value": 13,
           "image": "./media/Michael_Corrin.jpg"
         },
@@ -1971,7 +1971,7 @@
         },
         {
           "name": "Marc Dryer",
-          "category": "Visual Representation of Biology/Science",
+          "category": "Visual Representation of Science",
           "value": 13,
           "image": "./media/Marc_Dryer.jpg"
         },
@@ -2511,7 +2511,7 @@
         },
         {
           "name": "Sanja Hinic-Frlog",
-          "category": "Visual Representation of Biology/Science",
+          "category": "Visual Representation of Science",
           "value": 0,
           "image": "./media/Sanja_Hinic-Frlog.jpg"
         },
@@ -3143,7 +3143,7 @@
         },
         {
           "name": "Dave Mazierski",
-          "category": "Visual Representation of Biology/Science",
+          "category": "Visual Representation of Science",
           "value": 13,
           "image": "./media/David_Mazierski.jpg"
         },
@@ -3606,7 +3606,7 @@
         {
           "name": "Derek Ng",
           "category": "Science Education",
-          "value": 14,
+          "value": 0,
           "image": "./media/Derek_Ng.jpg"
         },
         {
@@ -3683,7 +3683,7 @@
         },
         {
           "name": "Alex N. Nguyen Ba",
-          "category": "Visual Representation of Biology/Science",
+          "category": "Visual Representation of Science",
           "value": 0,
           "image": "./media/Alex_Nguyen_Ba.jpg"
         },
@@ -3773,7 +3773,7 @@
         },
         {
           "name": "Jayson Parker",
-          "category": "Visual Representation of Biology/Science",
+          "category": "Visual Representation of Science",
           "value": 0,
           "image": "./media/Jayson_Parker.jpg"
         },
@@ -3863,7 +3863,7 @@
         },
         {
           "name": "Ian Orchard",
-          "category": "Visual Representation of Biology/Science",
+          "category": "Visual Representation of Science",
           "value": 0,
           "image": "./media/Ian_Orchard.jpg"
         },
@@ -4135,7 +4135,7 @@
         },
         {
           "name": "Fiona Rawle",
-          "category": "Visual Representation of Biology/Science",
+          "category": "Visual Representation of Science",
           "value": 13,
           "image": "./media/Fiona_Rawle.jpg"
         },
@@ -4495,7 +4495,7 @@
         },
         {
           "name": "Christoph Richter",
-          "category": "Visual Representation of Biology/Science",
+          "category": "Visual Representation of Science",
           "value": 0,
           "image": "./media/Christoph_Richter.jpg"
         },
@@ -4585,7 +4585,7 @@
         },
         {
           "name": "Adriano Senatore",
-          "category": "Visual Representation of Biology/Science",
+          "category": "Visual Representation of Science",
           "value": 0,
           "image": "./media/Adriano_Senatore.jpg"
         },
