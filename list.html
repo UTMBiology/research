@@ -121,7 +121,7 @@
              var htmlContent = "<div class='row'>"
              htmlContent += '<div class="column left">' + "<img src='" + f.img + "' style='border-radius:50%; margin-bottom:-10px;'>" + '</div>'
              htmlContent += '<div class="column right">' + "<h1>" + f.id + "<\/h1>" + "<h2>" + f.degree + "<\/h2>"
-             htmlContent += '<p style="margin-top:5px;">' + f.position + '</br>' + retrieveText(f.affiliation) + retrieveText(f.dept) + '</br>' + checkEmpty(f.office) + checkEmpty(f.officephone) + '<a href="mailto:' + f.email + '" target="_blank">' + f.email + '</a>' + '</br>' + checkWebsite(f.website) + "</p>"
+             htmlContent += '<p style="margin-top:5px;">' + f.position + '</br>' + retrieveText(f.affiliation) + retrieveText(f.dept) + '</br>' + checkEmpty(f.office) + checkEmpty(f.officephone) + '<a href="mailto:' + f.email + '" target="_blank">' + f.email + '</a>' + '</br>' + checkWebsite(f.website) + '</p>'
              htmlContent += '<p style="margin-top:-5px;">' + checkTwitter(f.twitter) + checkInstagram(f.instagram) + checkLinkedIn(f.linkedin) + '</p>'
              htmlContent += '<h3>' + 'Research Interests' + '</h3>'
              htmlContent += '<p style="margin-top:-10px;">' + f.bio + '</p>'
