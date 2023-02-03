@@ -38,7 +38,8 @@
             "website": "www.utmchenglab.wordpress.com",
             "bio": "In the Cheng lab, we seek to understand the molecular and cellular mechanisms that govern circadian rhythms in mammals using our animal model of choice, the lab mouse. We are also interested in other aspects of cellular or brain function, including neurodevelopment, neurodegeneration, neurogenesis, mood regulation, cellular metabolism, protein trafficking, and transcriptional regulation.",
             "category": ["Neurobiology", "Cell Biology", "Molecular Biology", "Animal Behaviour", "Stress and Disease Biology"],
-            "keyword": ["Circadian Rhythms", "Chronobiology", "Disease Models"]
+            "keyword": ["Circadian Rhythms", "Chronobiology", "Disease Models"],
+            "courses": ["N/A"]
         },
         {
             "id": "Mark Currie",
@@ -112,7 +113,8 @@
             "website": "www.ensmingerlab.net",
             "bio": "The importance of photosynthesis and carbon uptake by forests in defining the extent and scale of predicted future global environmental change is a major theme of my research. Our research investigates interactions of temperature, photoperiod, water availability and biotic stresses, and how metabolic imbalances caused by these stresses are used as signals for the regulation of primary carbon and isoprenoid metabolism of trees. We combine laboratory and field observations to investigate the factors impacting metabolism and photosynthesis of trees from molecular to leaf, species and ecosystem level.",
             "category": ["Molecular Biology", "Ecology", "Biological Responses to Climate Change", "Stress and Disease Biology", "Plant Biology"],
-            "keyword": ["Ecophysiology and Molecular Biology of Trees", "Global Change Biology", "Environmental Stress Physiology", "Photosynthesis"]
+            "keyword": ["Ecophysiology and Molecular Biology of Trees", "Global Change Biology", "Environmental Stress Physiology", "Photosynthesis"],
+            "courses": ["N/A"]
         },
         {
             "id": "Ted Erclik",
@@ -152,7 +154,8 @@
             "website": "www.sciencevis.ca",
             "bio": "My research focuses on the role that visual representations play in learning. This includes investigation along various lines of inquiry including the efficacy of visual media within different learning contexts, the design of visual representations for optimal impact, and the development of standards of visual communication in the scientific visualization community. In the Biomedical Communications graduate program, I teach Research Methods for Visual Communication and Information Design and Data Visualization.",
             "category": ["Visual Representation of Science", "Molecular Visualization"],
-            "keyword": ["Molecular Visualization", "Visual Complexity", "Dynamic Representation"]
+            "keyword": ["Molecular Visualization", "Visual Complexity", "Dynamic Representation"],
+            "courses": ["N/A"]
         },
         {
             "id": "Marc Johnson",
@@ -207,7 +210,8 @@
             "website": "www.utm.utoronto.ca/lange-lab/",
             "bio": "The goals of my research program are to study how cells, tissues and organ systems are regulated and integrated by neurons and neuroendocrine pathways that utilize a variety of neuroactive chemicals, receptors and second messengers. We determine how these systems participate in successful behaviours, using a variety of insect models. Our current research objectives involve discovery in the medically-important disease vector, <i>Rhodnius prolixus</i>, where we examine the integrative control of blood-gorging, homeostasis, reproduction, and the identification and molecular characterization of signaling pathways. Our scientific approach is holistic and incorporates multi-facetted aspects from gene to behaviour. ",
             "category": ["Neurobiology", "Integrative Physiology", "Molecular Biology", "Cell Biology"],
-            "keyword": ["Insect", "Neuropeptide", "Neurohormone", "Amines", "Receptor", "Reproduction", "Feeding", "Diuresis"]
+            "keyword": ["Insect", "Neuropeptide", "Neurohormone", "Amines", "Receptor", "Reproduction", "Feeding", "Diuresis"],
+            "courses": ["N/A"]
         },
         {
             "id": "Joel D. Levine",
@@ -228,7 +232,8 @@
             "website": "www.levinelab.com",
             "bio": "We study social networks and how the social environment influences individual behaviour.",
             "category": ["Neurobiology", "Integrative Physiology", "Molecular Biology", "Animal Behaviour", "Evolutionary Biology", "Ecology"],
-            "keyword": ["Social Networks", "<i>Drosophila</i>", "Genetics", "Biological Timing", "Peripheral Oscillators", "Social Recognition", "Pheromonal Communication"]
+            "keyword": ["Social Networks", "<i>Drosophila</i>", "Genetics", "Biological Timing", "Peripheral Oscillators", "Social Recognition", "Pheromonal Communication"],
+            "courses": ["N/A"]
         },
         {
             "id": "Baohua Liu",
@@ -377,7 +382,8 @@
             "website": "www.utm.utoronto.ca/orchard-lab/",
             "bio": "The central theme of my research program is the functioning of the nervous system, using insects as experimental models.  We are establishing the mechanisms by which the nervous system communicates information; examining hormonal, synaptic, and modulatory mechanisms, using neurophysiological, neurochemical, endocrinological, and molecular biological techniques. In particular, we are interested in the role of peptides and amines as neurohormones, released into the blood to co-ordinate activities of diverse groups of tissues, and as neuromodulators, modulating the ongoing activities of distinct pathways.",
             "category": ["Cell Biology", "Neurobiology", "Neuroscience & Physiology", "Physiology", "Molecular Biology"],
-            "keyword": ["Invertebrate", "Insect", "Neuroendocrinology", "Neurohormones", "GPCRs", "Diuresis", "Reproduction", "Chagas disease"]
+            "keyword": ["Invertebrate", "Insect", "Neuroendocrinology", "Neurohormones", "GPCRs", "Diuresis", "Reproduction", "Chagas disease"],
+            "courses": ["N/A"]
         },
         {
             "id": "Michael Phillips",
@@ -445,7 +451,8 @@
             "email": "arbora.resulaj@utoronto.ca ",
             "website": "www.resulajlab.com",
             "bio": "The lab’s research is focused on understanding how neural circuits enable perception, memory, and decision-making. Using mice as a model system, Dr. Resulaj’s lab currently uses techniques and approaches such as electrophysiology, behaviour, and optogenetics to study short term memory, and its role in visual cognition.",
-            "category": ["Neurobiology", "Integrative Physiology", "Animal Behaviour", "Visual Representation of Science"]
+            "category": ["Neurobiology", "Integrative Physiology", "Animal Behaviour", "Visual Representation of Science"],
+            "courses": ["N/A"]
         },
         {
             "id": "Ho Sung Rhee",
@@ -481,7 +488,8 @@
             "website": "www.senatorelab.com",
             "bio": "We study the structure-function properties and evolution of ion channels and neurotransmitter receptors.",
             "category": ["Neurobiology", "Integrative Physiology", "Cell Biology", "Molecular Biology", "Animal Behaviour", "Evolutionary Biology"],
-            "keyword": ["Evolution of Ion Channels and Neurotransmitter Receptors"]
+            "keyword": ["Evolution of Ion Channels and Neurotransmitter Receptors"],
+            "courses": ["N/A"]
         },
         {
             "id": "Steven M. Short",
@@ -559,7 +567,8 @@
             "website": "www.sites.utm.utoronto.ca/wagnerlab",
             "bio": "Spatial Ecology: Assess spatial patterns within populations and communities to infer underlying processes and assembly rules. Metacommunity dynamics: Relate scale-dependent components of species diversity within and among community to landscape structure and landscape change. Landscape Genetics: Provide a mechanistic link by testing landscape effects on gene flow.",
             "category": ["Ecology", "Evolutionary Biology", "Biological Responses to Climate Change"],
-            "keyword": ["Landscape Ecology", "Landscape Genetics"]
+            "keyword": ["Landscape Ecology", "Landscape Genetics"],
+            "courses": ["N/A"]
         },
         {
             "id": "Shelley Wall",
@@ -618,7 +627,8 @@
             "linkedin": "https://www.linkedin.com/in/nick-woolridge-1a23b326/",
             "bio": "I conduct research in risk visualization, cell and molecular modelling, and mobile applications in health. I co-authored with Michael J. Wiley Anatomy 300/303 Interactive Lab Companion, and co-authored with Jason Sharpe and Charles Lumsden In Silico: 3D Animation and Simulation of Cell Biology with Maya and MEL, a book on 3D graphics programming in biological visualization. From 2008-2019 I was the Director of the Master of Science in Biomedical Communications program. In the Masters program, I teach the first half of MSC2003Y (Biomedical Communications technology), which focuses on introductory organic modelling, and MSC2015H (Interpretive Visualization: Cinematic Design and Preproduction), in which students develop scripts storyboards and animatics, in order to design cinematic stories.",
             "category": ["Visual Representation of Science", "Molecular Visualization"],
-            "keyword": ["Medical Illustration", "Science Communication"]
+            "keyword": ["Medical Illustration", "Science Communication"],
+            "courses": ["N/A"]
         },
         {
             "id": "Steven Chatfield",
