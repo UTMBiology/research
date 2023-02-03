@@ -26,7 +26,7 @@
             "colour": "#4ca8bc",
             "degree": "PhD",
             "position": "Professor",
-            "affiliation": "Canada Research Chair in Molecular Genetics of Biological Clocks",
+            "affiliation": ["Canada Research Chair in Molecular Genetics of Biological Clocks"],
             "dept": ["Cell and Systems Biology"],
             "office": "DV3044",
             "officephone": "(905) 569-4299",
