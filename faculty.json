@@ -482,11 +482,12 @@
             "dept": ["Cell and Systems Biology"],
             "office": "DV3033",
             "officephone": "(905) 569-4322",
+            "lab": "DV1075",
             "email": "adriano.senatore@utoronto.ca",
             "twitter": "LabSenatore",
             "linkedin": "https://www.linkedin.com/in/adriano-senatore-567b23a6/",
             "website": "www.senatorelab.com",
-            "bio": "We study the structure-function properties and evolution of ion channels and neurotransmitter receptors.",
+            "bio": "In the Senatore lab, we study the molecular biology, electrophysiology, protein complexing, and evolution of voltage-gated calcium channels and synaptic receptors that are activated by glutamate and glycine (i.e., ionotropic glutamate receptors) as well as protons and neuropeptides (i.e., degenerin/ENaC sodium channels). Additionally, we explore the contributions of these various channels and receptors to cellular physiology and signaling in some of the most divergent animal lineages.",
             "category": ["Neurobiology", "Integrative Physiology", "Cell Biology", "Molecular Biology", "Animal Behaviour", "Evolutionary Biology"],
             "keyword": ["Evolution of Ion Channels and Neurotransmitter Receptors"],
             "courses": ["N/A"]
