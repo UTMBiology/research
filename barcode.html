@@ -40,6 +40,7 @@
     float: left;
     width: 33.33%;
   }
+
   
   /*#my_dataviz {
     position:absolute;
@@ -54,6 +55,7 @@
   .y line, path{
     stroke: rgba(255, 255, 255, 0);
   }
+
 
   ::-webkit-scrollbar {
     width: 8px;
@@ -76,16 +78,25 @@
 //ENTER NUMBER OF CATEGORIES:
 var cat_num = 15;
 
+
+// DN Add <---
+var rowPadding = 0;
+
+var dataPointsHeight = 30;
+
 // set the dimensions and margins of the graph
 var margin = {top: 30, right: 30, bottom: 30, left: 200},
   width = 380 - margin.left - margin.right,
-  height = 750 - margin.top - margin.bottom;
+  // height = 750 - margin.top - margin.bottom;
+  height = 1000 - margin.top - margin.bottom + (rowPadding * cat_num);
 
 // append the svg object to the body of the page - Column 1
 var svg = d3.select("#col1")
 .append("svg")
   .attr("width", width + margin.left + margin.right)
   .attr("height", height + margin.top + margin.bottom)
+  // .attr("width", 100 + "%")
+  // .attr("height", 100 + "%")
 .append("g")
   .attr("transform",
         "translate(" + (margin.left-125) + "," + margin.top + ")")
@@ -119,7 +130,8 @@ var defsS = svg.append("defs")
       .append("circle")
         .attr("r", 20)
         .attr('cx',0 - 28)
-        .attr('cy',0 - 12); // 10
+        // .attr('cy',0 - 12); // 10
+        .attr('cy',0 - 8); // 10
 
 
 //Colours for each bar
@@ -134,6 +146,8 @@ var barImg3 = [];
 var myGroup1 = []; //prof names
 var myGroup2 = [];
 var myGroup3 = [];
+
+
 
 
 // CREATE COLUMN 1
@@ -196,8 +210,12 @@ d3.json("./faculty.json", function(data) {
           .attr('xlink:href', barImg1[i]) //add profile img
           .attr('x',0 - 50)
           .attr('y',0 - 33)
+          .attr('y',0 - 29)
           .attr('width', 45)
-          .attr('height', 45);
+          .attr('height', 45)
+
+                 // DN ADD <-----
+          .attr("transform", "translate(" + 0 + "," + rowPadding + ")");
         });
   
   
@@ -206,32 +224,44 @@ d3.json("./faculty.json", function(data) {
   svg.selectAll("g.datapoints")
      .data(barcode, function(d) {return d.name+':'+d.category;})
       .enter()
-      .append("rect")
        .filter(function(d, i) {
          if (i%cat_num === 0) { // number of research categories 
            return d;
          }
        })
+      .append("rect")
+
        .attr('y', function(d) {
          return y(d.name);
        })
        .attr('fill', 'rgb(230,230,230)')
        .attr("opacity", 0.7)
-       .attr('height', function(d) {
-         return y.bandwidth();
-       })
-       .attr('width', 10*(cat_num+1)); // number of categories + 1 -> such that the total width of the background grey fills in the full width of the data visualization
+       // .attr('height', function(d) {
+       //   return y.bandwidth();
+       // })
+       .attr('height', dataPointsHeight)
+       .attr('width', 10*(cat_num+1)) // number of categories + 1 -> such that the total width of the background grey fills in the full width of the data visualization
+
+       // DN ADD <-----
+       .attr("transform", function(d, i) { return "translate(" + 0 + "," + i*rowPadding + ")"});
   
   
   //DATA POINTS - each barcode
   svg.selectAll("g.datapoints")
       .data(barcode, function(d) {return d.name+':'+d.category;})
       .enter()
+       // .filter(function(d, i) {
+       //   if (i%cat_num === 0) { // number of research categories 
+       //     return d;
+       //   }
+       // })
       .append("rect")
+
       .attr("y", function(d) { return y(d.name) })
       .attr("x", function(d) { return x(d.category) })
       .attr("width", 10 )
-      .attr("height", y.bandwidth() )
+      // .attr("height", y.bandwidth())
+      .attr('height', dataPointsHeight)
       .style("fill", function(d) { 
         console.log(d.value);
         if (d.value == 0) {
@@ -243,14 +273,25 @@ d3.json("./faculty.json", function(data) {
       })
       .on("mouseover", mouseover)
       .on("mousemove", mousemove1)
-      .on("mouseleave", mouseleave);
+      .on("mouseleave", mouseleave)
+
+
+             // DN ADD <-----
+      // .attr("transform", function(d, i) { if (i%cat_num === 0) {return "translate(" + 0 + "," + i*rowPadding + ")"}});
+      .attr("transform", function(d, i) { return "translate(" + 0 + "," + Math.floor(i/cat_num)*rowPadding + ")"});
   
   
   // PROF NAME
   svg.selectAll("g.datapoints")
      .data(barcode, function(d) {return d.name+':'+d.category;}) 
       .enter()
+       .filter(function(d, i) {
+         if (i%cat_num === 0) { // number of research categories 
+           return d;
+         }
+       })
     .append("text")
+
     .text(function(d) {                 
       return d.name;
     })
@@ -260,7 +301,10 @@ d3.json("./faculty.json", function(data) {
     .attr("font-family", "Inter, sans-serif")
     .attr("font-size", "11.5px")
     .attr("fill", "#002A5C")
-    .attr("opacity", 0.2);
+    .attr("opacity", 1)
+
+       // DN ADD <-----
+    .attr("transform", function(d, i) { return "translate(" + 0 + "," + i*rowPadding + ")"});
     
 });
 
@@ -324,7 +368,7 @@ d3.json("./faculty.json", function(data) {
             .style("clip-path", "url(#clipSmall)")
             .attr('xlink:href', barImg2[i]) //add profile img
             .attr('x',0 - 50)
-            .attr('y',0 - 33)
+            .attr('y',0 - 29)
             .attr('width',45)
             .attr('height',45);
       });
@@ -335,21 +379,27 @@ d3.json("./faculty.json", function(data) {
   svg2.selectAll("g.datapoints")
      .data(barcode, function(d) {return d.name+':'+d.category;})
       .enter()
-      .append("rect")
+
        .filter(function(d, i) {
          if (i%cat_num === 0) { // number of research categories 
            return d;
          }
        })
+      .append("rect")
+
        .attr('y', function(d) {
          return y2(d.name);
        })
        .attr('fill', 'rgb(230,230,230)')
        .attr("opacity", 0.7)
-       .attr('height', function(d) {
-         return y2.bandwidth();
-       })
-       .attr('width', 10*(cat_num+1)); // number of categories + 1 -- such that the total width of the background grey fills in the full width of the data visualization
+       // .attr('height', function(d) {
+       //   return y2.bandwidth();
+       // })
+       .attr('height', dataPointsHeight)
+       .attr('width', 10*(cat_num+1)) // number of categories + 1 -- such that the total width of the background grey fills in the full width of the data visualization
+
+              // DN ADD <-----
+       .attr("transform", function(d, i) { return "translate(" + 0 + "," + i*rowPadding + ")"});
   
   
   //DATA POINTS - each barcode
@@ -360,7 +410,8 @@ d3.json("./faculty.json", function(data) {
       .attr("y", function(d) { return y2(d.name) })
       .attr("x", function(d) { return x(d.category) })
       .attr("width", 10 )
-      .attr("height", y2.bandwidth() )
+      // .attr("height", y2.bandwidth() )
+      .attr('height', dataPointsHeight)
       .style("fill", function(d) { 
         console.log(d.value);
         if (d.value == 0) {
@@ -372,13 +423,22 @@ d3.json("./faculty.json", function(data) {
       })
       .on("mouseover", mouseover)
       .on("mousemove", mousemove2)
-      .on("mouseleave", mouseleave);
+      .on("mouseleave", mouseleave)
+
+                   // DN ADD <-----
+      // .attr("transform", function(d, i) { if (i%cat_num === 0) {return "translate(" + 0 + "," + i*rowPadding + ")"}});
+      .attr("transform", function(d, i) { return "translate(" + 0 + "," + Math.floor(i/cat_num)*rowPadding + ")"});
   
   
   // PROF NAME
   svg2.selectAll("g.datapoints")
      .data(barcode, function(d) {return d.name+':'+d.category;})
       .enter()
+       .filter(function(d, i) {
+         if (i%cat_num === 0) { // number of research categories 
+           return d;
+         }
+       })
     .append("text")
     .text(function(d) {                 
       return d.name;
@@ -389,7 +449,10 @@ d3.json("./faculty.json", function(data) {
     .attr("font-family", "Inter, sans-serif")
     .attr("font-size", "11.5px")
     .attr("fill", "#002A5C")
-    .attr("opacity", "0.2");
+    .attr("opacity", "1")
+
+       // DN ADD <-----
+    .attr("transform", function(d, i) { return "translate(" + 0 + "," + i*rowPadding + ")"});
   
   
 });
@@ -435,7 +498,8 @@ d3.json("./faculty.json", function(data) {
   
   // BUILD Y scales and axis: column 3
   var y3 = d3.scaleBand()
-  .range([ height*0.87, 0 ]) //   .range([ height*0.87, 0 ]) << changed by AJ
+  // .range([ height*0.87, 0 ]) //   .range([ height*0.87, 0 ]) << changed by AJ
+  .range([ (height * (myGroup3.length/14)), 0 ])
   .domain(myGroup3.reverse())
   .padding(0.45);
 
@@ -451,7 +515,7 @@ d3.json("./faculty.json", function(data) {
             .style("clip-path", "url(#clipSmall)")
             .attr('xlink:href', barImg3[i]) //add profile img
             .attr('x',0 - 50)
-            .attr('y',0 - 33)
+            .attr('y',0 - 29)
             .attr('width',45)
             .attr('height',45);
 
@@ -463,21 +527,26 @@ d3.json("./faculty.json", function(data) {
   svg3.selectAll("g.datapoints")
      .data(barcode, function(d) {return d.name+':'+d.category;})
       .enter()
-      .append("rect")
        .filter(function(d, i) {
          if (i%cat_num === 0) { // number of research categories 
            return d;
          }
        })
+
+      .append("rect")
+
        .attr('y', function(d) {
          return y3(d.name);
        })
        .attr('fill', 'rgb(230,230,230)')
        .attr("opacity", 0.7)
-       .attr('height', function(d) {
-         return y3.bandwidth();
-       })
-       .attr('width', 10*(cat_num+1)); // number of categories + 1 -- such that the total width of the background grey fills in the full width of the data visualization
+       // .attr('height', function(d) {
+       //   return y3.bandwidth();
+       // })
+       .attr('height', dataPointsHeight)
+       .attr('width', 10*(cat_num+1)) // number of categories + 1 -- such that the total width of the background grey fills in the full width of the data visualization
+              // DN ADD <-----
+       .attr("transform", function(d, i) { return "translate(" + 0 + "," + i*rowPadding + ")"});
   
   
   //DATA POINTS - each barcode
@@ -488,7 +557,8 @@ d3.json("./faculty.json", function(data) {
       .attr("y", function(d) { return y3(d.name) })
       .attr("x", function(d) { return x(d.category) })
       .attr("width", 10 )
-      .attr("height", y3.bandwidth() )
+      // .attr("height", y3.bandwidth() )
+      .attr('height', dataPointsHeight)
       .style("fill", function(d) { 
         console.log(d.value);
         if (d.value == 0) {
@@ -500,13 +570,22 @@ d3.json("./faculty.json", function(data) {
       })
       .on("mouseover", mouseover)
       .on("mousemove", mousemove3)
-      .on("mouseleave", mouseleave);
+      .on("mouseleave", mouseleave)
+
+                   // DN ADD <-----
+      // .attr("transform", function(d, i) { if (i%cat_num === 0) {return "translate(" + 0 + "," + i*rowPadding + ")"}});
+      .attr("transform", function(d, i) { return "translate(" + 0 + "," + Math.floor(i/cat_num)*rowPadding + ")"});
   
   
   //PROF NAME
   svg3.selectAll("g.datapoints")
      .data(barcode, function(d) {return d.name+':'+d.category;})
       .enter()
+       .filter(function(d, i) {
+         if (i%cat_num === 0) { // number of research categories 
+           return d;
+         }
+       })
     .append("text")
     .text(function(d) {                 
       return d.name;
@@ -517,7 +596,11 @@ d3.json("./faculty.json", function(data) {
     .attr("font-family", "Inter, sans-serif")
     .attr("font-size", "11.5px")
     .attr("fill", "#002A5C")
-    .attr("opacity", "0.2");
+    .attr("opacity", "1")
+
+
+       // DN ADD <-----
+    .attr("transform", function(d, i) { return "translate(" + 0 + "," + i*rowPadding + ")"});
   
   
 });
