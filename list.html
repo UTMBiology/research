@@ -116,7 +116,9 @@
   //Fetch faculty data in the spreadsheet and display in HTML
   $(function() {
      $.getJSON('./faculty.json', function(data) {
+        console.log(data.nodes);
          $.each(data.nodes, function(i, f) {
+           console.log(f);
            if (f.group != "Area") {
              var htmlContent = "<div class='row'>"
              htmlContent += '<div class="column left">' + "<img src='" + f.img + "' style='border-radius:50%; margin-bottom:-10px;'>" + '</div>'
