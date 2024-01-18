@@ -285,28 +285,6 @@
             "courses": ["N/A"]
         },
         {
-            "id": "Joel D. Levine",
-            "group": "CSB-EEB",
-            "img": "./media/Joel_Levine.jpg",
-            "colour": "#bae8e0",
-            "degree": "PhD",
-            "position": "Professor",
-            "affiliation": ["Tier 1 Canada Research Chair in Mechanisms and Features of Social Behaviour", "Senior Fellow in the CIFAR program on Child and Brain Development"],
-            "dept": ["Cell and Systems Biology", "Ecology and Evolutionary Biology"],
-            "office": "DV3030",
-            "officephone": "(905) 828-5364",
-            "lab": "DV3092E/DV1007",
-            "labphone": "(905) 828-5387",
-            "email": "joel.levine@utoronto.ca",
-            "twitter": "jlevmail",
-            "linkedin": "https://ca.linkedin.com/in/joel-levine-64a04a21/",
-            "website": "www.levinelab.com",
-            "bio": "We study social networks and how the social environment influences individual behaviour.",
-            "category": ["Neurobiology", "Integrative Physiology", "Molecular Biology", "Animal Behaviour", "Evolutionary Biology", "Ecology"],
-            "keyword": ["Social Networks", "<i>Drosophila</i>", "Genetics", "Biological Timing", "Peripheral Oscillators", "Social Recognition", "Pheromonal Communication"],
-            "courses": ["N/A"]
-        },
-        {
             "id": "Baohua Liu",
             "group": "CSB",
             "img": "./media/Baohua_Liu.jpg",
@@ -1080,26 +1058,6 @@
         {
             "source": "Angela B. Lange",
             "target": "Cell Biology",
-            "value": "1"
-        },
-        {
-            "source": "Joel D. Levine",
-            "target": "Neurobiology",
-            "value": "1"
-        },
-        {
-            "source": "Joel D. Levine",
-            "target": "Integrative Physiology",
-            "value": "1"
-        },
-        {
-            "source": "Joel D. Levine",
-            "target": "Molecular Biology",
-            "value": "1"
-        },
-        {
-            "source": "Joel D. Levine",
-            "target": "Animal Behaviour",
             "value": "1"
         },
         {
@@ -2905,96 +2863,6 @@
           "category": "Science Education",
           "value": 0,
           "image": "./media/Angela_Lange.jpg"
-        },
-        {
-          "name": "Joel D. Levine",
-          "category": "Neurobiology",
-          "value": 1,
-          "image": "./media/Joel_Levine.jpg"
-        },
-        {
-          "name": "Joel D. Levine",
-          "category": "Integrative Physiology",
-          "value": 2,
-          "image": "./media/Joel_Levine.jpg"
-        },
-        {
-          "name": "Joel D. Levine",
-          "category": "Cell Biology",
-          "value": 0,
-          "image": "./media/Joel_Levine.jpg"
-        },
-        {
-          "name": "Joel D. Levine",
-          "category": "Molecular Biology",
-          "value": 4,
-          "image": "./media/Joel_Levine.jpg"
-        },
-        {
-          "name": "Joel D. Levine",
-          "category": "Epigenetics",
-          "value": 0,
-          "image": "./media/Joel_Levine.jpg"
-        },
-        {
-          "name": "Joel D. Levine",
-          "category": "Animal Behaviour",
-          "value": 6,
-          "image": "./media/Joel_Levine.jpg"
-        },
-        {
-          "name": "Joel D. Levine",
-          "category": "Stress and Disease Biology",
-          "value": 0,
-          "image": "./media/Joel_Levine.jpg"
-        },
-        {
-          "name": "Joel D. Levine",
-          "category": "Evolutionary Biology",
-          "value": 8,
-          "image": "./media/Joel_Levine.jpg"
-        },
-        {
-          "name": "Joel D. Levine",
-          "category": "Ecology",
-          "value": 9,
-          "image": "./media/Joel_Levine.jpg"
-        },
-        {
-          "name": "Joel D. Levine",
-          "category": "Plant Biology",
-          "value": 0,
-          "image": "./media/Joel_Levine.jpg"
-        },
-        {
-          "name": "Joel D. Levine",
-          "category": "Biological Responses to Climate Change",
-          "value": 0,
-          "image": "./media/Joel_Levine.jpg"
-        },
-        {
-          "name": "Joel D. Levine",
-          "category": "Paleontology",
-          "value": 0,
-          "image": "./media/Joel_Levine.jpg"
-        },
-        {
-          "name": "Joel D. Levine",
-          "category": "Visual Representation of Science",
-          "value": 0,
-          "image": "./media/Joel_Levine.jpg"
-        },
-        {
-          "name": "Joel D. Levine",
-          "category": "Molecular Visualization",
-          "value": 0,
-          "image": "./media/Joel_Levine.jpg"
-        },
-        {
-          "name": "Joel D. Levine",
-          "category": "Science Education",
-          "value": 0,
-          "image": "./media/Joel_Levine.jpg"
         },
         {
           "name": "Baohua Liu",
