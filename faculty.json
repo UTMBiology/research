@@ -1,5 +1,18 @@
 {
     "nodes": [
+          {
+            "id": "Lars Barquist",
+            "group": "IMS",
+            "img": "./media/Nicholas_Woolridge.jpg",
+            "colour": "#fbc060",
+            "degree": "BFA, BScBMC, MSc, CMI, FAMI",
+            "position": "Associate Professor",
+            "dept": ["Institute of Medical Science"],
+            "bio": "XXX",
+            "category": ["Molecular Biology", "Stress and Disease Biology","Evolutionary Biology", "Molecular Visualization", "Visual Representation of Science"],
+            "keyword": ["Functional Genomics", "Bioinformatics", "Systems Biology", "Infection Biology", "Pathogens", "Bacteria", "Microbiology"],
+            "courses": ["N/A"]
+        },
         {
             "id": "Katharina Braeutigam",
             "group": "CSB",
@@ -189,6 +202,20 @@
             "keyword": ["Developmental Biology", "<i>Drosophila</i>", "Stem Cells", "Neurogenesis"],
             "courses": ["BIO380 Human Development", "BIO403 Developmental Neurobiology"]
         },
+          {
+            "id": "Samira Ghorbani",
+            "group": "CSB",
+            "img": "./media/Nicholas_Woolridge.jpg",
+            "colour": "#4ca8bc",
+            "degree": "BSc, MSc, PhD",
+            "position": "Associate Professor",
+            "dept": ["UTM Biology"],
+            "email": "samira.ghorbani@utoronto.ca",
+            "bio": "Our lab explores the intricate relationship between the immune cells, oligodendrocytes, and extracellular matrix of the central nervous system. How to improve myelin repair and neuroprotection during neuroinflammatory/degenerative diseases such as multiple sclerosis is an active area of research with important health implications, particularly in the context of aging.   Research in our lab focusses on overcoming inhibitors in multiple sclerosis lesions to enhance tissue repair and remyelination.",
+            "category": ["Cell Biology", "Neurobiology", "Molecular Biology", "Stress and Disease Biology"],
+            "keyword": ["Neuroimmunology", "Multiple Sclerosis", "Remyelination", "Extracellular matrix", "Aging"],
+            "courses": ["N/A"]
+          },
         {
             "id": "Sanja Hinic-Frlog",
             "group": "EEB",
@@ -284,6 +311,21 @@
             "keyword": ["Insect", "Neuropeptide", "Neurohormone", "Amines", "Receptor", "Reproduction", "Feeding", "Diuresis"],
             "courses": ["N/A"]
         },
+        {
+          "id": "Kara Layton",
+          "group": "EEB",
+          "img": "./media/Nicholas_Woolridge.jpg",
+          "colour": "#769557",
+          "degree": "BSc, MSc, PhD",
+          "position": "Associate Professor",
+          "dept": ["Ecology and Evolutionary Biology"],
+          "email": "kara.layton@utoronto.ca",
+          "website": "www.laytonlab.com",
+          "bio": "At the broadest level, my research applies genomic tools to advance understanding of invertebrate diversity and the underlying evolutionary and ecological processes generating this diversity. I am particularly interested in i) using phylogenomics to resolve evolutionary relationships in molluscs, ii) detecting and characterizing introgression and its role in adaptation, iii) identifying the genomic basis of colour pattern variation in shell-less molluscs, and iv) understanding adaptive genomic variation and its role in climate change response. My team works largely on molluscan systems but we welcome members with diverse interests.",
+          "category": ["Evolutionary Biology", "Biological Responses to Climate Change", "Ecology", "Molecular Biology"],
+          "keyword": ["Molecular Systematics", "Evolutionary and Ecological Genomics", "Invertebrate Biology"],
+          "courses": ["N/A"]
+      },
         {
             "id": "Baohua Liu",
             "group": "CSB",
@@ -836,6 +878,31 @@
     ],
     "links": [
         {
+          "source": "Lars Barquist",
+          "target": "Molecular Biology",
+          "value": "1"
+        },
+        {
+          "source": "Lars Barquist",
+          "target": "Stress and Disease Biology",
+          "value": "1"
+        },
+        {
+          "source": "Lars Barquist",
+          "target": "Evolutionary Biology",
+          "value": "1"
+        },
+        {
+          "source": "Lars Barquist",
+          "target": "Molecular Visualization",
+          "value": "1"
+        },
+        {
+          "source": "Lars Barquist",
+          "target": "Visual Representation of Science",
+          "value": "1"
+        },
+        {
             "source": "Katharina Braeutigam",
             "target": "Integrative Physiology",
             "value": "1"
@@ -986,6 +1053,26 @@
             "value": "1"
         },
         {
+          "source": "Samira Ghorbani",
+          "target": "Neurobiology",
+          "value": "1"
+        },
+        {
+          "source": "Samira Ghorbani",
+          "target": "Molecular Biology",
+          "value": "1"
+        },
+        {
+          "source": "Samira Ghorbani",
+          "target": "Stress and Disease Biology",
+          "value": "1"
+        },
+        {
+          "source": "Samira Ghorbani",
+          "target": "Cell Biology",
+          "value": "1"
+        },
+        {
             "source": "Jodie Jenkinson",
             "target": "Visual Representation of Science",
             "value": "1"
@@ -1059,6 +1146,26 @@
             "source": "Angela B. Lange",
             "target": "Cell Biology",
             "value": "1"
+        },
+        {
+          "source": "Kara Layton",
+          "target": "Evolutionary Biology",
+          "value": "1"
+        },
+        {
+          "source": "Kara Layton",
+          "target": "Biological Responses to Climate Change",
+          "value": "1"
+        },
+        {
+          "source": "Kara Layton",
+          "target": "Ecology",
+          "value": "1"
+        },
+        {
+          "source": "Kara Layton",
+          "target": "Molecular Biology",
+          "value": "1"
         },
         {
             "source": "Baohua Liu",
