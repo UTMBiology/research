@@ -1619,6 +1619,96 @@
         }
     ],
     "bar_col1": [
+      {
+        "name": "Lars Barquist",
+        "category": "Neurobiology",
+        "value": 0,
+        "image": "./media/Katharina_Braeutigam.png"
+      },
+      {
+        "name": "Lars Barquist",
+        "category": "Integrative Physiology",
+        "value": 0,
+        "image": "./media/Katharina_Braeutigam.png"
+      },
+      {
+        "name": "Lars Barquist",
+        "category": "Cell Biology",
+        "value": 0,
+        "image": "./media/Katharina_Braeutigam.png"
+      },
+      {
+        "name": "Lars Barquist",
+        "category": "Molecular Biology",
+        "value": 4,
+        "image": "./media/Katharina_Braeutigam.png"
+      },
+      {
+        "name": "Lars Barquist",
+        "category": "Epigenetics",
+        "value": 0,
+        "image": "./media/Katharina_Braeutigam.png"
+      },
+      {
+        "name": "Lars Barquist",
+        "category": "Animal Behaviour",
+        "value": 0,
+        "image": "./media/Katharina_Braeutigam.png"
+      },
+      {
+        "name": "Lars Barquist",
+        "category": "Stress and Disease Biology",
+        "value": 7,
+        "image": "./media/Katharina_Braeutigam.png"
+      },
+      {
+        "name": "Lars Barquist",
+        "category": "Evolutionary Biology",
+        "value": 8,
+        "image": "./media/Katharina_Braeutigam.png"
+      },
+      {
+        "name": "Lars Barquist",
+        "category": "Ecology",
+        "value": 0,
+        "image": "./media/Katharina_Braeutigam.png"
+      },
+      {
+        "name": "Lars Barquist",
+        "category": "Plant Biology",
+        "value": 0,
+        "image": "./media/Katharina_Braeutigam.png"
+      },
+      {
+        "name": "Lars Barquist",
+        "category": "Biological Responses to Climate Change",
+        "value": 0,
+        "image": "./media/Katharina_Braeutigam.png"
+      },
+      {
+        "name": "Lars Barquist",
+        "category": "Paleontology",
+        "value": 0,
+        "image": "./media/Katharina_Braeutigam.png"
+      },
+      {
+        "name": "Lars Barquist",
+        "category": "Visual Representation of Science",
+        "value": 13,
+        "image": "./media/Katharina_Braeutigam.png"
+      },
+      {
+        "name": "Lars Barquist",
+        "category": "Molecular Visualization",
+        "value": 14,
+        "image": "./media/Katharina_Braeutigam.png"
+      },
+      {
+        "name": "Lars Barquist",
+        "category": "Science Education",
+        "value": 0,
+        "image": "./media/Katharina_Braeutigam.png"
+      },
         {
           "name": "Katharina Braeutigam",
           "category": "Neurobiology",
@@ -2515,6 +2605,96 @@
         },
         {
           "name": "Ted Erclik",
+          "category": "Science Education",
+          "value": 0,
+          "image": "./media/Ted_Erclik.jpg"
+        },
+        {
+          "name": "Samira Ghorbani",
+          "category": "Neurobiology",
+          "value": 1,
+          "image": "./media/Ted_Erclik.jpg"
+        },
+        {
+          "name": "Samira Ghorbani",
+          "category": "Integrative Physiology",
+          "value": 0,
+          "image": "./media/Ted_Erclik.jpg"
+        },
+        {
+          "name": "Samira Ghorbani",
+          "category": "Cell Biology",
+          "value": 3,
+          "image": "./media/Ted_Erclik.jpg"
+        },
+        {
+          "name": "Samira Ghorbani",
+          "category": "Molecular Biology",
+          "value": 4,
+          "image": "./media/Ted_Erclik.jpg"
+        },
+        {
+          "name": "Samira Ghorbani",
+          "category": "Epigenetics",
+          "value": 0,
+          "image": "./media/Ted_Erclik.jpg"
+        },
+        {
+          "name": "Samira Ghorbani",
+          "category": "Animal Behaviour",
+          "value": 0,
+          "image": "./media/Ted_Erclik.jpg"
+        },
+        {
+          "name": "Samira Ghorbani",
+          "category": "Stress and Disease Biology",
+          "value": 7,
+          "image": "./media/Ted_Erclik.jpg"
+        },
+        {
+          "name": "Samira Ghorbani",
+          "category": "Evolutionary Biology",
+          "value": 0,
+          "image": "./media/Ted_Erclik.jpg"
+        },
+        {
+          "name": "Samira Ghorbani",
+          "category": "Ecology",
+          "value": 0,
+          "image": "./media/Ted_Erclik.jpg"
+        },
+        {
+          "name": "Samira Ghorbani",
+          "category": "Plant Biology",
+          "value": 0,
+          "image": "./media/Ted_Erclik.jpg"
+        },
+        {
+          "name": "Samira Ghorbani",
+          "category": "Biological Responses to Climate Change",
+          "value": 0,
+          "image": "./media/Ted_Erclik.jpg"
+        },
+        {
+          "name": "Samira Ghorbani",
+          "category": "Paleontology",
+          "value": 0,
+          "image": "./media/Ted_Erclik.jpg"
+        },
+        {
+          "name": "Samira Ghorbani",
+          "category": "Visual Representation of Science",
+          "value": 0,
+          "image": "./media/Ted_Erclik.jpg"
+        },
+        {
+          "name": "Samira Ghorbani",
+          "category": "Molecular Visualization",
+          "value": 0,
+          "image": "./media/Ted_Erclik.jpg"
+        },
+        {
+          "name": "Samira Ghorbani",
           "category": "Science Education",
           "value": 0,
           "image": "./media/Ted_Erclik.jpg"
@@ -2972,6 +3152,96 @@
           "image": "./media/Angela_Lange.jpg"
         },
         {
+          "name": "Kara Layton",
+          "category": "Neurobiology",
+          "value": 0,
+          "image": "./media/Ted_Erclik.jpg"
+        },
+        {
+          "name": "Kara Layton",
+          "category": "Integrative Physiology",
+          "value": 0,
+          "image": "./media/Ted_Erclik.jpg"
+        },
+        {
+          "name": "Kara Layton",
+          "category": "Cell Biology",
+          "value": 0,
+          "image": "./media/Ted_Erclik.jpg"
+        },
+        {
+          "name": "Kara Layton",
+          "category": "Molecular Biology",
+          "value": 4,
+          "image": "./media/Ted_Erclik.jpg"
+        },
+        {
+          "name": "Kara Layton",
+          "category": "Epigenetics",
+          "value": 0,
+          "image": "./media/Ted_Erclik.jpg"
+        },
+        {
+          "name": "Kara Layton",
+          "category": "Animal Behaviour",
+          "value": 0,
+          "image": "./media/Ted_Erclik.jpg"
+        },
+        {
+          "name": "Kara Layton",
+          "category": "Stress and Disease Biology",
+          "value": 0,
+          "image": "./media/Ted_Erclik.jpg"
+        },
+        {
+          "name": "Kara Layton",
+          "category": "Evolutionary Biology",
+          "value": 8,
+          "image": "./media/Ted_Erclik.jpg"
+        },
+        {
+          "name": "Kara Layton",
+          "category": "Ecology",
+          "value": 9,
+          "image": "./media/Ted_Erclik.jpg"
+        },
+        {
+          "name": "Kara Layton",
+          "category": "Plant Biology",
+          "value": 0,
+          "image": "./media/Ted_Erclik.jpg"
+        },
+        {
+          "name": "Kara Layton",
+          "category": "Biological Responses to Climate Change",
+          "value": 11,
+          "image": "./media/Ted_Erclik.jpg"
+        },
+        {
+          "name": "Kara Layton",
+          "category": "Paleontology",
+          "value": 0,
+          "image": "./media/Ted_Erclik.jpg"
+        },
+        {
+          "name": "Kara Layton",
+          "category": "Visual Representation of Science",
+          "value": 0,
+          "image": "./media/Ted_Erclik.jpg"
+        },
+        {
+          "name": "Kara Layton",
+          "category": "Molecular Visualization",
+          "value": 0,
+          "image": "./media/Ted_Erclik.jpg"
+        },
+        {
+          "name": "Kara Layton",
+          "category": "Science Education",
+          "value": 0,
+          "image": "./media/Ted_Erclik.jpg"
+        },
+        {
           "name": "Baohua Liu",
           "category": "Neurobiology",
           "value": 1,
@@ -4050,9 +4320,7 @@
           "category": "Science Education",
           "value": 0,
           "image": "./media/John_Ratcliffe.jpg"
-        }
-    ], 
-    "bar_col3": [
+        },
         {
           "name": "Fiona Rawle",
           "category": "Neurobiology",
@@ -4232,7 +4500,9 @@
           "category": "Science Education",
           "value": 0,
           "image": "./media/Robert_Reisz.jpg"
-        },
+        }
+    ], 
+    "bar_col3": [
         {
           "name": "Arbora Resulaj",
           "category": "Neurobiology",
